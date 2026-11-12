@@ -1,0 +1,253 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 10,
+  "prompt_version": "v1",
+  "rank_run": null,
+  "reader": "phi4",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 42.76182699203491,
+ "git": {
+  "commit": "64f938fa639b1aef8b0d2b44afb6537eeba529f1",
+  "dirty": true,
+  "dirty_paths": [
+   "Makefile",
+   "open_book_law/us/goodlaw_questions.py",
+   "results/runs/us_smoke/0955ba859113b361.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 30.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 487,
+   "mean_label_mass": 0.9987434474250085,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    355
+   ],
+   "B": [
+    33,
+    418
+   ],
+   "C": [
+    34,
+    363
+   ],
+   "D": [
+    35,
+    415
+   ]
+  },
+  "validation": {
+   "accuracy": 30.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 487,
+   "mean_label_mass": 0.9987434474250085,
+   "questions": 10
+  }
+ },
+ "model": {
+  "id": "mlx-community/Phi-4-mini-instruct-4bit",
+  "revision": "ac1c269cb4222a4e136a3d09edad301056c1f36a"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9995743961301047,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.06272009564706425,
+    "B": 0.25593760758074724,
+    "C": 0.674305236254647,
+    "D": 0.007037060517541452
+   },
+   "prompt_tokens": 281,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9996709498352753,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.22702671385710402,
+    "B": 0.014066877187805709,
+    "C": 0.7443928886469501,
+    "D": 0.014513520308140144
+   },
+   "prompt_tokens": 457,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9983131289722234,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.18032561766522845,
+    "B": 0.3475876522576102,
+    "C": 0.17477793084232282,
+    "D": 0.2973087992348386
+   },
+   "prompt_tokens": 238,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9993399104033703,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9743740992384841,
+    "B": 0.0029133279160674414,
+    "C": 0.010824324223808524,
+    "D": 0.011888248621639987
+   },
+   "prompt_tokens": 246,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9989187408472934,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8697703947019062,
+    "B": 0.07841223027343036,
+    "C": 0.05062673988923778,
+    "D": 0.0011906351354256826
+   },
+   "prompt_tokens": 232,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.994201615768626,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8368334291895544,
+    "B": 0.13660937959473865,
+    "C": 0.004256198761511149,
+    "D": 0.022300992454195746
+   },
+   "prompt_tokens": 281,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9990196364830606,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.18457748626410622,
+    "B": 0.11550572542981394,
+    "C": 0.6646893492492891,
+    "D": 0.035227439056790724
+   },
+   "prompt_tokens": 487,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9990637545343389,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8485983245828411,
+    "B": 0.01817118553704252,
+    "C": 0.09228085406461539,
+    "D": 0.040949635815500915
+   },
+   "prompt_tokens": 310,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999778515488561,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.08537353871861278,
+    "B": 0.013092503139572546,
+    "C": 0.889613099701587,
+    "D": 0.011920858440227777
+   },
+   "prompt_tokens": 369,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9993544897269371,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.04246471963095939,
+    "B": 0.008104545699758893,
+    "C": 0.6048158927320465,
+    "D": 0.34461484193723524
+   },
+   "prompt_tokens": 203,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "01ff1be3362f765f",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.5456085205078125,
+  "questions_per_second": 0.27131479270257763,
+  "read_seconds": 36.8575553894043,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:25:48+00:00"
+}

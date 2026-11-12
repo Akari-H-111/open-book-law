@@ -1,0 +1,208 @@
+{
+ "config": {
+  "as_of": "2026-11-03",
+  "condition": "citator",
+  "dataset": "scotus",
+  "k": 3,
+  "library": "scotus",
+  "limit": 5,
+  "prompt_version": "v3",
+  "rank_run": "2d36da496704cf75",
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "all"
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/authority.sqlite": "8dc7c9411574e35ccc85e0d4a0afe9dc685e11bf534846837171d1c79709ea9d",
+  "$OBL_DATA/derived/goodlaw/questions.jsonl": "c8a759fc90ae0f240bdd96ee97dad834408f679ac9b5653463cdb266d4f9650b",
+  "$OBL_DATA/derived/scotus_passages.jsonl.gz": "94c4dae10a65f6571ac7d6f9f894492a35e863f8380c7ae38d3da95bcc5806a5"
+ },
+ "elapsed_seconds": 165.58014726638794,
+ "git": {
+  "commit": "e9b71f06435f17758245f1de6dc584ca2ac56c4e",
+  "dirty": true,
+  "dirty_paths": [
+   "results/data_audit/goodlaw_audit.json",
+   "results/runs/us_smoke/119f5f7652d24723.json",
+   "results/runs/us_smoke/2d36da496704cf75.json",
+   "results/runs/us_smoke/2d36da496704cf75.rank.tsv.gz",
+   "results/runs/us_smoke/98bafc5556d0477b.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 40.0,
+   "contexts_cut": 0,
+   "k": 3,
+   "left_out": [],
+   "mean_label_mass": 0.9996436636799071,
+   "questions": 5,
+   "questions_with_fewer_than_k": 0,
+   "rates": {
+    "current": 40.0,
+    "other_wrong": 0.0,
+    "superseded": 60.0
+   }
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [
+    "11330430:1:15",
+    "cornell:19-1392:4:2",
+    "3555978:2:1"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9993238888671643,
+   "n_passages": 3,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0036661554911384254,
+    "B": 0.9699733171778997,
+    "C": 0.022457925111955244,
+    "D": 0.0039026022190067106
+   },
+   "prompt_tokens": 849,
+   "qid": "4-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6175059:0:3",
+    "12026932:0:7",
+    "12047213:0:8"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995233812171744,
+   "n_passages": 3,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.9250197451356086e-06,
+    "B": 3.2125057403376e-06,
+    "C": 1.5689453434257344e-05,
+    "D": 0.9999781730210803
+   },
+   "prompt_tokens": 1221,
+   "qid": "150-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:24-621:0:67",
+    "cornell:24-621:0:5",
+    "cornell:24-621:0:4"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997066526370799,
+   "n_passages": 3,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00026911759457353107,
+    "B": 0.0001908329504827603,
+    "C": 0.001150869978566145,
+    "D": 0.9983891794763776
+   },
+   "prompt_tokens": 737,
+   "qid": "2-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3933080:0:26",
+    "11341565:1:8",
+    "3933080:0:25"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998460238593712,
+   "n_passages": 3,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.002321476531713442,
+    "B": 0.966279779655979,
+    "C": 0.002672003109647093,
+    "D": 0.028726740702660403
+   },
+   "prompt_tokens": 1276,
+   "qid": "166-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6177769:0:14",
+    "12667:0:17",
+    "6198207:0:21"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998183718187461,
+   "n_passages": 3,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.016920944346117975,
+    "B": 0.9531784766517759,
+    "C": 0.010424691400113985,
+    "D": 0.019475887601992117
+   },
+   "prompt_tokens": 1125,
+   "qid": "82-1",
+   "superseded": 1.0,
+   "truncated": false
+  }
+ ],
+ "run_id": "6e3b522c9bb9851b",
+ "suite": "us_smoke",
+ "throughput": {
+  "questions_per_second": 0.03411405439514174,
+  "read_seconds": 146.5671579837799,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T19:16:49+00:00"
+}

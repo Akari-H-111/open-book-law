@@ -1,0 +1,11 @@
+# Housing: the e5-small search of all states, the reader sample of Amendment 2 (R3, H5), and the sampled states (R2c).
+open_book_law.experiments.us_retrieval --dataset housing --retriever e5-small
+open_book_law.experiments.us_retrieval --dataset housing --retriever e5-small --scope all-states --sample data/housing_reader_sample.json
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --split all --sample data/housing_reader_sample.json --condition closed
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --split all --sample data/housing_reader_sample.json --condition gold
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --split all --sample data/housing_reader_sample.json --condition retrieved --retriever bm25 --library within-state --k 1
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --split all --sample data/housing_reader_sample.json --condition retrieved --retriever e5-small --library within-state --k 1
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --split all --sample data/housing_reader_sample.json --condition retrieved --retriever e5-small --library all-states --k 1
+open_book_law.experiments.us_retrieval --dataset housing --retriever bm25 --states 10
+open_book_law.experiments.us_retrieval --dataset housing --retriever e5-small --states 10
+open_book_law.experiments.us_retrieval --dataset housing --retriever e5-base --states 10

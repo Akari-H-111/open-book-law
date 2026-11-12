@@ -1,0 +1,2 @@
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-small
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base

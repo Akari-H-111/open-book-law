@@ -1,0 +1,263 @@
+{
+ "config": {
+  "condition": "retrieved",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": 1,
+  "library": "cases",
+  "limit": 10,
+  "prompt_version": "v3",
+  "rank_run": "09a02f60f0e0eed3",
+  "reader": "llama8",
+  "rerun": 901,
+  "retriever": "e5-base",
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be",
+  "$OBL_DATA/barexam_qa/test.csv": "dc0cfd5253ae837e447e70d2ee22645b83bee43c383384f5e1882f72f9279c4b",
+  "$OBL_DATA/barexam_qa/train.csv": "91f8a3eb1f872f81e9c420241b6e44b1ba0c6592378708f1c947d575e28d9e8a",
+  "$OBL_DATA/barexam_qa/validation.csv": "25faae1290920494fe25d0eccf2487ee9a32f48475fd0be697869b50c9371129"
+ },
+ "elapsed_seconds": 50.89735007286072,
+ "git": {
+  "commit": "0500968cfa81a7afd5d79a01f4e8723fe4fd2587",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/reader/mlx_reader.py"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 30.0,
+   "contexts_cut": 0,
+   "mean_label_mass": 0.9994037591008048,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12563783_100"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9994808757570118,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0009033005084275616,
+    "B": 0.05009519063214248,
+    "C": 0.9305725180869033,
+    "D": 0.0184289907725266
+   },
+   "prompt_tokens": 483,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12530540_9"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9997668211264693,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.05329933120998027,
+    "B": 0.07285154832921069,
+    "C": 0.1494816708451915,
+    "D": 0.7243674496156175
+   },
+   "prompt_tokens": 1018,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12510795_102"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9998133804790035,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.061662869787123785,
+    "B": 0.9348928872007287,
+    "C": 0.0017221215047898354,
+    "D": 0.0017221215073576698
+   },
+   "prompt_tokens": 458,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "caselaw_12545414_6"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9985875204949904,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.6484586403702395,
+    "B": 0.023253908538533485,
+    "C": 0.012253948665476846,
+    "D": 0.31603350242575023
+   },
+   "prompt_tokens": 508,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12521713_15"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9994687288344026,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.08031378001496152,
+    "B": 0.7501822769819991,
+    "C": 0.13036213257334836,
+    "D": 0.039141810429691025
+   },
+   "prompt_tokens": 620,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12509206_55"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.998585405325029,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0682826177047652,
+    "B": 0.7227260442942174,
+    "C": 0.05749972902272312,
+    "D": 0.15149160897829425
+   },
+   "prompt_tokens": 487,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "caselaw_12509272_18"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9994015454319288,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.02545189119649554,
+    "B": 0.04004144538469284,
+    "C": 0.09165578106107262,
+    "D": 0.842850882357739
+   },
+   "prompt_tokens": 994,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12573881_90"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9995693655525341,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.08263072779881589,
+    "B": 0.19822081155404836,
+    "C": 0.6705723613083834,
+    "D": 0.048576099338752426
+   },
+   "prompt_tokens": 631,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12510790_12"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999445905715445,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.029615757814795616,
+    "B": 0.9655342532879272,
+    "C": 0.0044713106621092095,
+    "D": 0.00037867823516798
+   },
+   "prompt_tokens": 594,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "caselaw_12520722_80"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9994193574351334,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.004358732845307274,
+    "B": 0.008943539108766172,
+    "C": 0.8306274532278112,
+    "D": 0.15607027481811542
+   },
+   "prompt_tokens": 370,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "ad0912ed268ab6ba",
+ "suite": "us_smoke",
+ "throughput": {
+  "questions_per_second": 0.2727110876278413,
+  "read_seconds": 36.668842792510986,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-04T07:12:39+00:00"
+}

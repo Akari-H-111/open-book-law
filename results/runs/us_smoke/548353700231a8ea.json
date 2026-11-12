@@ -1,0 +1,182 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 5,
+  "prompt_version": "v2",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 106.58755397796631,
+ "git": {
+  "commit": "53e065567f718424d85860b3fa7441520ebde10f",
+  "dirty": true,
+  "dirty_paths": [
+   "Makefile",
+   "data/overruled_pairs.jsonl",
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_overruled.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/191ce5e24e39fc89.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9530352736e33ffd.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 20.0,
+   "contexts_cut": 0,
+   "empty_contexts": 5,
+   "max_prompt_tokens": 528,
+   "mean_label_mass": 0.9980201817796761,
+   "questions": 5
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  },
+  "validation": {
+   "accuracy": 20.0,
+   "contexts_cut": 0,
+   "empty_contexts": 5,
+   "max_prompt_tokens": 528,
+   "mean_label_mass": 0.9980201817796761,
+   "questions": 5
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9994457332361503,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.15159650755196735,
+    "B": 0.014548275110688664,
+    "C": 0.7943089053367514,
+    "D": 0.03954631200059264
+   },
+   "prompt_tokens": 528,
+   "qid": "mbe_234",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9998508049154765,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.16528472940801534,
+    "B": 0.5012197457431523,
+    "C": 0.31859465447806756,
+    "D": 0.014900870370764827
+   },
+   "prompt_tokens": 218,
+   "qid": "mbe_380",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9914896029054969,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.11096566158898832,
+    "B": 0.13595797073023455,
+    "C": 0.3471808404749863,
+    "D": 0.40589552720579086
+   },
+   "prompt_tokens": 326,
+   "qid": "mbe_812",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9995721646296791,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8724824395922434,
+    "B": 0.10584412871699286,
+    "C": 0.01810779534842034,
+    "D": 0.003565636342343453
+   },
+   "prompt_tokens": 252,
+   "qid": "mbe_1015",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9997426032115779,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.045366342842693023,
+    "B": 0.040035657061816526,
+    "C": 0.9112073540151502,
+    "D": 0.0033906460803402637
+   },
+   "prompt_tokens": 219,
+   "qid": "mbe_1039",
+   "truncated": false
+  }
+ ],
+ "run_id": "548353700231a8ea",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.41314697265625,
+  "questions_per_second": 0.055822657059051276,
+  "read_seconds": 89.56936597824097,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:46:10+00:00"
+}

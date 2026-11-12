@@ -1,0 +1,2 @@
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library doctrine --k 1 --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library cases --k 1 --split validation

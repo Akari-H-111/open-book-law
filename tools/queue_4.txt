@@ -1,0 +1,13 @@
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library doctrine --split confirmatory
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library cases --split confirmatory
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library real --split confirmatory
+open_book_law.experiments.us_retrieval --dataset mbe --retriever bm25 --library doctrine --split confirmatory
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition closed --split confirmatory
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition gold --split confirmatory
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library doctrine --k 1 --split confirmatory
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library cases --k 1 --split confirmatory
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library real --k 1 --split confirmatory
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever bm25 --library doctrine --k 1 --split confirmatory
+open_book_law.experiments.us_rollout --dataset mbe --reader llama8 --split confirmatory
+open_book_law.experiments.us_retrieval --dataset mbe --retriever bm25 --library full --split confirmatory --rollout $OBL_DATA/derived/rollouts/mbe-llama8-v3.jsonl
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library full --split confirmatory --rollout $OBL_DATA/derived/rollouts/mbe-llama8-v3.jsonl

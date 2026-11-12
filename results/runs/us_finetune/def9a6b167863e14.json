@@ -1,0 +1,51 @@
+{
+ "config": {
+  "batch_size": 16,
+  "epochs": 1,
+  "learning_rate": 1e-05,
+  "limit_pairs": null,
+  "mode": "train",
+  "model": "intfloat/e5-small-v2",
+  "rerun": 1,
+  "seed": 20261103,
+  "temperature": 0.01,
+  "train_max_length": 256,
+  "val_docs": 20000
+ },
+ "data_sha256": {
+  "$OBL_DATA/housing_qa/questions.json.zip": "7e7722c267d44ecc1f9f52d69109116d8a0a352b89f002438585872f67de9985",
+  "$OBL_DATA/housing_qa/statutes.tsv.zip": "7d4382875edc40b54de5889a21d7ddebe6fae5629fd54bfa53b3d82c20eb04ae",
+  "data/housing_state_splits.json": "3fcbec50cf233a56b0cfe0588fe8e15fc44a0b25c40ad5acbe02b28b3f51870c"
+ },
+ "elapsed_seconds": 8226.84119296074,
+ "git": {
+  "commit": "a3f866d18081bb5a81247fede2d577182764ec09",
+  "dirty": false,
+  "dirty_paths": []
+ },
+ "metrics": {
+  "log": [
+   {
+    "epoch": 0,
+    "validation_r@10": 50.75034106412006
+   },
+   {
+    "epoch": 1,
+    "mean_loss": 1.9065285197804482,
+    "seconds": 942.5621438026428,
+    "validation_r@10": 21.55525238744884
+   }
+  ],
+  "training_pairs": 8542
+ },
+ "model": {
+  "id": "intfloat/e5-small-v2",
+  "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+  "saved_to": "$OBL_DATA/derived/models/ft-small-def9a6b167863e14"
+ },
+ "per_query": [],
+ "run_id": "def9a6b167863e14",
+ "suite": "us_finetune",
+ "throughput": {},
+ "utc_time": "2026-11-07T09:45:13+00:00"
+}

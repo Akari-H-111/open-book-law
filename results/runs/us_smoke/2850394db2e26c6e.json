@@ -1,0 +1,82 @@
+{
+ "config": {
+  "dataset": "mbe",
+  "limit": 3,
+  "max_new_tokens": 256,
+  "prompt_version": "v2",
+  "reader": "llama8",
+  "rerun": 0,
+  "sample": null,
+  "split": "validation",
+  "temperature": 0
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/rollouts/mbe-llama8-v2.jsonl": "43801952c8659f2aa654eb9610af3beb3635c11e3c197bcc7a6c7aa48af38e12"
+ },
+ "elapsed_seconds": 127.43930888175964,
+ "git": {
+  "commit": "470df42c21046cc2698f253dc08310b0f9a2145f",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/citations.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_caselaw.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/191ce5e24e39fc89.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/548353700231a8ea.json",
+   "results/runs/us_smoke/5affe215a77eb85c.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9492d1aab16165c2.json",
+   "results/runs/us_smoke/9530352736e33ffd.json",
+   "results/runs/us_smoke/dcdda91f87498e8b.json",
+   "results/runs/us_smoke/dcdda91f87498e8b.rank.tsv.gz"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "hit_token_limit": 0,
+   "questions": 3
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "qid": "mbe_235",
+   "stopped": true,
+   "text_sha1": "c4960a80fdcaddf7dab41cbaf01e2e41fac5eeb2",
+   "tokens": 105
+  },
+  {
+   "qid": "mbe_381",
+   "stopped": true,
+   "text_sha1": "8d5da3590e910cdc43e3cde1725e235a22f52dcb",
+   "tokens": 62
+  },
+  {
+   "qid": "mbe_1039",
+   "stopped": true,
+   "text_sha1": "978f6248b4d93e9c2f0ae1d88c187e707b95795c",
+   "tokens": 79
+  }
+ ],
+ "run_id": "2850394db2e26c6e",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 1.7292022705078125,
+  "seconds": 104.9276111125946,
+  "tokens_per_second": 2.3444734650065078
+ },
+ "utc_time": "2026-11-03T09:54:19+00:00"
+}

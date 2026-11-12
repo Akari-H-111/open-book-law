@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The old-law trap · Open Book</title>
+<meta name="description" content="What happens when a small AI model reads a court decision that was later overruled.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="oldlaw">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html" aria-current="page">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="label">Results</p>
+    <h1>The old-law trap</h1>
+    <p class="lead">Courts sometimes overrule their own earlier decisions. After that, the old rule is no longer “<a href="words.html#good-law">good law</a>”. A lawyer must check this. A search tool has no sense of time.</p>
+  </div>
+  <noscript><p class="note">This page fills in its numbers and charts with JavaScript, which is turned off in this browser. You can read the main results in the <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">results table</a> instead.</p></noscript>
+  <div class="narrow">
+    <p><strong>An example.</strong> In <em>South Dakota v. Wayfair</em> (2018), the Supreme Court overruled two earlier decisions about sales tax on sales from other states. A person who reads only the earlier decisions learns a rule that courts no longer follow.</p>
+    <p>Overruling is a legal event. It does not say which side was morally right.</p>
+    <p>The US government publishes a table of Supreme Court decisions that the Court later overruled. From that table, AI models wrote <span data-bind="gl.written">227</span> questions. <span data-bind="gl.leftout">Two</span> of them later left the test, so the tests use <span data-bind="gl.tested">225</span>. Each question has one answer with the <span class="tag current">current rule</span> and one answer with the <span class="tag old">outdated rule</span>.</p>
+    <p class="note">An AI model wrote these questions, and a second AI model checked them. No person has checked them yet. The project treats the rule of the overruling decision as the current rule. A later law could also change a rule, and the questions do not check for that.</p>
+  </div>
+
+  <h2>What did the model choose, depending on what it read?</h2>
+  <p class="muted narrow">Model: Llama 3, a small model with 8 billion <a href="words.html#parameters">parameters</a>. Each bar shows <span data-bind="gl.tested">225</span> questions.</p>
+  <ul class="legend" aria-label="Parts of each bar">
+    <li><i class="seg-current"></i>current rule</li>
+    <li><i class="seg-old"></i>outdated rule (striped)</li>
+    <li><i class="seg-other"></i>another wrong answer</li>
+  </ul>
+  <div id="cond-chart" class="card"></div>
+
+  <h2>What the tests say</h2>
+  <div class="grid">
+    <div class="card"><p class="label">Test H7 · <span data-bind="H7.verdict">…</span></p><p class="big"><span data-bind="H7.diff">…</span></p><p>points more outdated answers when the model read only the old decision, compared with nothing to read.</p></div>
+    <div class="card"><p class="label">Test H9 · <span data-bind="H9.verdict">…</span></p><p class="big"><span data-bind="h9.count">…</span> of <span data-bind="h9.n">…</span></p><p>times, search ranked a passage from the old decision above every passage from the new one. That is <span data-bind="H9.share">…</span> of the questions.</p></div>
+    <div class="card"><p class="label">Test H8 · <span data-bind="H8.verdict">…</span></p><p class="big"><span data-bind="H8.diff">…</span></p><p>points fewer outdated answers after overruled decisions were removed from the search. The range goes from <span data-bind="H8.low">…</span> to <span data-bind="H8.high">…</span>, so this is too small to tell apart from chance.</p></div>
+    <div class="card"><p class="label">Not a test · dissents</p><p class="big" id="dissent-share">…</p><p>of the first ten search results were dissents. A dissent is the opinion of a judge who disagreed with the decision. It is not the rule of the case.</p></div>
+    <div class="card"><p class="label">Not a test · exploratory</p><p class="big"><span data-bind="date.both">…</span></p><p>of questions got both dates right: the old rule for the year before the change, and the new rule for today.</p></div>
+  </div>
+
+  <h2>Can an AI agent that checks the law do better?</h2>
+  <p class="narrow">The project gave a second small model, Qwen3, three tools: search, read a passage, and check whether a decision had been overruled. It could use up to five tools for each question. An AI model that takes steps like this is called an <a href="words.html#agent">agent</a>.</p>
+  <div id="agent-chart" class="card"></div>
+  <p class="narrow">The agent chose the outdated rule <span data-bind="H10.abs">…</span> points less often than plain search. But the uncertainty range goes from <span data-bind="H10.low">…</span> to <span data-bind="H10.high">…</span>, which includes zero. So test H10 is <strong><span data-bind="H10.verdict">…</span></strong>: we cannot tell this difference apart from chance.</p>
+
+  <p><a class="btn" href="questions.html">Try a question yourself</a></p>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

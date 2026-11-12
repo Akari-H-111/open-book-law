@@ -1,0 +1,209 @@
+{
+ "alpha": 0.05,
+ "exploratory": {
+  "H6_unseen_groups": {
+   "hit@10": null,
+   "questions": 0,
+   "zero_hit@10": null
+  },
+  "date_test_both_forms_correct": 4.444444444444445
+ },
+ "tests": {
+  "H1": {
+   "a_only": 98,
+   "b_only": 100,
+   "difference": -0.18674136321195145,
+   "family_complete": true,
+   "high": 2.3342670401493932,
+   "low": -2.8011204481792715,
+   "p": 0.9433683628047674,
+   "p_holm": 1.0,
+   "questions": 1071,
+   "runs": [
+    "5feb10aa4a385948",
+    "37b2a24e08bf9b8c"
+   ],
+   "status": "done",
+   "threshold": 3,
+   "verdict": "not supported"
+  },
+  "H10": {
+   "a_only": 31,
+   "b_only": 25,
+   "difference": 2.6666666666666665,
+   "family_complete": true,
+   "high": 8.88888888888889,
+   "low": -4.0,
+   "p": 0.5044037600228256,
+   "p_holm": 1.0,
+   "questions": 225,
+   "runs": [
+    "fe9cca9d1cb8b3b5",
+    "6146f77693af14f4"
+   ],
+   "status": "done",
+   "threshold": 5,
+   "verdict": "not supported"
+  },
+  "H2": {
+   "a_only": 100,
+   "b_only": 93,
+   "difference": 0.6535947712418301,
+   "family_complete": true,
+   "high": 3.1746031746031744,
+   "low": -1.8674136321195145,
+   "p": 0.6659330459055769,
+   "p_holm": 1.0,
+   "questions": 1071,
+   "runs": [
+    "5feb10aa4a385948",
+    "3a800718b8513119"
+   ],
+   "status": "done",
+   "threshold": 2,
+   "verdict": "not supported"
+  },
+  "H3": {
+   "a_only": 209,
+   "b_only": 80,
+   "difference": 12.044817927170868,
+   "family_complete": true,
+   "high": 15.032679738562091,
+   "low": 9.056956115779645,
+   "p": 1.8615266077403604e-14,
+   "p_holm": 1.6753739469663243e-13,
+   "questions": 1071,
+   "runs": [
+    "15eb1f50138858a0",
+    "5feb10aa4a385948"
+   ],
+   "status": "done",
+   "threshold": 5,
+   "verdict": "supported"
+  },
+  "H4a": {
+   "a_only": 61,
+   "b_only": 2,
+   "difference": 5.508870214752568,
+   "family_complete": true,
+   "high": 7.002801120448179,
+   "low": 4.1083099906629315,
+   "p": 4.373671563806525e-16,
+   "p_holm": 4.373671563806525e-15,
+   "questions": 1071,
+   "runs": [
+    "c32ecf8920ae7b1d",
+    "064ab92f0a8e8c80"
+   ],
+   "status": "done",
+   "threshold": 3,
+   "verdict": "supported"
+  },
+  "H4b": {
+   "a_only": 45,
+   "b_only": 3,
+   "difference": 3.9215686274509802,
+   "family_complete": true,
+   "high": 5.228758169934641,
+   "low": 2.707749766573296,
+   "p": 1.312585595769633e-10,
+   "p_holm": 1.0500684766157065e-09,
+   "questions": 1071,
+   "runs": [
+    "fb646bf5a440f2bf",
+    "362e4429624184c3"
+   ],
+   "status": "done",
+   "threshold": 3,
+   "verdict": "supported"
+  },
+  "H5": {
+   "a_only": 289,
+   "b_only": 177,
+   "difference": 5.6,
+   "family_complete": true,
+   "high": 7.7,
+   "low": 3.5,
+   "p": 2.393332672165453e-07,
+   "p_holm": 1.6753328705158171e-06,
+   "questions": 2000,
+   "runs": [
+    "42bfc4709b07d14b",
+    "4e6221e859aaf510"
+   ],
+   "status": "done",
+   "threshold": 3,
+   "verdict": "supported"
+  },
+  "H6": {
+   "a_only": 223,
+   "b_only": 234,
+   "difference": -0.593311758360302,
+   "family_complete": true,
+   "high": 1.6720604099244876,
+   "low": -2.912621359223301,
+   "p": 0.6399895832899425,
+   "p_holm": 1.0,
+   "questions": 1854,
+   "runs": [
+    "bd578ac4833d144c",
+    "bd578ac4833d144c"
+   ],
+   "status": "done",
+   "threshold": 2,
+   "verdict": "not supported"
+  },
+  "H7": {
+   "a_only": 120,
+   "b_only": 0,
+   "difference": 53.333333333333336,
+   "family_complete": true,
+   "high": 60.0,
+   "low": 46.666666666666664,
+   "p": 1.504632769052528e-36,
+   "p_holm": 1.6550960459577808e-35,
+   "questions": 225,
+   "runs": [
+    "dd658d2b7cfeff72",
+    "706be530bacd2057"
+   ],
+   "status": "done",
+   "threshold": 10,
+   "verdict": "supported"
+  },
+  "H8": {
+   "a_only": 7,
+   "b_only": 4,
+   "difference": 1.3333333333333333,
+   "family_complete": true,
+   "high": 4.444444444444445,
+   "low": -1.7777777777777777,
+   "p": 0.548828125,
+   "p_holm": 1.0,
+   "questions": 225,
+   "runs": [
+    "d1fa719011ae04dd",
+    "07838f54df6478e4"
+   ],
+   "status": "done",
+   "threshold": 5,
+   "verdict": "not supported"
+  },
+  "H9": {
+   "difference": 38.666666666666664,
+   "family_complete": true,
+   "high": 45.1693173082993,
+   "low": 32.544511181161425,
+   "p": 0.003365799938545792,
+   "p_holm": 0.02019479963127475,
+   "questions": 225,
+   "runs": [
+    "f90498bed7d31fdb"
+   ],
+   "status": "done",
+   "threshold": "Wilson low > 30%",
+   "verdict": "supported"
+  }
+ },
+ "units": "percentage points"
+}

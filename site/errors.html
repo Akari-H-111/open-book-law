@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why answers went wrong · Open Book</title>
+<meta name="description" content="A random sample of 100 wrong answers, with the reason that an AI model gave for each one.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="errors">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html" aria-current="page">Wrong answers</a></li>
+        <li><a href="teachers.html">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="label">Explore</p>
+    <h1>Why answers went wrong</h1>
+    <p class="lead">The project took <span data-bind="err.count">100</span> random questions that the model got wrong while it read from the encyclopedia. An AI model then gave each wrong answer one reason.</p>
+  </div>
+  <noscript><p class="note">This page fills in its numbers and charts with JavaScript, which is turned off in this browser. You can read the main results in the <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">results table</a> instead.</p></noscript>
+  <p class="note narrow">These reasons are an AI first pass. The author has not reviewed them yet. They describe only questions that the model got wrong, so they do not show how often search fails overall. The reasons use legal terms, and they are shown as the AI wrote them.</p>
+  <div class="grid" id="err-cards"></div>
+  <div class="grid">
+    <div class="card"><p class="label">With the right passage</p><p class="big"><span data-bind="err.byGold">…</span> of <span data-bind="err.count">…</span></p><p>of these wrong answers became right when the model read the passage that a law student had marked instead.</p></div>
+    <div class="card"><p class="label">With nothing to read</p><p class="big"><span data-bind="err.byClosed">…</span> of <span data-bind="err.count">…</span></p><p>of these wrong answers were right when the model read nothing at all. For these, the encyclopedia passage turned a right answer into a wrong one.</p></div>
+  </div>
+
+  <h2>Each wrong answer</h2>
+  <p class="narrow muted">The questions themselves are not shown. They belong to a published dataset, and this project keeps their text out of its files. To read a question, look up its ID (for example <code>mbe_1026</code>) in the public dataset <a href="https://huggingface.co/datasets/reglab/barexam_qa">reglab/barexam_qa</a>. That site may ask you to sign in and accept its terms.</p>
+  <div class="toolbar">
+    <label for="err-filter">Show</label>
+    <select id="err-filter"></select>
+  </div>
+  <div id="err-list"></div>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

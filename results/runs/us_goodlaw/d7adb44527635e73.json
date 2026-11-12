@@ -1,0 +1,5480 @@
+{
+ "config": {
+  "as_of": "2026-11-03",
+  "condition": "both-dated",
+  "dataset": "scotus",
+  "k": 1,
+  "library": "scotus",
+  "limit": null,
+  "prompt_version": "v3",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "all"
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/authority.sqlite": "8dc7c9411574e35ccc85e0d4a0afe9dc685e11bf534846837171d1c79709ea9d",
+  "$OBL_DATA/derived/goodlaw/questions.jsonl": "f89ea046eb190af6a2d241579540adf39b57ae24a770e38baafd8e7aa4459529",
+  "$OBL_DATA/derived/scotus_passages.jsonl.gz": "94c4dae10a65f6571ac7d6f9f894492a35e863f8380c7ae38d3da95bcc5806a5"
+ },
+ "elapsed_seconds": 1778.7282330989838,
+ "git": {
+  "commit": "dbd41fea293f586bdcac0a7e15df8ba7608b9bab",
+  "dirty": true,
+  "dirty_paths": [
+   "results/runs/us_goodlaw/"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 66.66666666666667,
+   "contexts_cut": 11,
+   "left_out": [
+    "145-1",
+    "49-1"
+   ],
+   "mean_label_mass": 0.9997323843524731,
+   "questions": 225,
+   "rates": {
+    "current": 66.66666666666667,
+    "other_wrong": 0.8888888888888888,
+    "superseded": 32.44444444444444
+   }
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [
+    "cornell:19-1392",
+    "1480969"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998557832682179,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0008265507715049477,
+    "B": 0.6327852239827273,
+    "C": 0.36622799106953235,
+    "D": 0.00016023417623543178
+   },
+   "prompt_tokens": 441,
+   "qid": "4-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "451047",
+    "6931824"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997943457304809,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 1.644199400804065e-05,
+    "B": 1.3211513372990463e-05,
+    "C": 1.7231061775475467e-05,
+    "D": 0.9999531154308434
+   },
+   "prompt_tokens": 640,
+   "qid": "150-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:24-621",
+    "9313389"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998680343789016,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 3.8207095478175464e-05,
+    "B": 2.3173774854143735e-05,
+    "C": 0.0005527447069037862,
+    "D": 0.9993858744227638
+   },
+   "prompt_tokens": 345,
+   "qid": "2-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "377010",
+    "434270"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998567873920964,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.982811139912228,
+    "B": 0.017176496651542174,
+    "C": 1.200919077718643e-05,
+    "D": 3.5424545261069313e-07
+   },
+   "prompt_tokens": 531,
+   "qid": "166-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6176664",
+    "6169915"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999103052250388,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.0142726929050057e-05,
+    "B": 0.00011959287639748662,
+    "C": 2.7531843403760386e-05,
+    "D": 0.9998327325532698
+   },
+   "prompt_tokens": 866,
+   "qid": "82-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "379871",
+    "377174"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997141954122555,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9665168275221826,
+    "B": 0.0013650604472535259,
+    "C": 0.0005602196779697922,
+    "D": 0.031557892352594076
+   },
+   "prompt_tokens": 725,
+   "qid": "144-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "5928574",
+    "6215448"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999563460330467,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00790762862548225,
+    "B": 0.003508988934482572,
+    "C": 0.9882670374925983,
+    "D": 0.00031634494743686836
+   },
+   "prompt_tokens": 353,
+   "qid": "24-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "10687",
+    "102735"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9993990078380361,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9998723623047073,
+    "B": 0.00010720661061184764,
+    "C": 1.8340888513954418e-05,
+    "D": 2.0901961669281908e-06
+   },
+   "prompt_tokens": 1183,
+   "qid": "194-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "359225",
+    "1484699"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999080365255337,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.006128923177850617,
+    "B": 0.007165437151899218,
+    "C": 0.983525996202418,
+    "D": 0.0031796434678321886
+   },
+   "prompt_tokens": 481,
+   "qid": "187-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6161224",
+    "11336704"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997465964988292,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9988404867462185,
+    "B": 0.0009695677680251271,
+    "C": 7.59424162487963e-05,
+    "D": 0.00011400306950761277
+   },
+   "prompt_tokens": 821,
+   "qid": "127-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6181588",
+    "6158919"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999589612789346,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00018757270057564537,
+    "B": 0.0029803365433085545,
+    "C": 0.9967861240888211,
+    "D": 4.596666729480388e-05
+   },
+   "prompt_tokens": 858,
+   "qid": "120-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3903035",
+    "11339173"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999373649948644,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 4.495081053872687e-06,
+    "B": 1.577921861337652e-06,
+    "C": 0.9999731419528273,
+    "D": 2.078504425756357e-05
+   },
+   "prompt_tokens": 610,
+   "qid": "129-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "189371",
+    "5718412"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998216057775017,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.3547264196506608e-05,
+    "B": 2.3918079708635346e-05,
+    "C": 0.0002034173222917311,
+    "D": 0.9997491173338031
+   },
+   "prompt_tokens": 692,
+   "qid": "198-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11132975",
+    "468279"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999766646398415,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 1.9222845632860058e-05,
+    "B": 0.9999638909583054,
+    "C": 1.5206522516861554e-05,
+    "D": 1.6796735448853832e-06
+   },
+   "prompt_tokens": 1837,
+   "qid": "34-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11719655",
+    "3573311"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998234018428455,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.996619055847581,
+    "B": 0.003172019993091743,
+    "C": 0.00010854055540324549,
+    "D": 0.00010038360392402104
+   },
+   "prompt_tokens": 762,
+   "qid": "21-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3414183",
+    "641305"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995173294858685,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 6.107531942906043e-05,
+    "B": 0.00011590059086789153,
+    "C": 0.0001006961782561862,
+    "D": 0.9997223279114468
+   },
+   "prompt_tokens": 828,
+   "qid": "158-3",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6159838",
+    "6079"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998762318384399,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0013447322251932817,
+    "B": 0.0008029762882508934,
+    "C": 0.9978170111705482,
+    "D": 3.5280316007645006e-05
+   },
+   "prompt_tokens": 583,
+   "qid": "91-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3451470",
+    "3512246"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998916071821532,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9995130415678735,
+    "B": 0.00046551693734098913,
+    "C": 9.968184600780627e-06,
+    "D": 1.1473310184811491e-05
+   },
+   "prompt_tokens": 642,
+   "qid": "219-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "28034",
+    "1771589"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999290655298839,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 5.708081610007565e-05,
+    "B": 0.9343375831169186,
+    "C": 0.06560079474528024,
+    "D": 4.541321701040034e-06
+   },
+   "prompt_tokens": 708,
+   "qid": "63-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11926477",
+    "8293612"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998388293154371,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.49095658269858694,
+    "B": 0.20148817609005373,
+    "C": 0.30723277898040585,
+    "D": 0.0003224622309535196
+   },
+   "prompt_tokens": 1744,
+   "qid": "204-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3694651",
+    "3366123"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999739754469232,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0007885365109263336,
+    "B": 0.0015199439117343,
+    "C": 0.9646819194194877,
+    "D": 0.033009600157851725
+   },
+   "prompt_tokens": 1302,
+   "qid": "207-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6187462",
+    "11317375"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999300299180631,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 1.4281128894859198e-05,
+    "B": 0.0003053439996752689,
+    "C": 0.9996785015949727,
+    "D": 1.8732764570779643e-06
+   },
+   "prompt_tokens": 802,
+   "qid": "75-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:18-5924",
+    "6171091"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999014308809446,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.001358916019134212,
+    "B": 0.9927087688505918,
+    "C": 0.005374617116639548,
+    "D": 0.00055769801363451
+   },
+   "prompt_tokens": 2240,
+   "qid": "6-1",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "353467",
+    "678699"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9997595825432987,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.003942092111654254,
+    "B": 0.9952177677862606,
+    "C": 0.0008008845904524166,
+    "D": 3.925551163268336e-05
+   },
+   "prompt_tokens": 860,
+   "qid": "30-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "11341451",
+    "640821"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999243397222404,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00028148822809738396,
+    "B": 0.9964613461143608,
+    "C": 0.0029331746925931328,
+    "D": 0.00032399096494870906
+   },
+   "prompt_tokens": 438,
+   "qid": "130-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "28332",
+    "3463590"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999171861586917,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.5566727774403568,
+    "B": 0.0027873814191467536,
+    "C": 0.44036441240778934,
+    "D": 0.0001754287327071367
+   },
+   "prompt_tokens": 769,
+   "qid": "62-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "8781",
+    "3383291"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999631680515589,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0002718490060922657,
+    "B": 0.9623387389834068,
+    "C": 0.03731392226759273,
+    "D": 7.548974290816147e-05
+   },
+   "prompt_tokens": 1672,
+   "qid": "225-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "8289427",
+    "11331985"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996589423383148,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0007145320683032139,
+    "B": 0.0001301259570245448,
+    "C": 0.8472515154714703,
+    "D": 0.15190382650320203
+   },
+   "prompt_tokens": 898,
+   "qid": "55-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "12123142",
+    "6932011"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9993552228644661,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.005216171437260639,
+    "B": 0.9940263265834088,
+    "C": 0.0007170488512185208,
+    "D": 4.045312811198371e-05
+   },
+   "prompt_tokens": 636,
+   "qid": "86-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3443990",
+    "5655150"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998577343140618,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00017190179553598495,
+    "B": 0.9877385908460135,
+    "C": 0.0009439265516069374,
+    "D": 0.011145580806843573
+   },
+   "prompt_tokens": 616,
+   "qid": "228-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11713016",
+    "6176716"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999464026044563,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 5.3894526092435975e-05,
+    "B": 0.9996434216426208,
+    "C": 0.00027800911920811426,
+    "D": 2.4674712078748188e-05
+   },
+   "prompt_tokens": 374,
+   "qid": "92-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "11643636",
+    "6177769"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997141976051727,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.13045122863599046,
+    "B": 0.10814786728558802,
+    "C": 0.04508273829667665,
+    "D": 0.7163181657817448
+   },
+   "prompt_tokens": 839,
+   "qid": "85-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "605625",
+    "cornell:14-7505"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998312904632618,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 8.883831241197816e-05,
+    "B": 5.473169658425834e-05,
+    "C": 0.0004238238848272622,
+    "D": 0.9994326061061765
+   },
+   "prompt_tokens": 513,
+   "qid": "14-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "678699",
+    "6197359"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9996393461149403,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.001175502425757282,
+    "B": 0.5048168308152902,
+    "C": 0.004722416563400495,
+    "D": 0.4892852501955521
+   },
+   "prompt_tokens": 1004,
+   "qid": "69-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "368295",
+    "366495"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9995964542037991,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.004474024297533839,
+    "B": 0.007262058266269456,
+    "C": 0.9813344129922734,
+    "D": 0.006929504443923221
+   },
+   "prompt_tokens": 1520,
+   "qid": "174-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6136740",
+    "1484712"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9994403027732667,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.8350438608406817e-06,
+    "B": 3.4465368455650964e-06,
+    "C": 9.368658421639792e-06,
+    "D": 0.9999843497608719
+   },
+   "prompt_tokens": 1259,
+   "qid": "183-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "12032050",
+    "cornell:19-5807"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9995954274219875,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9990142292683605,
+    "B": 2.0126237296933913e-05,
+    "C": 0.0009547020489041833,
+    "D": 1.0942445438365805e-05
+   },
+   "prompt_tokens": 794,
+   "qid": "5-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "368295",
+    "366720"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999056369172366,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.022172398965498476,
+    "B": 0.253749669037671,
+    "C": 0.7228655363918697,
+    "D": 0.0012123956049608319
+   },
+   "prompt_tokens": 885,
+   "qid": "173-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3317281",
+    "5680026"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999527892179116,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0001214347920208135,
+    "B": 0.00033009398922006377,
+    "C": 5.647242285009047e-05,
+    "D": 0.999491998795909
+   },
+   "prompt_tokens": 1435,
+   "qid": "233-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6176664",
+    "3942430"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998314741183869,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 1.1826898688335256e-05,
+    "B": 4.28341887620348e-06,
+    "C": 0.9986168860580349,
+    "D": 0.0013670036244005533
+   },
+   "prompt_tokens": 634,
+   "qid": "82-3",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "189328",
+    "5718412"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.99994584826952,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.002320204924229647,
+    "B": 0.9964067037690789,
+    "C": 0.0012614735369910431,
+    "D": 1.1617769700480599e-05
+   },
+   "prompt_tokens": 536,
+   "qid": "198-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "28093",
+    "6166693"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997135191188737,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9999718101485199,
+    "B": 2.507151568006109e-05,
+    "C": 2.1907246247577963e-06,
+    "D": 9.276111752038566e-07
+   },
+   "prompt_tokens": 792,
+   "qid": "65-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11182106",
+    "6154176"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999012480257419,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.001376719125244933,
+    "B": 0.0004539937822879025,
+    "C": 0.00804723233502884,
+    "D": 0.9901220547574384
+   },
+   "prompt_tokens": 471,
+   "qid": "35-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "8287190",
+    "324365"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997707373022923,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00019707379101103537,
+    "B": 0.0003919280325628668,
+    "C": 9.30910672977643e-05,
+    "D": 0.9993179071091283
+   },
+   "prompt_tokens": 589,
+   "qid": "40-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11729477",
+    "324365"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9992650647349627,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.000491364889218588,
+    "B": 0.022946874231363875,
+    "C": 0.0008358398326194268,
+    "D": 0.9757259210467981
+   },
+   "prompt_tokens": 861,
+   "qid": "40-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6170538",
+    "359158"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.999907341675489,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.003976217499018307,
+    "B": 0.988270049767537,
+    "C": 0.005785362326523158,
+    "D": 0.0019683704069216037
+   },
+   "prompt_tokens": 1257,
+   "qid": "106-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3906798",
+    "1564227"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9986574709381333,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "other_wrong",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.012129472072994581,
+    "B": 0.02820186751941961,
+    "C": 0.948624650386335,
+    "D": 0.011044010021250796
+   },
+   "prompt_tokens": 704,
+   "qid": "44-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1486115",
+    "6136267"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999096569360539,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0011498691412012067,
+    "B": 0.0008027380342067481,
+    "C": 0.9975209443677032,
+    "D": 0.0005264484568888785
+   },
+   "prompt_tokens": 950,
+   "qid": "180-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11745611",
+    "6172250"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999316094568015,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0006070340279681925,
+    "B": 6.201243018130963e-05,
+    "C": 0.999324518812002,
+    "D": 6.434729848436449e-06
+   },
+   "prompt_tokens": 611,
+   "qid": "39-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6144433",
+    "6165037"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996613892401658,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00390523207367659,
+    "B": 0.00951569187940295,
+    "C": 0.7799206709999982,
+    "D": 0.20665840504692234
+   },
+   "prompt_tokens": 727,
+   "qid": "143-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6171321",
+    "8299708"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998927765200804,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00036821380539314106,
+    "B": 0.0001487718260433786,
+    "C": 7.963182006229374e-05,
+    "D": 0.9994033825485013
+   },
+   "prompt_tokens": 984,
+   "qid": "112-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3668927",
+    "8284771"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998591435138309,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9311289028658578,
+    "B": 0.019025358107345992,
+    "C": 0.02725256717071241,
+    "D": 0.022593171856083772
+   },
+   "prompt_tokens": 2222,
+   "qid": "206-1",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11338628",
+    "6171859"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997770391398322,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 8.601277148364538e-05,
+    "B": 0.03209228029389959,
+    "C": 0.00017648674791856327,
+    "D": 0.9676452201866982
+   },
+   "prompt_tokens": 573,
+   "qid": "104-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "8897054",
+    "3639027"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9988962988192837,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.014956977331011746,
+    "B": 0.11582181150266525,
+    "C": 0.013407347834341565,
+    "D": 0.8558138633319815
+   },
+   "prompt_tokens": 641,
+   "qid": "18-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "5645962",
+    "3679065"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999591789893637,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 2.178122104551793e-05,
+    "B": 3.535441154684447e-05,
+    "C": 0.9999126241366556,
+    "D": 3.024023075200343e-05
+   },
+   "prompt_tokens": 749,
+   "qid": "205-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1105177",
+    "6159097"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999344564041941,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 9.1566885306058e-05,
+    "B": 6.293293868571683e-05,
+    "C": 0.0014101405963594202,
+    "D": 0.9984353595796488
+   },
+   "prompt_tokens": 370,
+   "qid": "154-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3938061",
+    "5720689"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996361350225057,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.007011418176606134,
+    "B": 0.004818872557843275,
+    "C": 0.9040774103812198,
+    "D": 0.08409229888433079
+   },
+   "prompt_tokens": 724,
+   "qid": "163-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6137841",
+    "5724172"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999513112037265,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0010140085496914263,
+    "B": 0.0012619540312299431,
+    "C": 0.9967862328129515,
+    "D": 0.0009378046061270811
+   },
+   "prompt_tokens": 791,
+   "qid": "188-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "368247",
+    "5717781"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9996870402998924,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.3184498064669098e-05,
+    "B": 8.092184964685135e-05,
+    "C": 4.757150123967097e-05,
+    "D": 0.9998483221510488
+   },
+   "prompt_tokens": 511,
+   "qid": "178-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:17-532",
+    "468279"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9997869500270965,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0018371371029620098,
+    "B": 0.9818695295297079,
+    "C": 0.01514368234040979,
+    "D": 0.001149651026920353
+   },
+   "prompt_tokens": 1445,
+   "qid": "8-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6137572",
+    "3626047"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998930352363615,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00039197113172846035,
+    "B": 0.0001088464524025209,
+    "C": 0.9994277991694329,
+    "D": 7.138324643613557e-05
+   },
+   "prompt_tokens": 787,
+   "qid": "190-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6188807",
+    "6204748"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998700145084759,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0038084070921870447,
+    "B": 0.003808407095679601,
+    "C": 0.0003951799753567879,
+    "D": 0.9919880058367766
+   },
+   "prompt_tokens": 779,
+   "qid": "67-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3664215",
+    "5646330"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9990858425802721,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.5763407978081514,
+    "B": 0.0004785230742370576,
+    "C": 0.00152074317912762,
+    "D": 0.421659935938484
+   },
+   "prompt_tokens": 977,
+   "qid": "212-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "4335985",
+    "cornell:13-7120"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999183451902223,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 4.5657010181211565e-06,
+    "B": 5.014441604418961e-06,
+    "C": 0.9999365095296678,
+    "D": 5.391032770960505e-05
+   },
+   "prompt_tokens": 683,
+   "qid": "15-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1248432",
+    "6166693"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9994793327917684,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0010451330599755518,
+    "B": 0.0009818116532058871,
+    "C": 0.6429192971735659,
+    "D": 0.3550537581132526
+   },
+   "prompt_tokens": 1017,
+   "qid": "33-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3653776",
+    "6206467"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999624445489186,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00011407978093684029,
+    "B": 0.9995125972523818,
+    "C": 0.0003625447940372809,
+    "D": 1.0778172644079565e-05
+   },
+   "prompt_tokens": 450,
+   "qid": "19-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6136936",
+    "6137652"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999589619616016,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0006356812828959683,
+    "B": 0.9985627860964267,
+    "C": 0.0006661882648725707,
+    "D": 0.00013534435580486782
+   },
+   "prompt_tokens": 665,
+   "qid": "181-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "336877",
+    "6143553"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998741899566785,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0045959878560169155,
+    "B": 0.99245703106785,
+    "C": 0.002876095710258982,
+    "D": 7.088536587405812e-05
+   },
+   "prompt_tokens": 1077,
+   "qid": "196-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3334337",
+    "3328443"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999948937741185,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.004930514861196486,
+    "B": 0.009503816147310504,
+    "C": 0.0008839926037827389,
+    "D": 0.9846816763877103
+   },
+   "prompt_tokens": 1282,
+   "qid": "235-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6163994",
+    "6166688"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999900289610251,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 8.879482194199108e-05,
+    "B": 0.0009252632921514083,
+    "C": 4.2604221173755004e-05,
+    "D": 0.9989433376647328
+   },
+   "prompt_tokens": 649,
+   "qid": "139-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6209106",
+    "cornell:22-451"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9997916242476823,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00038865483852819664,
+    "B": 0.7364279224876158,
+    "C": 0.0006019603896889932,
+    "D": 0.26258146228416696
+   },
+   "prompt_tokens": 516,
+   "qid": "3-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6158690",
+    "11957617"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.999899125530022,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9997438386345482,
+    "B": 0.0002453668319188134,
+    "C": 3.499969884012143e-06,
+    "D": 7.294563649013064e-06
+   },
+   "prompt_tokens": 438,
+   "qid": "102-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "355821",
+    "634223"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999032107623066,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.005910911024974948,
+    "B": 0.9940623881708004,
+    "C": 2.4923353333269027e-05,
+    "D": 1.7774508913203646e-06
+   },
+   "prompt_tokens": 677,
+   "qid": "46-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "9414276",
+    "541334"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998271523246709,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.19903075985153618,
+    "B": 0.0011651320012110967,
+    "C": 0.7995782370053764,
+    "D": 0.00022587114187629827
+   },
+   "prompt_tokens": 751,
+   "qid": "32-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "9301604",
+    "189376"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9994125168940075,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9999169347546177,
+    "B": 3.5911317252956045e-05,
+    "C": 4.6111044087201323e-05,
+    "D": 1.0428840420297043e-06
+   },
+   "prompt_tokens": 605,
+   "qid": "31-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1772077",
+    "6157337"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9997664151856962,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.7459319608013242,
+    "B": 0.253790567834258,
+    "C": 0.0002581755216137648,
+    "D": 1.9295842803975604e-05
+   },
+   "prompt_tokens": 576,
+   "qid": "117-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6144782",
+    "3445849"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.999887008850332,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9816329564954434,
+    "B": 0.015378454445439572,
+    "C": 0.0028447280306925457,
+    "D": 0.00014386102842445074
+   },
+   "prompt_tokens": 868,
+   "qid": "171-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "532338",
+    "1439670"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999446651354492,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0887125829975495,
+    "B": 0.9100747516606738,
+    "C": 0.0004802981335156896,
+    "D": 0.0007323672082610367
+   },
+   "prompt_tokens": 2209,
+   "qid": "236-2",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6183325",
+    "11960265"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998154854763097,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00011773165623715193,
+    "B": 8.479893099668423e-05,
+    "C": 0.9997724028966049,
+    "D": 2.506651616128255e-05
+   },
+   "prompt_tokens": 766,
+   "qid": "68-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "353956",
+    "11341575"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998827899565832,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00021305584497372337,
+    "B": 0.00026104147874462234,
+    "C": 0.9991691012786181,
+    "D": 0.00035680139766349015
+   },
+   "prompt_tokens": 829,
+   "qid": "165-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6170949",
+    "cornell:18-5924"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.999815947785251,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9684987355828107,
+    "B": 0.028346318935702226,
+    "C": 0.0014790088655997232,
+    "D": 0.0016759366158873644
+   },
+   "prompt_tokens": 2208,
+   "qid": "6-2",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6171849",
+    "362716"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.999645448657053,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0007325008872718538,
+    "B": 0.012584416636388587,
+    "C": 0.002478018558933679,
+    "D": 0.9842050639174058
+   },
+   "prompt_tokens": 1148,
+   "qid": "138-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1765333",
+    "368158"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997114860431566,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.0458627523716705e-05,
+    "B": 0.00020026764121814993,
+    "C": 1.0127755027724576e-05,
+    "D": 0.9997691459762305
+   },
+   "prompt_tokens": 985,
+   "qid": "147-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3475563",
+    "3560896"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998647239463045,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.7109806570210119,
+    "B": 0.28726215328165117,
+    "C": 0.0012112407237080398,
+    "D": 0.0005459489736289992
+   },
+   "prompt_tokens": 2257,
+   "qid": "214-2",
+   "superseded": 1.0,
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1421282",
+    "3523061"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995216451739138,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 3.6467556951621624e-05,
+    "B": 1.8625805821956263e-05,
+    "C": 0.00028239251894504705,
+    "D": 0.9996625141182813
+   },
+   "prompt_tokens": 2262,
+   "qid": "217-1",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3521233",
+    "3425093"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995503320805348,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 5.955515487545606e-05,
+    "B": 4.223092865413554e-05,
+    "C": 0.00970748829240789,
+    "D": 0.9901907256240625
+   },
+   "prompt_tokens": 475,
+   "qid": "218-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1108176",
+    "6216766"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995644417172711,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0023683164079583824,
+    "B": 0.002368316411098616,
+    "C": 0.06921235075023079,
+    "D": 0.9260510164307122
+   },
+   "prompt_tokens": 575,
+   "qid": "53-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1787633",
+    "6163485"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997639108000581,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 7.030393233544142e-05,
+    "B": 3.882551894995708e-05,
+    "C": 7.367788849460382e-05,
+    "D": 0.99981719266022
+   },
+   "prompt_tokens": 602,
+   "qid": "80-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3383405",
+    "6178074"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997949483094533,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.23586669667821503,
+    "B": 0.006092245927507552,
+    "C": 0.7495828115443217,
+    "D": 0.008458245849955687
+   },
+   "prompt_tokens": 971,
+   "qid": "89-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6212725",
+    "3499903"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.999788308101895,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00033421897146172693,
+    "B": 0.9359303884238815,
+    "C": 0.06369086223662755,
+    "D": 4.453036802915724e-05
+   },
+   "prompt_tokens": 526,
+   "qid": "54-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "5704466",
+    "1767723"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998096297848502,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 9.234099947846845e-05,
+    "B": 0.008576131709230914,
+    "C": 6.547957362930739e-05,
+    "D": 0.9912660477176614
+   },
+   "prompt_tokens": 1109,
+   "qid": "123-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3915622",
+    "11335683"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9994840482693109,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00017668571092687585,
+    "B": 5.826476358392941e-05,
+    "C": 0.00027796564023008176,
+    "D": 0.9994870838852592
+   },
+   "prompt_tokens": 981,
+   "qid": "156-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6160224",
+    "3642626"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9995655623102854,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9731514652775882,
+    "B": 0.0004532391987824162,
+    "C": 5.32924685369373e-05,
+    "D": 0.026342003055092458
+   },
+   "prompt_tokens": 407,
+   "qid": "162-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1254843",
+    "12699057"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997210276048827,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.3756397933649634,
+    "B": 0.5909643465741511,
+    "C": 0.028517150787808258,
+    "D": 0.004878709273077236
+   },
+   "prompt_tokens": 877,
+   "qid": "17-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "5721387",
+    "6137841"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997682036273404,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0002563692214991573,
+    "B": 7.119116181321383e-05,
+    "C": 0.996738449242228,
+    "D": 0.0029339903744596374
+   },
+   "prompt_tokens": 800,
+   "qid": "188-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166360",
+    "1767371"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999699510892008,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0001511772428362575,
+    "B": 0.9998174008026546,
+    "C": 2.97685641459555e-05,
+    "D": 1.6533903631943324e-06
+   },
+   "prompt_tokens": 860,
+   "qid": "122-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6931436",
+    "605341"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9981952723684862,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "other_wrong",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.2357165548240385,
+    "B": 0.5566880591115496,
+    "C": 0.057764826144344514,
+    "D": 0.14983055992006739
+   },
+   "prompt_tokens": 875,
+   "qid": "58-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3671681",
+    "6141268"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998661034750276,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9347252103897015,
+    "B": 0.0006638179054311562,
+    "C": 0.06461054246617247,
+    "D": 4.292386949533616e-07
+   },
+   "prompt_tokens": 786,
+   "qid": "211-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "343165",
+    "1765363"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997840796367466,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0010316360493084755,
+    "B": 0.00037951769380442044,
+    "C": 0.00019689118553998345,
+    "D": 0.9983919550713471
+   },
+   "prompt_tokens": 770,
+   "qid": "146-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1771730",
+    "6140617"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999304607348924,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00011411808140895694,
+    "B": 1.5934454529510984e-05,
+    "C": 0.999848167647035,
+    "D": 2.1779817026612008e-05
+   },
+   "prompt_tokens": 875,
+   "qid": "115-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1524661",
+    "12787"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9994471216008431,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 1.892492109071983e-05,
+    "B": 6.7478884589707595e-06,
+    "C": 0.9999690719296218,
+    "D": 5.255260828497117e-06
+   },
+   "prompt_tokens": 1242,
+   "qid": "66-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1134198",
+    "6176396"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999079721546134,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0919430164388284,
+    "B": 0.0072015335744810656,
+    "C": 0.9000218119646253,
+    "D": 0.0008336380220652958
+   },
+   "prompt_tokens": 581,
+   "qid": "96-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3328443",
+    "1446283"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999535651421024,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.008203880192999636,
+    "B": 0.01290651518939722,
+    "C": 0.9783399789076198,
+    "D": 0.0005496257099833403
+   },
+   "prompt_tokens": 1004,
+   "qid": "235-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1771578",
+    "362379"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999762054592308,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 6.013112774225435e-05,
+    "B": 0.9997671091086073,
+    "C": 0.00016091924253554043,
+    "D": 1.1840521114941165e-05
+   },
+   "prompt_tokens": 550,
+   "qid": "119-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6136267",
+    "3902629"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998100571618201,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.7661558842675775,
+    "B": 0.23366434291200877,
+    "C": 0.0001583433748026364,
+    "D": 2.1429445611111752e-05
+   },
+   "prompt_tokens": 997,
+   "qid": "180-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3556011",
+    "cornell:13-7120"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998170089604229,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.004001497882019182,
+    "B": 0.9945533696742658,
+    "C": 0.0014046578668645618,
+    "D": 4.047457685054897e-05
+   },
+   "prompt_tokens": 697,
+   "qid": "15-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3576386",
+    "3492116"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999678711350136,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 6.059491382545517e-05,
+    "B": 0.00026735729833624885,
+    "C": 0.9918587222318453,
+    "D": 0.007813325555992937
+   },
+   "prompt_tokens": 469,
+   "qid": "213-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3668927",
+    "3692764"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997755681451285,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 1.6961166943089455e-05,
+    "B": 0.00014882951212754632,
+    "C": 4.3311857094073204e-05,
+    "D": 0.9997908974638353
+   },
+   "prompt_tokens": 1305,
+   "qid": "208-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3537788",
+    "3906505"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999893863697517,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00010376503392755523,
+    "B": 0.00011758118794935532,
+    "C": 0.9984946299323894,
+    "D": 0.0012840238457337435
+   },
+   "prompt_tokens": 871,
+   "qid": "202-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6165037",
+    "5718167"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998032986318949,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0004107605737826153,
+    "B": 6.29921742904236e-05,
+    "C": 0.0001511103703385824,
+    "D": 0.9993751368815884
+   },
+   "prompt_tokens": 799,
+   "qid": "143-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166312",
+    "11735156"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9997540880382558,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.004195314790255477,
+    "B": 0.427933742656693,
+    "C": 0.5669200998377096,
+    "D": 0.0009508427153419099
+   },
+   "prompt_tokens": 827,
+   "qid": "109-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3679065",
+    "3646470"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999585298640916,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 2.6683763946033686e-05,
+    "B": 0.0001739999984109351,
+    "C": 0.999794751183861,
+    "D": 4.565053781992551e-06
+   },
+   "prompt_tokens": 696,
+   "qid": "205-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6931675",
+    "6166408"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9993192143293728,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.002104637779330823,
+    "B": 0.9926651295744099,
+    "C": 0.004251485181495435,
+    "D": 0.0009787474647638653
+   },
+   "prompt_tokens": 468,
+   "qid": "125-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6174691",
+    "6140033"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995102450983823,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00792953929095749,
+    "B": 0.005119695379384646,
+    "C": 0.6601518841093987,
+    "D": 0.3267988812202592
+   },
+   "prompt_tokens": 932,
+   "qid": "133-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6210086",
+    "11744357"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997323246311856,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9997191178633786,
+    "B": 0.00012929603713047512,
+    "C": 0.00012531801624599294,
+    "D": 2.626808324491717e-05
+   },
+   "prompt_tokens": 465,
+   "qid": "41-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:17-1299",
+    "6183342"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999199061641846,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 4.832282595948219e-05,
+    "B": 0.9998934839070301,
+    "C": 4.069189921979969e-05,
+    "D": 1.750136779058307e-05
+   },
+   "prompt_tokens": 439,
+   "qid": "7-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6167820",
+    "6176665"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.999938165626714,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 7.251965909905313e-05,
+    "B": 0.9995972082475416,
+    "C": 0.0002652658909857227,
+    "D": 6.50062023736103e-05
+   },
+   "prompt_tokens": 631,
+   "qid": "99-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3903160",
+    "3917810"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9996299736384576,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.015893972411450723,
+    "B": 0.028780266017668428,
+    "C": 0.0022542446361277658,
+    "D": 0.9530715169347531
+   },
+   "prompt_tokens": 447,
+   "qid": "199-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "605295",
+    "11470872"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.99907457895217,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.007313948180289487,
+    "B": 0.0011939692220700466,
+    "C": 0.0031456899152975107,
+    "D": 0.9883463926823429
+   },
+   "prompt_tokens": 701,
+   "qid": "37-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6163994",
+    "12046400"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9982761791018585,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.525509936511282,
+    "B": 0.01689248924216347,
+    "C": 0.008105104912503725,
+    "D": 0.4494924693340509
+   },
+   "prompt_tokens": 532,
+   "qid": "134-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "5678343",
+    "6228361"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998986026078427,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 3.5912453212897405e-05,
+    "B": 1.406351877518654e-05,
+    "C": 0.9999485647247155,
+    "D": 1.4593032964034941e-06
+   },
+   "prompt_tokens": 579,
+   "qid": "52-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6187462",
+    "6165107"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9994678171351534,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 1.2044212606764107e-05,
+    "B": 0.014281342770567985,
+    "C": 2.9347555740140446e-05,
+    "D": 0.985677265461085
+   },
+   "prompt_tokens": 760,
+   "qid": "75-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1771581",
+    "81088"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998355564748918,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 7.071758811257637e-06,
+    "B": 1.8925008021776564e-05,
+    "C": 0.9999736619834502,
+    "D": 3.4124971685790593e-07
+   },
+   "prompt_tokens": 995,
+   "qid": "116-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "11336837",
+    "341446"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999434036952004,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0008477775557636376,
+    "B": 0.9010970866457814,
+    "C": 0.0979897622127571,
+    "D": 6.537358569788197e-05
+   },
+   "prompt_tokens": 681,
+   "qid": "132-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6142260",
+    "366760"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999638406283181,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 3.705006850070911e-05,
+    "B": 1.4284073897138962e-05,
+    "C": 0.9998846490797714,
+    "D": 6.401677783077526e-05
+   },
+   "prompt_tokens": 625,
+   "qid": "175-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "cornell:25-332",
+    "333771"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9993948287882061,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.011693093798397072,
+    "B": 0.8590897459919762,
+    "C": 0.0414556173602698,
+    "D": 0.08776154284935694
+   },
+   "prompt_tokens": 2255,
+   "qid": "1-1",
+   "superseded": 1.0,
+   "truncated": true
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "605806",
+    "84368"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999761195894702,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 3.9810933126719035e-05,
+    "B": 1.9402299274742566e-05,
+    "C": 0.993651257070674,
+    "D": 0.006289529696924546
+   },
+   "prompt_tokens": 616,
+   "qid": "59-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3926505",
+    "3653292"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9983248895084288,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.46262464919373936,
+    "B": 0.2677466059488066,
+    "C": 0.21852841078965352,
+    "D": 0.05110033406780057
+   },
+   "prompt_tokens": 312,
+   "qid": "197-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11335902",
+    "3516839"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999372060363757,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0002304201671222661,
+    "B": 0.9993940816592496,
+    "C": 0.0003199067209846959,
+    "D": 5.5591452643397174e-05
+   },
+   "prompt_tokens": 855,
+   "qid": "73-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6160420",
+    "1767670"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999117744544023,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 6.814611912518994e-05,
+    "B": 0.9998936581211662,
+    "C": 3.7050402325138156e-05,
+    "D": 1.1453573836198695e-06
+   },
+   "prompt_tokens": 956,
+   "qid": "121-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6160710",
+    "3916250"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999571413559932,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0028841339456132527,
+    "B": 0.014196204836036837,
+    "C": 0.9798011688595228,
+    "D": 0.0031184923588270562
+   },
+   "prompt_tokens": 655,
+   "qid": "160-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "344922",
+    "303872"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998088522845584,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.007066552423583604,
+    "B": 0.006742951446267205,
+    "C": 0.9401107858298783,
+    "D": 0.04607971030027093
+   },
+   "prompt_tokens": 1279,
+   "qid": "179-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "5701158",
+    "1780381"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998232811919823,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 4.0049585710142126e-05,
+    "B": 4.197160552063645e-05,
+    "C": 0.00031013054729315035,
+    "D": 0.9996078482614761
+   },
+   "prompt_tokens": 994,
+   "qid": "81-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3658647",
+    "1777844"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996463871964223,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00062215672494103,
+    "B": 0.021931780551305863,
+    "C": 0.9773176734265243,
+    "D": 0.00012838929722886041
+   },
+   "prompt_tokens": 624,
+   "qid": "79-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6141099",
+    "3677920"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999180966583994,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00010070844895811798,
+    "B": 4.468910344775471e-05,
+    "C": 0.9998441524190814,
+    "D": 1.0450028512744545e-05
+   },
+   "prompt_tokens": 787,
+   "qid": "195-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "189376",
+    "6139344"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999601958114851,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0016217162870535641,
+    "B": 0.9976076123814789,
+    "C": 0.0007660445322692921,
+    "D": 4.626799198232598e-06
+   },
+   "prompt_tokens": 766,
+   "qid": "192-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1285816",
+    "414131"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998981298219085,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 2.9217280123893636e-05,
+    "B": 4.342761026829346e-06,
+    "C": 0.9511103009687799,
+    "D": 0.04885613899006933
+   },
+   "prompt_tokens": 706,
+   "qid": "151-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "8898517",
+    "6204722"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9987895777354485,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0355371891752606,
+    "B": 0.0027834877643587506,
+    "C": 0.0011786028728861038,
+    "D": 0.9605007201874945
+   },
+   "prompt_tokens": 732,
+   "qid": "26-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3679212",
+    "9313023"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999760688692605,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0014099622513118137,
+    "B": 0.9983090842368386,
+    "C": 0.00019081764065354576,
+    "D": 9.013587119608778e-05
+   },
+   "prompt_tokens": 512,
+   "qid": "20-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1772077",
+    "362582"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999086525721061,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 5.432457324833796e-05,
+    "B": 0.007937484342803097,
+    "C": 0.9919982978441686,
+    "D": 9.893239780014496e-06
+   },
+   "prompt_tokens": 613,
+   "qid": "117-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3409274",
+    "411253"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999436641140441,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00012337722717483424,
+    "B": 7.029822515905166e-05,
+    "C": 0.9997360263224452,
+    "D": 7.029822522100707e-05
+   },
+   "prompt_tokens": 673,
+   "qid": "227-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1175059",
+    "6141099"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9996051143541321,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00025652516055964686,
+    "B": 0.0008025962233095948,
+    "C": 0.0015961531812314082,
+    "D": 0.9973447254348993
+   },
+   "prompt_tokens": 517,
+   "qid": "195-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6160543",
+    "6176137"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998027071030776,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.020177921869612942,
+    "B": 0.9571537436989583,
+    "C": 0.004296127477695286,
+    "D": 0.01837220695373345
+   },
+   "prompt_tokens": 687,
+   "qid": "90-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3933606",
+    "1767493"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999707900809923,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0014986779205623324,
+    "B": 0.0006055206175017355,
+    "C": 0.0010627217788701387,
+    "D": 0.9968330796830658
+   },
+   "prompt_tokens": 409,
+   "qid": "126-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6141122",
+    "5721828"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9995656818779416,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0007912672767175519,
+    "B": 0.00017112354993421448,
+    "C": 0.00028657801651337336,
+    "D": 0.9987510311568348
+   },
+   "prompt_tokens": 732,
+   "qid": "191-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "368211",
+    "6182253"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998775737022844,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0010190746705910662,
+    "B": 0.21664715788954872,
+    "C": 0.0021573810944187865,
+    "D": 0.7801763863454414
+   },
+   "prompt_tokens": 620,
+   "qid": "98-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6171487",
+    "11299429"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.999669105295394,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.007984099528839427,
+    "B": 0.022044805715791618,
+    "C": 0.9671242763881528,
+    "D": 0.002846818367216139
+   },
+   "prompt_tokens": 453,
+   "qid": "124-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "364913",
+    "6207619"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998497797610134,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 1.3005108098374732e-05,
+    "B": 8.799696320749074e-06,
+    "C": 0.00014652809882336325,
+    "D": 0.9998316670967575
+   },
+   "prompt_tokens": 449,
+   "qid": "70-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1499406",
+    "641305"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9996621132643986,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8571563242726862,
+    "B": 0.05311026967040969,
+    "C": 0.004863436620227454,
+    "D": 0.08486996943667663
+   },
+   "prompt_tokens": 840,
+   "qid": "158-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1522273",
+    "11729899"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999015265979547,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 9.1630800222506e-05,
+    "B": 0.9991322809069352,
+    "C": 0.0007553207263721108,
+    "D": 2.0767566470107878e-05
+   },
+   "prompt_tokens": 808,
+   "qid": "222-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3599681",
+    "6212725"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999126980498497,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 2.2472527867636244e-05,
+    "B": 5.649592895089417e-05,
+    "C": 0.9999080254417871,
+    "D": 1.3006101394235768e-05
+   },
+   "prompt_tokens": 1270,
+   "qid": "54-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6191830",
+    "11722820"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996123698427611,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.000967783657907461,
+    "B": 0.997002511868317,
+    "C": 0.001752429813131201,
+    "D": 0.00027727466064430444
+   },
+   "prompt_tokens": 553,
+   "qid": "77-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:17-494",
+    "11728988"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996512459628716,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.000319796216598537,
+    "B": 0.0005190804970307377,
+    "C": 0.9990488642558516,
+    "D": 0.000112259030519066
+   },
+   "prompt_tokens": 887,
+   "qid": "12-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6176749",
+    "11733438"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.999962656488356,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 1.2029454815942604e-05,
+    "B": 1.2029454837237064e-05,
+    "C": 0.9999726524203949,
+    "D": 3.2886699519909747e-06
+   },
+   "prompt_tokens": 652,
+   "qid": "93-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166651",
+    "6169954"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999374398562164,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0006522783273035402,
+    "B": 0.9931096434066954,
+    "C": 0.004744998302868288,
+    "D": 0.001493079963132798
+   },
+   "prompt_tokens": 768,
+   "qid": "111-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11727460",
+    "359322"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999100800649089,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 3.705086309043009e-05,
+    "B": 3.763432932688561e-05,
+    "C": 0.9999060930729962,
+    "D": 1.9221734586528238e-05
+   },
+   "prompt_tokens": 389,
+   "qid": "186-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "302045",
+    "3902786"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998664639002871,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00039168551967644485,
+    "B": 0.9986995604437651,
+    "C": 0.000457926766206936,
+    "D": 0.00045082727035161154
+   },
+   "prompt_tokens": 498,
+   "qid": "168-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6183430",
+    "cornell:17-494"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9992094132416934,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 5.047549300964703e-05,
+    "B": 1.7173421624119457e-05,
+    "C": 0.0033242119963842417,
+    "D": 0.996608139088982
+   },
+   "prompt_tokens": 573,
+   "qid": "12-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "11334896",
+    "3468334"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996174189959066,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00041862383855856364,
+    "B": 0.001438487882610829,
+    "C": 0.15377146040339962,
+    "D": 0.844371427875431
+   },
+   "prompt_tokens": 970,
+   "qid": "72-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6164855",
+    "11926611"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999447734231978,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00020021204262401251,
+    "B": 0.0002823442355771073,
+    "C": 0.9994915887729476,
+    "D": 2.585494885130335e-05
+   },
+   "prompt_tokens": 2055,
+   "qid": "141-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6214810",
+    "1255406"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998205711118615,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.008426377291668216,
+    "B": 0.0020649725653776917,
+    "C": 0.9892943779315455,
+    "D": 0.0002142722114085773
+   },
+   "prompt_tokens": 716,
+   "qid": "27-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6137459",
+    "11339780"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.999951712471738,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 6.6433926275620515e-06,
+    "B": 5.594297492512612e-06,
+    "C": 0.9999872127099805,
+    "D": 5.495998994483349e-07
+   },
+   "prompt_tokens": 1109,
+   "qid": "193-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "636682",
+    "8289541"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9990565940959143,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.002033857560542053,
+    "B": 0.0018231381407801139,
+    "C": 0.09498170230075956,
+    "D": 0.9011613019979183
+   },
+   "prompt_tokens": 927,
+   "qid": "76-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1285830",
+    "11340402"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9992235392713337,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00017396290718923896,
+    "B": 0.00016599656600739727,
+    "C": 7.84112255150701e-05,
+    "D": 0.9995816293012882
+   },
+   "prompt_tokens": 772,
+   "qid": "131-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "451231",
+    "3573311"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998950594438367,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 5.389470953133606e-05,
+    "B": 0.9996468240785596,
+    "C": 8.612350061439917e-05,
+    "D": 0.0002131577112945696
+   },
+   "prompt_tokens": 1046,
+   "qid": "21-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6168686",
+    "3599681"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.999931768910771,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0010433786035945825,
+    "B": 0.004603602297969771,
+    "C": 0.0002517268028913741,
+    "D": 0.9941012922955443
+   },
+   "prompt_tokens": 508,
+   "qid": "114-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1160402",
+    "3926505"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999273202506503,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 8.992714269782503e-05,
+    "B": 0.9959972911690357,
+    "C": 0.00014826479299237966,
+    "D": 0.0037645168952741585
+   },
+   "prompt_tokens": 499,
+   "qid": "197-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6168585",
+    "6176512"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9996052321168709,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0004135821171516128,
+    "B": 0.0004911409182343238,
+    "C": 0.0684754855221124,
+    "D": 0.9306197914425016
+   },
+   "prompt_tokens": 736,
+   "qid": "87-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3949489",
+    "1785580"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9987727788046056,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.7441708730607751,
+    "B": 0.24540150792580243,
+    "C": 0.006642714414229306,
+    "D": 0.0037849045991931304
+   },
+   "prompt_tokens": 690,
+   "qid": "152-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "434083",
+    "551509"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.999319214018794,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.001552186107254008,
+    "B": 0.0033377246458634476,
+    "C": 0.009964605148652375,
+    "D": 0.9851454840982301
+   },
+   "prompt_tokens": 824,
+   "qid": "200-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "11735156",
+    "6136730"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999144522689809,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0008727275237211614,
+    "B": 0.6577784110321981,
+    "C": 0.3412509441293662,
+    "D": 9.791731471458206e-05
+   },
+   "prompt_tokens": 699,
+   "qid": "109-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3902647",
+    "6138846"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9996702473326162,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.005003317050200693,
+    "B": 0.4434016871885352,
+    "C": 0.041242781436576635,
+    "D": 0.5103522143246875
+   },
+   "prompt_tokens": 568,
+   "qid": "184-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1254507",
+    "6218483"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998919526086888,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 3.0654038949271426e-06,
+    "B": 5.682361128374018e-06,
+    "C": 9.972854352865245e-06,
+    "D": 0.9999812793806239
+   },
+   "prompt_tokens": 623,
+   "qid": "29-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "374741",
+    "1501244"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998270699324029,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0005889055142370475,
+    "B": 0.011111831877791276,
+    "C": 0.9847477078159589,
+    "D": 0.003551554792012774
+   },
+   "prompt_tokens": 840,
+   "qid": "177-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3906090",
+    "377010"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999468436323045,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9998411201162608,
+    "B": 0.00013134818075725567,
+    "C": 2.3920280739032496e-05,
+    "D": 3.6114222429406803e-06
+   },
+   "prompt_tokens": 677,
+   "qid": "166-3",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3646827",
+    "641305"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.999841975023645,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00018227423346649653,
+    "B": 0.9838830626949486,
+    "C": 0.01590298855914086,
+    "D": 3.1674512444058685e-05
+   },
+   "prompt_tokens": 834,
+   "qid": "158-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "915883",
+    "6200100"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998903839216738,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0013414190235887815,
+    "B": 0.9953585525145052,
+    "C": 0.003070538725133573,
+    "D": 0.00022948973677248543
+   },
+   "prompt_tokens": 904,
+   "qid": "36-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "11733536",
+    "3929002"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.999525543862676,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.01907936704520428,
+    "B": 0.009898245256036182,
+    "C": 0.6725708715330955,
+    "D": 0.29845151616566407
+   },
+   "prompt_tokens": 705,
+   "qid": "107-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "301825",
+    "333898"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998280747992276,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 5.7383009071068796e-05,
+    "B": 5.5617519599182e-05,
+    "C": 2.429749479926559e-05,
+    "D": 0.9998627019765305
+   },
+   "prompt_tokens": 920,
+   "qid": "170-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11339173",
+    "368290"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.999906923477614,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 1.2218377885155588e-05,
+    "B": 1.644162458409798e-05,
+    "C": 0.9999306465858689,
+    "D": 4.0693411661792136e-05
+   },
+   "prompt_tokens": 398,
+   "qid": "129-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6143691",
+    "3914451"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999775517654425,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0011875626233625266,
+    "B": 0.00027769774428645564,
+    "C": 0.9985238025586387,
+    "D": 1.0937073712325573e-05
+   },
+   "prompt_tokens": 948,
+   "qid": "167-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166505",
+    "6930835"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9999738237609502,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0062742018962706125,
+    "B": 0.0022371355849032013,
+    "C": 0.9912296952769606,
+    "D": 0.00025896724186549543
+   },
+   "prompt_tokens": 737,
+   "qid": "140-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11957048",
+    "cornell:19-1392"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9991127972517947,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9999272774389135,
+    "B": 2.5070399140864968e-05,
+    "C": 1.8341895830929344e-05,
+    "D": 2.9310266114720272e-05
+   },
+   "prompt_tokens": 442,
+   "qid": "4-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3903210",
+    "11957278"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998776718001501,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00045724198274930755,
+    "B": 0.00031920634891385434,
+    "C": 0.9972061054231426,
+    "D": 0.002017446245194189
+   },
+   "prompt_tokens": 572,
+   "qid": "103-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "377142",
+    "572305"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999353297786446,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00010377918688521752,
+    "B": 0.9986308191476703,
+    "C": 0.0012253912246182588,
+    "D": 4.001044082619294e-05
+   },
+   "prompt_tokens": 704,
+   "qid": "161-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1532109",
+    "6227938"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997922464842586,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0032996353271923552,
+    "B": 0.3639210525501427,
+    "C": 0.003980119943955563,
+    "D": 0.6287991921787094
+   },
+   "prompt_tokens": 551,
+   "qid": "50-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3344630",
+    "6138434"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9998559688037336,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.038517681535653214,
+    "B": 0.9478937300378746,
+    "C": 0.0036964296596077545,
+    "D": 0.009892158766864393
+   },
+   "prompt_tokens": 348,
+   "qid": "182-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6160224",
+    "8285078"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998162870959041,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.001365085707482481,
+    "B": 0.0011676196850748577,
+    "C": 0.9515499824181936,
+    "D": 0.04591731218924915
+   },
+   "prompt_tokens": 1023,
+   "qid": "162-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "468276",
+    "11299017"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.999730400206213,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 4.13316113301261e-05,
+    "B": 8.887693108806881e-05,
+    "C": 0.9998670653423035,
+    "D": 2.7261152782885166e-06
+   },
+   "prompt_tokens": 720,
+   "qid": "74-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1434769",
+    "3365982"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9998904528622379,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00105372154436166,
+    "B": 0.9883908589390779,
+    "C": 0.009842435849434585,
+    "D": 0.0007129836671259369
+   },
+   "prompt_tokens": 2214,
+   "qid": "234-1",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166408",
+    "372505"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997474795168289,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0004107672792244964,
+    "B": 0.0001252769422322178,
+    "C": 7.250473163127069e-05,
+    "D": 0.9993914510469121
+   },
+   "prompt_tokens": 618,
+   "qid": "125-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:18-422",
+    "6204370"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997816954890091,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 6.676733325568178e-05,
+    "B": 8.845234614472905e-05,
+    "C": 0.050322820270003184,
+    "D": 0.9495219600505963
+   },
+   "prompt_tokens": 2206,
+   "qid": "10-1",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1772134",
+    "605800"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9996920160996983,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.1712621997679524,
+    "B": 0.8170462596550634,
+    "C": 0.010778686534358393,
+    "D": 0.0009128540426258004
+   },
+   "prompt_tokens": 590,
+   "qid": "56-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166003",
+    "11338823"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.999456201750712,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.004186454967166993,
+    "B": 0.8626243444997239,
+    "C": 0.12821766223853712,
+    "D": 0.004971538294572012
+   },
+   "prompt_tokens": 469,
+   "qid": "128-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1564297",
+    "6217947"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997363909312883,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9444529548142816,
+    "B": 0.0017127596113818418,
+    "C": 0.006072260107046564,
+    "D": 0.04776202546728996
+   },
+   "prompt_tokens": 653,
+   "qid": "42-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6158163",
+    "11725442"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998449604859967,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.00015115416011221116,
+    "B": 0.0001739773723998744,
+    "C": 0.9996647417699888,
+    "D": 1.0126697499202954e-05
+   },
+   "prompt_tokens": 1375,
+   "qid": "164-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "366560",
+    "6140479"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9996164155231604,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.998930610059664,
+    "B": 0.0008038724371970945,
+    "C": 0.00016331659148592642,
+    "D": 0.00010220091165304473
+   },
+   "prompt_tokens": 544,
+   "qid": "176-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1230205",
+    "353556"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999330715170013,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00039658289659419546,
+    "B": 0.9955096440265415,
+    "C": 0.004068420380435008,
+    "D": 2.5352696429357777e-05
+   },
+   "prompt_tokens": 843,
+   "qid": "28-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6199682",
+    "915883"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9999187632073363,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0008420945692058737,
+    "B": 0.00030978927979001053,
+    "C": 0.9985078791880545,
+    "D": 0.00034023696294958395
+   },
+   "prompt_tokens": 939,
+   "qid": "36-2",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6183010",
+    "cornell:14-556"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9996009830683866,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 2.642565486818652e-06,
+    "B": 1.154451367874845e-06,
+    "C": 6.540412393465094e-06,
+    "D": 0.9999896625707518
+   },
+   "prompt_tokens": 389,
+   "qid": "16-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11340482",
+    "8286632"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9996278578057044,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9999949549307879,
+    "B": 3.6119778906539335e-06,
+    "C": 1.1911038871009514e-06,
+    "D": 2.4198743429358625e-07
+   },
+   "prompt_tokens": 526,
+   "qid": "157-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "434121",
+    "377010"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9979274517670544,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.04961440424028422,
+    "B": 0.013994385340764064,
+    "C": 0.04310574140293491,
+    "D": 0.8932854690160169
+   },
+   "prompt_tokens": 801,
+   "qid": "166-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "13089",
+    "3671675"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999142516216034,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 8.609248010027567e-05,
+    "B": 0.0006070110954547684,
+    "C": 0.9992867646965091,
+    "D": 2.0131727935786302e-05
+   },
+   "prompt_tokens": 975,
+   "qid": "203-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3939849",
+    "6175136"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997207237430132,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0002163080631892274,
+    "B": 0.0004235106287638155,
+    "C": 0.9986939055660703,
+    "D": 0.0006662757419766124
+   },
+   "prompt_tokens": 692,
+   "qid": "95-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6162154",
+    "6174203"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998925770571526,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0004293930952399648,
+    "B": 0.0025098990341630317,
+    "C": 0.00019354263138244158,
+    "D": 0.9968671652392146
+   },
+   "prompt_tokens": 776,
+   "qid": "135-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6178289",
+    "9414276"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999406410516496,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00033471682454899385,
+    "B": 0.9977767915540673,
+    "C": 0.0018379569392397658,
+    "D": 5.053468214393301e-05
+   },
+   "prompt_tokens": 427,
+   "qid": "32-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1230203",
+    "cornell:17-965"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998913180063811,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 9.736776726896495e-05,
+    "B": 2.833563576358735e-05,
+    "C": 0.9973631487796037,
+    "D": 0.0025111478173637093
+   },
+   "prompt_tokens": 614,
+   "qid": "13-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1108153",
+    "1765582"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998687635632483,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.011127813532807078,
+    "B": 0.0014596514859733416,
+    "C": 0.0012485060767734627,
+    "D": 0.9861640289044461
+   },
+   "prompt_tokens": 855,
+   "qid": "51-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "3904778",
+    "11715401"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9996434057386755,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9594488434435314,
+    "B": 0.03232154380020976,
+    "C": 0.0015596851882995868,
+    "D": 0.006669927567959199
+   },
+   "prompt_tokens": 744,
+   "qid": "105-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11715808",
+    "7650"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999199170542551,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0001354237875050648,
+    "B": 0.00010881607036992775,
+    "C": 0.0006069273082930085,
+    "D": 0.9991488328338319
+   },
+   "prompt_tokens": 586,
+   "qid": "88-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "13162",
+    "6139344"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999717035273279,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.00015590404203971703,
+    "B": 0.9993553528058027,
+    "C": 0.0004802182571668729,
+    "D": 8.52489499074773e-06
+   },
+   "prompt_tokens": 544,
+   "qid": "192-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6166688",
+    "6163569"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.999909667437949,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9998470198578956,
+    "B": 0.00015118172141009582,
+    "C": 1.7327895495700058e-06,
+    "D": 6.56311446922541e-08
+   },
+   "prompt_tokens": 572,
+   "qid": "139-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1525264",
+    "3630982"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9995359653203261,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 1.89249153071872e-05,
+    "B": 2.642510276160561e-06,
+    "C": 9.665900931997115e-06,
+    "D": 0.9999687666734847
+   },
+   "prompt_tokens": 722,
+   "qid": "136-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "3451986",
+    "683886"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997312225323424,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9849351113352093,
+    "B": 0.004152978396807956,
+    "C": 0.010772006327857915,
+    "D": 0.00013990394012489002
+   },
+   "prompt_tokens": 831,
+   "qid": "230-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "365087",
+    "6164855"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998834065002661,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 2.931018974003533e-05,
+    "B": 4.006227947918877e-05,
+    "C": 0.9999246728045214,
+    "D": 5.954726259380633e-06
+   },
+   "prompt_tokens": 838,
+   "qid": "141-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6159871",
+    "6176664"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999355748982329,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 1.9222446052838854e-05,
+    "B": 0.9999431050506474,
+    "C": 3.591225713549103e-05,
+    "D": 1.760246164225944e-06
+   },
+   "prompt_tokens": 920,
+   "qid": "82-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6141122",
+    "3412793"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999242040988998,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 7.483692490460433e-05,
+    "B": 0.9998008733970412,
+    "C": 9.760575060953886e-05,
+    "D": 2.668392744465153e-05
+   },
+   "prompt_tokens": 731,
+   "qid": "191-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11925862",
+    "11723264"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9999166974101379,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0013454675240085433,
+    "B": 0.9983626172284467,
+    "C": 0.0002776529169489052,
+    "D": 1.4262330595905433e-05
+   },
+   "prompt_tokens": 624,
+   "qid": "78-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6139305",
+    "3560896"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9999211405382967,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "superseded",
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0006035401403087297,
+    "B": 0.9630037169621165,
+    "C": 0.0007629462255045043,
+    "D": 0.03562979667207035
+   },
+   "prompt_tokens": 2253,
+   "qid": "214-1",
+   "superseded": 1.0,
+   "truncated": true
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "5629004",
+    "3433453"
+   ],
+   "gold": "A",
+   "group": "overruled",
+   "label_mass": 0.9997970021931463,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.007003463797419339,
+    "B": 0.0009331212393891679,
+    "C": 0.0002551011503082204,
+    "D": 0.9918083138128833
+   },
+   "prompt_tokens": 1055,
+   "qid": "223-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6213752",
+    "12041690"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9997506580174444,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0008428164715067934,
+    "B": 0.18199768126364665,
+    "C": 0.0015024828104686385,
+    "D": 0.815657019454378
+   },
+   "prompt_tokens": 894,
+   "qid": "57-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6137691",
+    "2264"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9992413017913842,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0006738236995314917,
+    "B": 0.0002722493859964105,
+    "C": 0.41450632093290696,
+    "D": 0.5845476059815651
+   },
+   "prompt_tokens": 594,
+   "qid": "83-2",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "11336583",
+    "1439670"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998753708944033,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.00021317744638982522,
+    "B": 8.011475196053515e-06,
+    "C": 3.943386248335195e-05,
+    "D": 0.9997393772159308
+   },
+   "prompt_tokens": 2215,
+   "qid": "236-1",
+   "superseded": 0.0,
+   "truncated": true
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "6198942",
+    "6156305"
+   ],
+   "gold": "B",
+   "group": "overruled",
+   "label_mass": 0.9996845107179375,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.006462931722316121,
+    "B": 0.46746900257963514,
+    "C": 0.012653806030123014,
+    "D": 0.5134142596679256
+   },
+   "prompt_tokens": 762,
+   "qid": "71-1",
+   "superseded": 1.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "6167411",
+    "11470447"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9998899621343129,
+   "n_passages": 2,
+   "old_first": true,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0009491780309353481,
+    "B": 0.05101991776101292,
+    "C": 0.9477503277171961,
+    "D": 0.0002805764908556204
+   },
+   "prompt_tokens": 622,
+   "qid": "38-1",
+   "superseded": 0.0,
+   "truncated": false
+  }
+ ],
+ "run_id": "d7adb44527635e73",
+ "suite": "us_goodlaw",
+ "throughput": {
+  "questions_per_second": 0.1272875456344031,
+  "read_seconds": 1767.6513352394104,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-04T20:32:02+00:00"
+}

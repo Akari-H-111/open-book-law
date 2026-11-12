@@ -1,0 +1,125 @@
+{
+ "post_hoc": true,
+ "runs": [
+  {
+   "accuracy": 66.0,
+   "accuracy_by_gold": {
+    "No": 73.05,
+    "Yes": 53.35
+   },
+   "always_no": 64.2,
+   "config": {
+    "condition": "closed",
+    "k": null,
+    "library": null,
+    "retriever": null
+   },
+   "gold": {
+    "No": 1284,
+    "Yes": 716
+   },
+   "predicted": {
+    "No": 1272,
+    "Yes": 728
+   },
+   "questions": 2000,
+   "run_id": "0a3bd283a1dd357b"
+  },
+  {
+   "accuracy": 72.4,
+   "accuracy_by_gold": {
+    "No": 83.72,
+    "Yes": 52.09
+   },
+   "always_no": 64.2,
+   "config": {
+    "condition": "gold",
+    "k": null,
+    "library": null,
+    "retriever": null
+   },
+   "gold": {
+    "No": 1284,
+    "Yes": 716
+   },
+   "predicted": {
+    "No": 1418,
+    "Yes": 582
+   },
+   "questions": 2000,
+   "run_id": "dc5d0f854fe0300e"
+  },
+  {
+   "accuracy": 68.15,
+   "accuracy_by_gold": {
+    "No": 89.1,
+    "Yes": 30.59
+   },
+   "always_no": 64.2,
+   "config": {
+    "condition": "retrieved",
+    "k": 1,
+    "library": "within-state",
+    "retriever": "bm25"
+   },
+   "gold": {
+    "No": 1284,
+    "Yes": 716
+   },
+   "predicted": {
+    "No": 1641,
+    "Yes": 359
+   },
+   "questions": 2000,
+   "run_id": "77b704031495cce7"
+  },
+  {
+   "accuracy": 66.65,
+   "accuracy_by_gold": {
+    "No": 89.49,
+    "Yes": 25.7
+   },
+   "always_no": 64.2,
+   "config": {
+    "condition": "retrieved",
+    "k": 1,
+    "library": "within-state",
+    "retriever": "e5-small"
+   },
+   "gold": {
+    "No": 1284,
+    "Yes": 716
+   },
+   "predicted": {
+    "No": 1681,
+    "Yes": 319
+   },
+   "questions": 2000,
+   "run_id": "42bfc4709b07d14b"
+  },
+  {
+   "accuracy": 61.05,
+   "accuracy_by_gold": {
+    "No": 83.49,
+    "Yes": 20.81
+   },
+   "always_no": 64.2,
+   "config": {
+    "condition": "retrieved",
+    "k": 1,
+    "library": "all-states",
+    "retriever": "e5-small"
+   },
+   "gold": {
+    "No": 1284,
+    "Yes": 716
+   },
+   "predicted": {
+    "No": 1639,
+    "Yes": 361
+   },
+   "questions": 2000,
+   "run_id": "4e6221e859aaf510"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+# Validation only: inputs to the selection rules in section 3.4 and Amendment 4.
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library real --split validation
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library doctrine --split validation
+open_book_law.experiments.us_retrieval --dataset mbe --retriever e5-base --library cases --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition closed --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader qwen3 --condition closed --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader phi4 --condition closed --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library real --k 1 --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library real --k 3 --split validation
+open_book_law.experiments.us_reader --dataset mbe --reader llama8 --condition retrieved --retriever e5-base --library real --k 5 --split validation

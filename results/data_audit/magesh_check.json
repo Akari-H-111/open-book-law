@@ -1,0 +1,232 @@
+{
+  "source_file": "$OBL_DATA/legal_rag_hallucinations/dataset.csv",
+  "sha256": "121ff9fc25ff4b85c9b0c226d642b468e6678d35670b7942fa79c89fc8e1abac",
+  "rows": 400,
+  "queries": 100,
+  "categories": {
+    "Bar Exam": {
+      "public": 10,
+      "paper": 20
+    },
+    "Rule QA": {
+      "public": 10,
+      "paper": 20
+    },
+    "Treatment (Doctrinal Agreement)": {
+      "public": 10,
+      "paper": 20
+    },
+    "Doctrine Test": {
+      "public": 5,
+      "paper": 10
+    },
+    "Question with Irrelevant Context": {
+      "public": 5,
+      "paper": 10
+    },
+    "SCALR": {
+      "public": 15,
+      "paper": 30
+    },
+    "Circuit Splits": {
+      "public": 9,
+      "paper": 10
+    },
+    "Changes in Law": {
+      "public": 5,
+      "paper": 10
+    },
+    "Local Rules": {
+      "public": 5,
+      "paper": 20
+    },
+    "False Holding Statements": {
+      "public": 5,
+      "paper": 10
+    },
+    "Whimsical Holding Statements": {
+      "public": 5,
+      "paper": 10
+    },
+    "False Judicial Contribution": {
+      "public": 1,
+      "paper": 2
+    },
+    "Metadata: Citation": {
+      "public": 5,
+      "paper": 10
+    },
+    "Metadata: Year": {
+      "public": 5,
+      "paper": 10
+    },
+    "Metadata: Author": {
+      "public": 5,
+      "paper": 10
+    }
+  },
+  "tools": {
+    "Lexis+ AI": {
+      "responses": 100,
+      "labels": {
+        "Accurate": {
+          "count": 63,
+          "percent": 63.0,
+          "wilson_low": 53.2,
+          "wilson_high": 71.8,
+          "paper_percent": 65,
+          "paper_inside_interval": true
+        },
+        "Incomplete": {
+          "count": 18,
+          "percent": 18.0,
+          "wilson_low": 11.7,
+          "wilson_high": 26.7,
+          "paper_percent": 18,
+          "paper_inside_interval": true
+        },
+        "Hallucination": {
+          "count": 19,
+          "percent": 19.0,
+          "wilson_low": 12.5,
+          "wilson_high": 27.8,
+          "paper_percent": 17,
+          "paper_inside_interval": true
+        }
+      }
+    },
+    "Westlaw": {
+      "responses": 100,
+      "labels": {
+        "Accurate": {
+          "count": 42,
+          "percent": 42.0,
+          "wilson_low": 32.8,
+          "wilson_high": 51.8,
+          "paper_percent": 42,
+          "paper_inside_interval": true
+        },
+        "Incomplete": {
+          "count": 20,
+          "percent": 20.0,
+          "wilson_low": 13.3,
+          "wilson_high": 28.9,
+          "paper_percent": 25,
+          "paper_inside_interval": true
+        },
+        "Hallucination": {
+          "count": 38,
+          "percent": 38.0,
+          "wilson_low": 29.1,
+          "wilson_high": 47.8,
+          "paper_percent": 33,
+          "paper_inside_interval": true
+        }
+      }
+    },
+    "Practical Law": {
+      "responses": 100,
+      "labels": {
+        "Accurate": {
+          "count": 21,
+          "percent": 21.0,
+          "wilson_low": 14.2,
+          "wilson_high": 30.0,
+          "paper_percent": 20,
+          "paper_inside_interval": true
+        },
+        "Incomplete": {
+          "count": 63,
+          "percent": 63.0,
+          "wilson_low": 53.2,
+          "wilson_high": 71.8,
+          "paper_percent": 63,
+          "paper_inside_interval": true
+        },
+        "Hallucination": {
+          "count": 16,
+          "percent": 16.0,
+          "wilson_low": 10.1,
+          "wilson_high": 24.4,
+          "paper_percent": 17,
+          "paper_inside_interval": true
+        }
+      }
+    },
+    "GPT-4": {
+      "responses": 100,
+      "labels": {
+        "Accurate": {
+          "count": 50,
+          "percent": 50.0,
+          "wilson_low": 40.4,
+          "wilson_high": 59.6,
+          "paper_percent": 49,
+          "paper_inside_interval": true
+        },
+        "Incomplete": {
+          "count": 11,
+          "percent": 11.0,
+          "wilson_low": 6.3,
+          "wilson_high": 18.6,
+          "paper_percent": 8,
+          "paper_inside_interval": true
+        },
+        "Hallucination": {
+          "count": 39,
+          "percent": 39.0,
+          "wilson_low": 30.0,
+          "wilson_high": 48.8,
+          "paper_percent": 43,
+          "paper_inside_interval": true
+        }
+      }
+    }
+  },
+  "label_rule_mismatches": {
+    "total_rows": 4,
+    "groups": [
+      {
+        "correctness": "Partially Correct",
+        "groundedness": "Ungrounded",
+        "file_label": "Hallucination",
+        "rebuilt_label": "Incomplete",
+        "rows": 4
+      }
+    ]
+  },
+  "reweighted_to_paper_categories": {
+    "Lexis+ AI": {
+      "reweighted_percent": {
+        "Accurate": 62.7,
+        "Incomplete": 18.9,
+        "Hallucination": 18.4
+      },
+      "max_shift_points": 0.9
+    },
+    "Westlaw": {
+      "reweighted_percent": {
+        "Accurate": 39.9,
+        "Incomplete": 21.8,
+        "Hallucination": 38.3
+      },
+      "max_shift_points": 2.1
+    },
+    "Practical Law": {
+      "reweighted_percent": {
+        "Accurate": 20.8,
+        "Incomplete": 63.7,
+        "Hallucination": 15.5
+      },
+      "max_shift_points": 0.7
+    },
+    "GPT-4": {
+      "reweighted_percent": {
+        "Accurate": 50.6,
+        "Incomplete": 10.5,
+        "Hallucination": 38.9
+      },
+      "max_shift_points": 0.6
+    }
+  }
+}

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open_book_law"
+version = "0.1.0"
+description = "What does a small model need from a law library to answer US bar exam questions, and how does it fail?"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+    "huggingface_hub",
+    "mcp",
+    "mlx",
+    "mlx-lm",
+    "nltk",
+    "numpy",
+    "safetensors",
+    "torch",
+    "transformers",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+include = ["open_book_law*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

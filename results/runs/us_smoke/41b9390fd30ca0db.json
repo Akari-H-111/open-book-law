@@ -1,0 +1,276 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 10,
+  "prompt_version": "v1",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 143.39492297172546,
+ "git": {
+  "commit": "f89e35e705796e27e901707bc81a64a315f1bb53",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/experiments/us_retrieval.py",
+   "open_book_law/experiments/us_verdicts.py",
+   "open_book_law/runlog.py",
+   "tests/test_us_runs.py",
+   "data/overruled_pairs.jsonl",
+   "docs/RESULTS.md",
+   "open_book_law/experiments/us_finetune.py",
+   "open_book_law/experiments/us_hypotheses.py",
+   "open_book_law/experiments/us_reader.py",
+   "open_book_law/experiments/us_rollout.py",
+   "open_book_law/experiments/us_select.py",
+   "open_book_law/reader/mlx_reader.py",
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/authority.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/citations.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_authority.py",
+   "tests/test_caselaw.py",
+   "tests/test_citations.py",
+   "tests/test_goodlaw_questions.py",
+   "tests/test_overruled.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 30.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 498,
+   "mean_label_mass": 0.4414078275540073,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  },
+  "validation": {
+   "accuracy": 30.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 498,
+   "mean_label_mass": 0.4414078275540073,
+   "questions": 10
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.4797919490848735,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0008211035433874145,
+    "B": 0.5461501517478691,
+    "C": 0.45277437869719844,
+    "D": 0.00025436601154504325
+   },
+   "prompt_tokens": 288,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.3495873257125448,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.044977613637282456,
+    "B": 0.21124949828719747,
+    "C": 0.40088110667505944,
+    "D": 0.34289178140046056
+   },
+   "prompt_tokens": 470,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.710920393357336,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.004128853998853969,
+    "B": 0.9946340557586594,
+    "C": 0.0011287658710174325,
+    "D": 0.00010832437146926031
+   },
+   "prompt_tokens": 247,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.3687016189858241,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9629795114668003,
+    "B": 0.03347025506353422,
+    "C": 0.0012002527214735924,
+    "D": 0.00234998074819187
+   },
+   "prompt_tokens": 253,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.07376442866659892,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.13981865561707443,
+    "B": 0.16603876180821261,
+    "C": 0.6670374998156979,
+    "D": 0.027105082759015013
+   },
+   "prompt_tokens": 234,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.35336627871398707,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.0073381208881101185,
+    "B": 0.9762393578728219,
+    "C": 0.008851463389199397,
+    "D": 0.007571057849868525
+   },
+   "prompt_tokens": 291,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.1310134327156744,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.4546005069941453,
+    "B": 0.37687705746252126,
+    "C": 0.12623800158617599,
+    "D": 0.04228443395715736
+   },
+   "prompt_tokens": 498,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.3641100899766319,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.3768070923436054,
+    "B": 0.4689440031713259,
+    "C": 0.14755977753360205,
+    "D": 0.006689126951466759
+   },
+   "prompt_tokens": 318,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.8966587315153636,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.006484263871688392,
+    "B": 0.9928983565779579,
+    "C": 0.0006126284151591235,
+    "D": 4.751135194680279e-06
+   },
+   "prompt_tokens": 376,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.6861640268112391,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.009712288835421426,
+    "B": 0.07759608492707036,
+    "C": 0.9020247637309732,
+    "D": 0.01066686250653498
+   },
+   "prompt_tokens": 207,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "41b9390fd30ca0db",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 1.115631103515625,
+  "questions_per_second": 0.07569276850155901,
+  "read_seconds": 132.11301684379578,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:21:34+00:00"
+}

@@ -1,0 +1,2 @@
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --condition closed --split all --sample data/housing_reader_sample.json --answer-form yes-no-scored-y-n
+open_book_law.experiments.us_reader --dataset housing --reader llama8 --condition closed --split all --sample data/housing_reader_sample.json --answer-form y-n

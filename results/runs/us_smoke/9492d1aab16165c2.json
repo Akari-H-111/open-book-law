@@ -1,0 +1,183 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 5,
+  "prompt_version": "v2",
+  "rank_run": null,
+  "reader": "phi4",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 40.705503940582275,
+ "git": {
+  "commit": "53e065567f718424d85860b3fa7441520ebde10f",
+  "dirty": true,
+  "dirty_paths": [
+   "Makefile",
+   "data/overruled_pairs.jsonl",
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_overruled.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/191ce5e24e39fc89.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/548353700231a8ea.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9530352736e33ffd.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 60.0,
+   "contexts_cut": 0,
+   "empty_contexts": 5,
+   "max_prompt_tokens": 516,
+   "mean_label_mass": 0.9568823500691946,
+   "questions": 5
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    355
+   ],
+   "B": [
+    33,
+    418
+   ],
+   "C": [
+    34,
+    363
+   ],
+   "D": [
+    35,
+    415
+   ]
+  },
+  "validation": {
+   "accuracy": 60.0,
+   "contexts_cut": 0,
+   "empty_contexts": 5,
+   "max_prompt_tokens": 516,
+   "mean_label_mass": 0.9568823500691946,
+   "questions": 5
+  }
+ },
+ "model": {
+  "id": "mlx-community/Phi-4-mini-instruct-4bit",
+  "revision": "ac1c269cb4222a4e136a3d09edad301056c1f36a"
+ },
+ "per_query": [
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9843306069007571,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.19211187085304884,
+    "B": 0.2109935743401709,
+    "C": 0.5061473513247772,
+    "D": 0.09074720348200312
+   },
+   "prompt_tokens": 516,
+   "qid": "mbe_234",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9378704751276873,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0038067162637478724,
+    "B": 0.08664043877542359,
+    "C": 0.8481155744289571,
+    "D": 0.0614372705318715
+   },
+   "prompt_tokens": 209,
+   "qid": "mbe_380",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9763936103349855,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.023545514737653112,
+    "B": 0.023545511568097328,
+    "C": 0.04132366104362919,
+    "D": 0.9115853126506204
+   },
+   "prompt_tokens": 314,
+   "qid": "mbe_812",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9524238923504149,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.42272783112847895,
+    "B": 0.07119897772209,
+    "C": 0.3730559896538283,
+    "D": 0.13301720149560273
+   },
+   "prompt_tokens": 241,
+   "qid": "mbe_1015",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9333931656321287,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.08656880817874361,
+    "B": 0.03963408185493574,
+    "C": 0.12595686872151662,
+    "D": 0.7478402412448041
+   },
+   "prompt_tokens": 214,
+   "qid": "mbe_1039",
+   "truncated": false
+  }
+ ],
+ "run_id": "9492d1aab16165c2",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.4281463623046875,
+  "questions_per_second": 0.19475584573672697,
+  "read_seconds": 25.67317032814026,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:46:58+00:00"
+}

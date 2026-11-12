@@ -1,0 +1,2652 @@
+{
+ "config": {
+  "batch_size": 32,
+  "dataset": "scotus",
+  "device": "mps",
+  "ks": [
+   1,
+   10,
+   100,
+   1000
+  ],
+  "library": "scotus",
+  "limit": null,
+  "max_length": 512,
+  "rerun": 0,
+  "retriever": "e5-base",
+  "rollout": null,
+  "sample": null,
+  "split": "all",
+  "states": null,
+  "tie_break": "fixed random order, seed 20261103",
+  "vector_dtype": "float16"
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/authority.sqlite": "8dc7c9411574e35ccc85e0d4a0afe9dc685e11bf534846837171d1c79709ea9d",
+  "$OBL_DATA/derived/goodlaw/questions.jsonl": "f89ea046eb190af6a2d241579540adf39b57ae24a770e38baafd8e7aa4459529",
+  "$OBL_DATA/derived/scotus_passages.jsonl.gz": "94c4dae10a65f6571ac7d6f9f894492a35e863f8380c7ae38d3da95bcc5806a5"
+ },
+ "elapsed_seconds": 28945.40802001953,
+ "git": {
+  "commit": "78be0afc7299fb71010254d943d032957028f53c",
+  "dirty": false,
+  "dirty_paths": []
+ },
+ "metrics": {
+  "all": {
+   "left_out": [
+    "145-1",
+    "49-1"
+   ],
+   "old_outranks_new": 38.666666666666664,
+   "questions": 225,
+   "type_share_top10": {
+    "concurrence": 8.0,
+    "concurring-in-part-and-dissenting-in-part": 2.577777777777778,
+    "dissent": 22.355555555555554,
+    "majority": 67.02222222222223,
+    "plurality": 0.044444444444444446
+   }
+  }
+ },
+ "model": {
+  "id": "intfloat/e5-base-v2",
+  "revision": "f52bf8ec8c7124536f0efb74aca902b2995e5bcd"
+ },
+ "per_query": [
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "4-1",
+   "rank_new": 1,
+   "rank_old": 10,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 5,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "150-1",
+   "rank_new": 6,
+   "rank_old": 15,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "2-1",
+   "rank_new": 2,
+   "rank_old": 16,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "166-1",
+   "rank_new": 9,
+   "rank_old": 11,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "82-1",
+   "rank_new": 4,
+   "rank_old": 3,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 3,
+    "dissent": 1,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "144-1",
+   "rank_new": 88,
+   "rank_old": 5,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 5,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "24-1",
+   "rank_new": 1,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 7,
+    "majority": 2
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "194-1",
+   "rank_new": 20,
+   "rank_old": 13849,
+   "types_top10": {
+    "concurrence": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "187-1",
+   "rank_new": 8,
+   "rank_old": 4,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "127-1",
+   "rank_new": 20,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 3,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "120-1",
+   "rank_new": 7,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "129-2",
+   "rank_new": 2,
+   "rank_old": 8,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "198-2",
+   "rank_new": 1,
+   "rank_old": 16,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "34-1",
+   "rank_new": 7,
+   "rank_old": 4,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "21-1",
+   "rank_new": 398,
+   "rank_old": 541,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "158-3",
+   "rank_new": 8,
+   "rank_old": 347,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "91-1",
+   "rank_new": 2,
+   "rank_old": 5,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 4,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "219-1",
+   "rank_new": 52,
+   "rank_old": 129,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "63-1",
+   "rank_new": 6,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "204-2",
+   "rank_new": 7,
+   "rank_old": 116,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "207-1",
+   "rank_new": 51,
+   "rank_old": 658,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "75-1",
+   "rank_new": 4,
+   "rank_old": 19,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "6-1",
+   "rank_new": 1,
+   "rank_old": 28,
+   "types_top10": {
+    "concurrence": 4,
+    "dissent": 1,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "30-1",
+   "rank_new": 1,
+   "rank_old": 554,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "130-1",
+   "rank_new": 12,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 4,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "62-1",
+   "rank_new": 5,
+   "rank_old": 59,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "225-1",
+   "rank_new": 10,
+   "rank_old": 68,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "55-1",
+   "rank_new": 12,
+   "rank_old": 1403,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "86-1",
+   "rank_new": 3,
+   "rank_old": 4,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "228-1",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "92-1",
+   "rank_new": 6361,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 4,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "85-1",
+   "rank_new": 3,
+   "rank_old": 14,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "14-1",
+   "rank_new": 89,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "69-1",
+   "rank_new": 1,
+   "rank_old": 11,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "174-1",
+   "rank_new": 10,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "183-1",
+   "rank_new": 1,
+   "rank_old": 68,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "5-1",
+   "rank_new": 1,
+   "rank_old": 3,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "173-1",
+   "rank_new": 434856,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "233-1",
+   "rank_new": 1,
+   "rank_old": 2,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "82-3",
+   "rank_new": 13,
+   "rank_old": 11,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 1,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "198-1",
+   "rank_new": 1,
+   "rank_old": 2547,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "65-1",
+   "rank_new": 2,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "35-1",
+   "rank_new": 8,
+   "rank_old": 58,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "40-1",
+   "rank_new": 40,
+   "rank_old": 42,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "40-2",
+   "rank_new": 148,
+   "rank_old": 16,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "106-1",
+   "rank_new": 1,
+   "rank_old": 28,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "44-1",
+   "rank_new": 1,
+   "rank_old": 41,
+   "types_top10": {
+    "concurrence": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "180-1",
+   "rank_new": 263,
+   "rank_old": 235,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "39-1",
+   "rank_new": 9,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 7,
+    "majority": 2
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "143-1",
+   "rank_new": 1,
+   "rank_old": 12,
+   "types_top10": {
+    "concurrence": 6,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "112-1",
+   "rank_new": 23,
+   "rank_old": 68,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "206-1",
+   "rank_new": 61,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "104-1",
+   "rank_new": 5,
+   "rank_old": 2,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "18-1",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 4,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "205-2",
+   "rank_new": 1,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "154-2",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 4,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "163-1",
+   "rank_new": 9,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "188-1",
+   "rank_new": 41,
+   "rank_old": 7,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "178-1",
+   "rank_new": 1,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "8-1",
+   "rank_new": 1,
+   "rank_old": 7,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "190-1",
+   "rank_new": 1,
+   "rank_old": 13,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "67-1",
+   "rank_new": 4,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "212-1",
+   "rank_new": 7,
+   "rank_old": 718,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "15-1",
+   "rank_new": 1,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 7,
+    "majority": 2
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "33-1",
+   "rank_new": 1,
+   "rank_old": 13,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "19-1",
+   "rank_new": 3,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "181-1",
+   "rank_new": 6,
+   "rank_old": 32,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "196-1",
+   "rank_new": 4,
+   "rank_old": 9,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "235-1",
+   "rank_new": 2,
+   "rank_old": 721,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "139-1",
+   "rank_new": 2,
+   "rank_old": 46,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 3,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "3-1",
+   "rank_new": 16,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "102-1",
+   "rank_new": 1,
+   "rank_old": 61,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "46-1",
+   "rank_new": 22,
+   "rank_old": 6,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "32-2",
+   "rank_new": 1,
+   "rank_old": 39,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "31-1",
+   "rank_new": 2,
+   "rank_old": 14,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "117-2",
+   "rank_new": 5,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 5,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "171-1",
+   "rank_new": 1,
+   "rank_old": 864,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 5,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "236-2",
+   "rank_new": 7,
+   "rank_old": 6,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "68-1",
+   "rank_new": 3,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "165-1",
+   "rank_new": 44,
+   "rank_old": 6471,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "6-2",
+   "rank_new": 3,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 4,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "138-1",
+   "rank_new": 29,
+   "rank_old": 3,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 4,
+    "plurality": 1
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "147-1",
+   "rank_new": 124,
+   "rank_old": 25,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "214-2",
+   "rank_new": 4,
+   "rank_old": 15,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "217-1",
+   "rank_new": 15,
+   "rank_old": 487,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "218-1",
+   "rank_new": 61,
+   "rank_old": 18,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 5,
+    "dissent": 2,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "53-2",
+   "rank_new": 1,
+   "rank_old": 11,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "80-1",
+   "rank_new": 8,
+   "rank_old": 5,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "89-1",
+   "rank_new": 13,
+   "rank_old": 204,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "54-2",
+   "rank_new": 1,
+   "rank_old": 7,
+   "types_top10": {
+    "concurrence": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "123-1",
+   "rank_new": 6,
+   "rank_old": 5,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 4,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "156-1",
+   "rank_new": 8,
+   "rank_old": 18,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "162-2",
+   "rank_new": 1,
+   "rank_old": 340,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "17-1",
+   "rank_new": 1,
+   "rank_old": 22,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 4,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "188-2",
+   "rank_new": 30,
+   "rank_old": 9,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "122-1",
+   "rank_new": 4,
+   "rank_old": 5,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "58-1",
+   "rank_new": 10,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "211-1",
+   "rank_new": 20,
+   "rank_old": 3,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "146-1",
+   "rank_new": 296,
+   "rank_old": 46,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "115-1",
+   "rank_new": 56,
+   "rank_old": 36,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "66-1",
+   "rank_new": 3,
+   "rank_old": 50,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "96-1",
+   "rank_new": 1,
+   "rank_old": 25,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "235-2",
+   "rank_new": 4,
+   "rank_old": 89,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "119-1",
+   "rank_new": 9,
+   "rank_old": 4,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "180-2",
+   "rank_new": 233,
+   "rank_old": 49,
+   "types_top10": {
+    "concurrence": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "15-2",
+   "rank_new": 2,
+   "rank_old": 23,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "213-1",
+   "rank_new": 1,
+   "rank_old": 2,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "208-1",
+   "rank_new": 2,
+   "rank_old": 4,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "202-1",
+   "rank_new": 25,
+   "rank_old": 53,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "143-2",
+   "rank_new": 3,
+   "rank_old": 65,
+   "types_top10": {
+    "concurrence": 4,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "109-1",
+   "rank_new": 4,
+   "rank_old": 3,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "205-1",
+   "rank_new": 1,
+   "rank_old": 2,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "125-1",
+   "rank_new": 1,
+   "rank_old": 11,
+   "types_top10": {
+    "concurrence": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "133-1",
+   "rank_new": 13,
+   "rank_old": 17,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "41-1",
+   "rank_new": 123,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "7-1",
+   "rank_new": 28,
+   "rank_old": 25,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "99-1",
+   "rank_new": 3,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 2,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "199-1",
+   "rank_new": 19,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "37-1",
+   "rank_new": 9,
+   "rank_old": 7,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "134-2",
+   "rank_new": 16,
+   "rank_old": 20,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 3,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "52-1",
+   "rank_new": 9,
+   "rank_old": 45,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "75-2",
+   "rank_new": 4,
+   "rank_old": 22,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "116-1",
+   "rank_new": 47,
+   "rank_old": 103,
+   "types_top10": {
+    "concurrence": 5,
+    "dissent": 1,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "132-1",
+   "rank_new": 93,
+   "rank_old": 356,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "175-1",
+   "rank_new": 1,
+   "rank_old": 299,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "1-1",
+   "rank_new": 10,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "59-1",
+   "rank_new": 1,
+   "rank_old": 4,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "197-2",
+   "rank_new": 1,
+   "rank_old": 547,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "73-1",
+   "rank_new": 3,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "121-1",
+   "rank_new": 7,
+   "rank_old": 37,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 3,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "160-1",
+   "rank_new": 9,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "179-1",
+   "rank_new": 6,
+   "rank_old": 7,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 5,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "81-1",
+   "rank_new": 3,
+   "rank_old": 23,
+   "types_top10": {
+    "concurrence": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "79-1",
+   "rank_new": 2,
+   "rank_old": 15,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "195-2",
+   "rank_new": 1,
+   "rank_old": 241,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "192-2",
+   "rank_new": 1,
+   "rank_old": 15,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "151-1",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "26-1",
+   "rank_new": 1,
+   "rank_old": 3,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "20-1",
+   "rank_new": 3,
+   "rank_old": 1,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "117-1",
+   "rank_new": 1,
+   "rank_old": 46,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "227-1",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "195-1",
+   "rank_new": 4,
+   "rank_old": 38,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "90-1",
+   "rank_new": 144,
+   "rank_old": 59,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 3,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "126-1",
+   "rank_new": 1,
+   "rank_old": 66,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "191-1",
+   "rank_new": 1,
+   "rank_old": 649,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "98-1",
+   "rank_new": 8,
+   "rank_old": 2108,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "124-1",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "70-1",
+   "rank_new": 1,
+   "rank_old": 98,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "158-2",
+   "rank_new": 8,
+   "rank_old": 6,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "222-1",
+   "rank_new": 2,
+   "rank_old": 171,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "54-1",
+   "rank_new": 1,
+   "rank_old": 30,
+   "types_top10": {
+    "concurrence": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "77-1",
+   "rank_new": 1,
+   "rank_old": 7,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 4,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "12-1",
+   "rank_new": 2,
+   "rank_old": 1,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "dissent": 1,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "93-1",
+   "rank_new": 120,
+   "rank_old": 31,
+   "types_top10": {
+    "dissent": 6,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "111-1",
+   "rank_new": 5,
+   "rank_old": 7,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "186-1",
+   "rank_new": 1,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "168-1",
+   "rank_new": 2,
+   "rank_old": 28,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "12-2",
+   "rank_new": 1,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "72-1",
+   "rank_new": 6,
+   "rank_old": 53,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "141-2",
+   "rank_new": 8,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "27-1",
+   "rank_new": 4,
+   "rank_old": 2,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "193-1",
+   "rank_new": 6,
+   "rank_old": 34,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "76-1",
+   "rank_new": 2,
+   "rank_old": 169,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "131-1",
+   "rank_new": 3,
+   "rank_old": 1,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "21-2",
+   "rank_new": 58,
+   "rank_old": 92,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "114-1",
+   "rank_new": 2,
+   "rank_old": 76,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 4,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "197-1",
+   "rank_new": 2,
+   "rank_old": 13,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "87-1",
+   "rank_new": 22,
+   "rank_old": 5,
+   "types_top10": {
+    "concurrence": 4,
+    "dissent": 2,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "152-1",
+   "rank_new": 42,
+   "rank_old": 39,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 4,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "200-1",
+   "rank_new": 4,
+   "rank_old": 8,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "109-2",
+   "rank_new": 3,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "184-1",
+   "rank_new": 5,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "29-1",
+   "rank_new": 8,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 5,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "177-1",
+   "rank_new": 3,
+   "rank_old": 5,
+   "types_top10": {
+    "dissent": 3,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "166-3",
+   "rank_new": 1,
+   "rank_old": 7,
+   "types_top10": {
+    "dissent": 6,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "158-1",
+   "rank_new": 2,
+   "rank_old": 7,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "36-1",
+   "rank_new": 5,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 6,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "107-1",
+   "rank_new": 5,
+   "rank_old": 1,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "170-1",
+   "rank_new": 84,
+   "rank_old": 6,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 4,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "129-1",
+   "rank_new": 13,
+   "rank_old": 9,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 4,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "167-1",
+   "rank_new": 6,
+   "rank_old": 1,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "140-1",
+   "rank_new": 4,
+   "rank_old": 72,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "4-2",
+   "rank_new": 7,
+   "rank_old": 9,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "dissent": 4,
+    "majority": 2
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "103-1",
+   "rank_new": 16,
+   "rank_old": 29,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "161-1",
+   "rank_new": 4,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 3,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "50-1",
+   "rank_new": 1,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 3,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "182-1",
+   "rank_new": 52,
+   "rank_old": 3,
+   "types_top10": {
+    "concurrence": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "162-1",
+   "rank_new": 7,
+   "rank_old": 6,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "74-1",
+   "rank_new": 3,
+   "rank_old": 6,
+   "types_top10": {
+    "concurrence": 4,
+    "dissent": 3,
+    "majority": 3
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "234-1",
+   "rank_new": 2,
+   "rank_old": 267,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "125-2",
+   "rank_new": 2,
+   "rank_old": 4,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 1,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "10-1",
+   "rank_new": 1,
+   "rank_old": 13,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 3,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "56-1",
+   "rank_new": 7,
+   "rank_old": 40,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "128-1",
+   "rank_new": 5,
+   "rank_old": 7,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "42-1",
+   "rank_new": 14,
+   "rank_old": 4,
+   "types_top10": {
+    "concurrence": 2,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 3,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "164-1",
+   "rank_new": 5,
+   "rank_old": 21,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 5,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "176-1",
+   "rank_new": 1,
+   "rank_old": 3,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "28-1",
+   "rank_new": 1,
+   "rank_old": 7,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "36-2",
+   "rank_new": 7,
+   "rank_old": 2,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "16-1",
+   "rank_new": 2,
+   "rank_old": 643240,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 5,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "157-1",
+   "rank_new": 2,
+   "rank_old": 26,
+   "types_top10": {
+    "concurrence": 3,
+    "dissent": 3,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "166-2",
+   "rank_new": 3,
+   "rank_old": 4,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "203-1",
+   "rank_new": 6,
+   "rank_old": 37,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "95-1",
+   "rank_new": 4,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "135-1",
+   "rank_new": 2,
+   "rank_old": 8,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "32-1",
+   "rank_new": 1,
+   "rank_old": 5,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 4,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "13-1",
+   "rank_new": 134,
+   "rank_old": 12,
+   "types_top10": {
+    "concurrence": 2,
+    "dissent": 4,
+    "majority": 4
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "51-1",
+   "rank_new": 1,
+   "rank_old": 22,
+   "types_top10": {
+    "concurrence": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "105-1",
+   "rank_new": 3,
+   "rank_old": 1,
+   "types_top10": {
+    "concurrence": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "88-1",
+   "rank_new": 13,
+   "rank_old": 1,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "192-1",
+   "rank_new": 1,
+   "rank_old": 16,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "dissent": 1,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "139-2",
+   "rank_new": 1,
+   "rank_old": 256,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "dissent": 2,
+    "majority": 7
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "136-1",
+   "rank_new": 16,
+   "rank_old": 15,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "230-1",
+   "rank_new": 56,
+   "rank_old": 116,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "141-1",
+   "rank_new": 5,
+   "rank_old": 3,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "82-2",
+   "rank_new": 6,
+   "rank_old": 99,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "191-2",
+   "rank_new": 3,
+   "rank_old": 127,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 2,
+    "dissent": 3,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "78-1",
+   "rank_new": 77,
+   "rank_old": 60,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "214-1",
+   "rank_new": 14,
+   "rank_old": 73,
+   "types_top10": {
+    "dissent": 1,
+    "majority": 9
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "223-1",
+   "rank_new": 1,
+   "rank_old": 2,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "57-1",
+   "rank_new": 1,
+   "rank_old": 5,
+   "types_top10": {
+    "concurrence": 1,
+    "dissent": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "83-2",
+   "rank_new": 34,
+   "rank_old": 6,
+   "types_top10": {
+    "concurring-in-part-and-dissenting-in-part": 3,
+    "dissent": 1,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "236-1",
+   "rank_new": 6,
+   "rank_old": 14,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "71-1",
+   "rank_new": 13,
+   "rank_old": 8,
+   "types_top10": {
+    "majority": 10
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 1.0,
+   "qid": "38-1",
+   "rank_new": 64,
+   "rank_old": 6,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  }
+ ],
+ "run_id": "f90498bed7d31fdb",
+ "suite": "us_downstream",
+ "throughput": {
+  "encoding_seconds": 28889.43009543419,
+  "passages_encoded_in_this_run": 760508,
+  "passages_per_second": 26.324783752663713,
+  "search_seconds": 32.14340114593506,
+  "stored_rows": 760508
+ },
+ "utc_time": "2026-11-05T05:33:11+00:00"
+}

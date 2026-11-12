@@ -1,0 +1,266 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 10,
+  "prompt_version": "v2",
+  "rank_run": null,
+  "reader": "qwen3",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 262.6758859157562,
+ "git": {
+  "commit": "53e065567f718424d85860b3fa7441520ebde10f",
+  "dirty": true,
+  "dirty_paths": [
+   "Makefile",
+   "data/overruled_pairs.jsonl",
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_overruled.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9530352736e33ffd.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 60.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 501,
+   "mean_label_mass": 2.628990065563922e-09,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    425
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    422
+   ]
+  },
+  "validation": {
+   "accuracy": 60.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 501,
+   "mean_label_mass": 2.628990065563922e-09,
+   "questions": 10
+  }
+ },
+ "model": {
+  "id": "mlx-community/Qwen3-8B-4bit",
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 1.4445964115263586e-09,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.006607405594449523,
+    "B": 0.0004223973247843449,
+    "C": 0.9806259382081014,
+    "D": 0.012344258872664765
+   },
+   "prompt_tokens": 292,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 4.977837490383104e-09,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0007054110983644889,
+    "B": 9.546701405891188e-05,
+    "C": 0.9932927870543884,
+    "D": 0.0059063348331881245
+   },
+   "prompt_tokens": 498,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 1.5650942387058722e-10,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.10055050299382433,
+    "B": 0.0474966958664194,
+    "C": 0.2733246059028243,
+    "D": 0.5786281952369319
+   },
+   "prompt_tokens": 251,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 7.898950534586234e-10,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.1472123664737886,
+    "B": 0.0006016233107683851,
+    "C": 0.005037330187709008,
+    "D": 0.847148680027734
+   },
+   "prompt_tokens": 257,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 2.445146442483033e-11,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.26829477192565654,
+    "B": 0.00035596826573451026,
+    "C": 0.7293008039324432,
+    "D": 0.0020484558761658276
+   },
+   "prompt_tokens": 243,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 7.292612728643922e-09,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.005176654729320804,
+    "B": 0.001680613751987284,
+    "C": 0.0066469562540560035,
+    "D": 0.9864957752646358
+   },
+   "prompt_tokens": 305,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 3.0410118067127127e-09,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0031387690784315195,
+    "B": 0.002157242370941712,
+    "C": 0.008532058967002307,
+    "D": 0.9861719295836244
+   },
+   "prompt_tokens": 501,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 4.8468503551058135e-09,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.7011284374684077,
+    "B": 0.03490713111746761,
+    "C": 0.15644290178086348,
+    "D": 0.10752152963326118
+   },
+   "prompt_tokens": 324,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 3.3092283047959225e-09,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.006919240786476536,
+    "B": 0.002545446503882193,
+    "C": 0.9062417033799454,
+    "D": 0.08429360932969596
+   },
+   "prompt_tokens": 380,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 4.069076167173434e-10,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0021818872596719202,
+    "B": 8.460095296454138e-05,
+    "C": 0.9974382254551895,
+    "D": 0.0002952863321741109
+   },
+   "prompt_tokens": 209,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "191ce5e24e39fc89",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.2650604248046875,
+  "questions_per_second": 0.03983583839793382,
+  "read_seconds": 251.0302381515503,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:44:11+00:00"
+}

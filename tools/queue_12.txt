@@ -1,0 +1,1 @@
+open_book_law.experiments.us_finetune eval --model-run a37ef8eb21b1b248 --split test

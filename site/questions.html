@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try a question · Open Book</title>
+<meta name="description" content="Thirty AI-written questions about overruled Supreme Court decisions, with the answer of each model under each condition.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="questions">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html" aria-current="page">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="label">Explore</p>
+    <h1>Try a question</h1>
+    <p class="lead">These are <span data-bind="gl.sample">30</span> of the <span data-bind="gl.written">227</span> questions about overruled decisions, picked at random. Make your best guess first. Then see what each model chose.</p>
+  </div>
+  <noscript><p class="note">This page fills in its numbers and charts with JavaScript, which is turned off in this browser. You can read the main results in the <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">results table</a> instead.</p></noscript>
+  <p class="narrow muted">An AI model wrote these questions for this project. They are not real bar exam questions, because the project does not publish those. One question in this sample later left the test, and the page says so when you reach it.</p>
+  <div class="toolbar">
+    <label for="q-select">Question</label>
+    <select id="q-select"></select>
+    <button type="button" class="chip" id="q-prev">← Previous</button>
+    <button type="button" class="chip" id="q-next">Next →</button>
+    <button type="button" class="btn" id="q-hide" aria-pressed="false">Show the answers</button>
+  </div>
+  <div id="q-card"></div>
+  <div id="q-answers" aria-live="polite"></div>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

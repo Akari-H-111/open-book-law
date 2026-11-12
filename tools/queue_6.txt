@@ -1,0 +1,10 @@
+# Good-law conditions that need no search, then the BM25 search of the scotus corpus.
+# Start after queue_5 and after a smoke run of us_goodlaw with --limit 3.
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition closed
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition old-only
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition new-only
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition both
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition both-dated
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition date-before
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition date-today
+open_book_law.experiments.us_retrieval --dataset scotus --retriever bm25

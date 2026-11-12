@@ -1,0 +1,543 @@
+{
+ "reader_targets": [
+  {
+   "dataset": "housing",
+   "difference": 7.189999999999998,
+   "id": "R3a",
+   "later_runs": [],
+   "note": "On the sample of 2,000 questions from Amendment 2. Weights are 4-bit. The prompt is ours.",
+   "ours": 66.0,
+   "published": 58.81,
+   "questions": 2000,
+   "run_id": "0a3bd283a1dd357b",
+   "verdict": "diverged"
+  },
+  {
+   "dataset": "housing",
+   "difference": -2.8699999999999903,
+   "id": "R3b",
+   "later_runs": [],
+   "note": "On the sample of 2,000 questions from Amendment 2. Weights are 4-bit. The prompt is ours.",
+   "ours": 72.4,
+   "published": 75.27,
+   "questions": 2000,
+   "run_id": "dc5d0f854fe0300e",
+   "verdict": "reproduced"
+  },
+  {
+   "dataset": "housing",
+   "difference": -0.06999999999999318,
+   "id": "R3c",
+   "later_runs": [],
+   "note": "On the sample of 2,000 questions from Amendment 2. Weights are 4-bit. The prompt is ours.",
+   "ours": 68.15,
+   "published": 68.22,
+   "questions": 2000,
+   "run_id": "77b704031495cce7",
+   "verdict": "reproduced"
+  },
+  {
+   "dataset": "mbe",
+   "difference": 7.258039215686274,
+   "id": "R4 closed",
+   "later_runs": [],
+   "note": "Comparison only, with no verdict. The published set includes private questions.",
+   "ours": 45.09803921568628,
+   "published": 37.84,
+   "questions": 1071,
+   "run_id": "37b2a24e08bf9b8c",
+   "verdict": "comparison only"
+  },
+  {
+   "dataset": "mbe",
+   "difference": -0.42388422035481454,
+   "id": "R4 gold",
+   "later_runs": [],
+   "note": "Comparison only, with no verdict. The published set includes private questions.",
+   "ours": 56.95611577964519,
+   "published": 57.38,
+   "questions": 1071,
+   "run_id": "15eb1f50138858a0",
+   "verdict": "comparison only"
+  }
+ ],
+ "same_states": [
+  {
+   "R@10": 40.070422535211264,
+   "R@100": 63.098591549295776,
+   "R@1000": 79.15492957746478,
+   "retriever": "bm25",
+   "run_id": "4562ca7de9977b74",
+   "states": [
+    "connecticut",
+    "delaware",
+    "idaho",
+    "kansas",
+    "louisiana",
+    "new jersey",
+    "oregon",
+    "rhode island",
+    "washington",
+    "wyoming"
+   ]
+  },
+  {
+   "R@10": 33.16901408450704,
+   "R@100": 64.36619718309859,
+   "R@1000": 85.84507042253522,
+   "retriever": "e5-small",
+   "run_id": "bd95d37a2633a73f",
+   "states": [
+    "connecticut",
+    "delaware",
+    "idaho",
+    "kansas",
+    "louisiana",
+    "new jersey",
+    "oregon",
+    "rhode island",
+    "washington",
+    "wyoming"
+   ]
+  },
+  {
+   "R@10": 45.91549295774648,
+   "R@100": 73.16901408450704,
+   "R@1000": 89.71830985915493,
+   "retriever": "e5-base",
+   "run_id": "0643777ad54eeabb",
+   "states": [
+    "connecticut",
+    "delaware",
+    "idaho",
+    "kansas",
+    "louisiana",
+    "new jersey",
+    "oregon",
+    "rhode island",
+    "washington",
+    "wyoming"
+   ]
+  }
+ ],
+ "source": "Zheng et al. 2025, Tables 22, 24, 25, 30 and 33. Rules: preregistration section 5",
+ "targets": [
+  {
+   "commit": "f5b789e9faed03aa23f77b0bf08fbd3ddc5e23d1",
+   "comparison_only": {
+    "hit@1": {
+     "difference": 0.0010460251046024993,
+     "ours": 0.2510460251046025,
+     "published": 0.25
+    },
+    "mrr@10": {
+     "difference": -0.004588563458856387,
+     "ours": 0.3654114365411436,
+     "published": 0.37
+    }
+   },
+   "dataset": "mbe",
+   "diagnostics": [
+    {
+     "R@10": 0.7531380753138075,
+     "R@100": 2.3430962343096233,
+     "R@1000": 8.451882845188285,
+     "comparison_only": {
+      "hit@1": 0.2510460251046025,
+      "mrr@10": 0.3586703858670386
+     },
+     "run_id": "062d8d251c0b1d7c",
+     "tokenizer": "porter"
+    }
+   ],
+   "id": "R1a",
+   "later_runs": [],
+   "metrics": {
+    "R@10": {
+     "difference": -0.08054393305439334,
+     "limit": 1,
+     "ours": 0.6694560669456067,
+     "published": 0.75,
+     "verdict": "reproduced"
+    },
+    "R@100": {
+     "difference": 0.16677824267782437,
+     "limit": 2,
+     "ours": 2.426778242677824,
+     "published": 2.26,
+     "verdict": "reproduced"
+    },
+    "R@1000": {
+     "difference": -0.84020920502092,
+     "limit": 3,
+     "ours": 7.949790794979079,
+     "published": 8.79,
+     "verdict": "reproduced"
+    }
+   },
+   "published": {
+    "R@10": 0.75,
+    "R@100": 2.26,
+    "R@1000": 8.79
+   },
+   "questions": 1195,
+   "retriever": "bm25",
+   "run_id": "064ab92f0a8e8c80",
+   "verdict": "reproduced"
+  },
+  {
+   "commit": "45e6215711b6053f6d030f2e5c8f82fe04f97e4b",
+   "comparison_only": {
+    "hit@1": {
+     "difference": -0.08,
+     "ours": 0.0,
+     "published": 0.08
+    },
+    "mrr@10": {
+     "difference": 0.028042770804277084,
+     "ours": 0.20804277080427708,
+     "published": 0.18
+    }
+   },
+   "dataset": "mbe",
+   "diagnostics": [],
+   "id": "R1b",
+   "later_runs": [],
+   "metrics": {
+    "R@10": {
+     "difference": 0.3305020920502092,
+     "limit": 1,
+     "ours": 0.9205020920502092,
+     "published": 0.59,
+     "verdict": "reproduced"
+    },
+    "R@100": {
+     "difference": 1.4204184100418407,
+     "limit": 2,
+     "ours": 4.100418410041841,
+     "published": 2.68,
+     "verdict": "reproduced"
+    },
+    "R@1000": {
+     "difference": 3.513347280334729,
+     "limit": 3,
+     "ours": 12.803347280334728,
+     "published": 9.29,
+     "verdict": "partly reproduced"
+    }
+   },
+   "published": {
+    "R@10": 0.59,
+    "R@100": 2.68,
+    "R@1000": 9.29
+   },
+   "questions": 1195,
+   "retriever": "e5-small",
+   "run_id": "b89510c86c4e05b5",
+   "verdict": "partly reproduced"
+  },
+  {
+   "commit": "af8a6a15a9c2a0b00f5ceb7325cf94a95fe43485",
+   "comparison_only": {
+    "hit@1": {
+     "difference": -0.25,
+     "ours": 0.0,
+     "published": 0.25
+    },
+    "mrr@10": {
+     "difference": -0.18743640831506944,
+     "ours": 0.20256359168493057,
+     "published": 0.39
+    }
+   },
+   "dataset": "mbe",
+   "diagnostics": [],
+   "id": "R1c",
+   "later_runs": [],
+   "metrics": {
+    "R@10": {
+     "difference": -0.08686192468619247,
+     "limit": 1,
+     "ours": 0.7531380753138075,
+     "published": 0.84,
+     "verdict": "reproduced"
+    },
+    "R@100": {
+     "difference": 0.9251464435146444,
+     "limit": 2,
+     "ours": 4.435146443514644,
+     "published": 3.51,
+     "verdict": "reproduced"
+    },
+    "R@1000": {
+     "difference": 0.6728451882845174,
+     "limit": 3,
+     "ours": 11.882845188284518,
+     "published": 11.21,
+     "verdict": "reproduced"
+    }
+   },
+   "published": {
+    "R@10": 0.84,
+    "R@100": 3.51,
+    "R@1000": 11.21
+   },
+   "questions": 1195,
+   "retriever": "e5-base",
+   "run_id": "362e4429624184c3",
+   "verdict": "reproduced"
+  },
+  {
+   "comparison_only": {},
+   "dataset": "mbe",
+   "diagnostics": [],
+   "id": "R1d",
+   "published": {
+    "R@10": 0.92,
+    "R@100": 4.27,
+    "R@1000": 12.3
+   },
+   "retriever": "e5-large",
+   "verdict": "pending"
+  },
+  {
+   "commit": "fd4972a2fb080ea9edbe6a54a727fc6cb25afc55",
+   "comparison_only": {
+    "all@10": {
+     "difference": -2.317004231723331,
+     "ours": 15.992995768276668,
+     "published": 18.31
+    },
+    "all@100": {
+     "difference": -3.7160615788705655,
+     "ours": 36.173938421129435,
+     "published": 39.89
+    },
+    "all@1000": {
+     "difference": -4.142279293739968,
+     "ours": 55.53772070626003,
+     "published": 59.68
+    },
+    "hit@1": {
+     "difference": -0.9450109441120684,
+     "ours": 13.774989055887932,
+     "published": 14.72
+    },
+    "mrr@10": {
+     "difference": -1.5255006149548649,
+     "ours": 20.464499385045134,
+     "published": 21.99
+    }
+   },
+   "dataset": "housing",
+   "diagnostics": [
+    {
+     "R@10": 40.726689041295785,
+     "R@100": 62.512768130745656,
+     "R@1000": 76.27316503720998,
+     "comparison_only": {
+      "all@10": 18.13804173354735,
+      "all@100": 39.99708157011528,
+      "all@1000": 59.71107544141252,
+      "hit@1": 15.132058952283671,
+      "mrr@10": 22.30558856160782
+     },
+     "run_id": "65cb3b18226d7b1c",
+     "tokenizer": "porter"
+    }
+   ],
+   "id": "R2a",
+   "later_runs": [],
+   "metrics": {
+    "R@10": {
+     "difference": -3.5854268203706425,
+     "limit": 2,
+     "ours": 37.22457317962936,
+     "published": 40.81,
+     "verdict": "partly reproduced"
+    },
+    "R@100": {
+     "difference": -3.0637282941777286,
+     "limit": 3,
+     "ours": 59.34627170582227,
+     "published": 62.41,
+     "verdict": "partly reproduced"
+    },
+    "R@1000": {
+     "difference": -1.1717598132204898,
+     "limit": 3,
+     "ours": 75.01824018677951,
+     "published": 76.19,
+     "verdict": "reproduced"
+    }
+   },
+   "published": {
+    "R@10": 40.81,
+    "R@100": 62.41,
+    "R@1000": 76.19
+   },
+   "questions": 6853,
+   "retriever": "bm25",
+   "run_id": "009ec399e8e08026",
+   "verdict": "partly reproduced"
+  },
+  {
+   "commit": "77962996b1f0afcf3390991c2d8d4579f93ac418",
+   "comparison_only": {
+    "all@10": {
+     "difference": 0.2506989639573902,
+     "ours": 13.57069896395739,
+     "published": 13.32
+    },
+    "all@100": {
+     "difference": -0.2432817744053679,
+     "ours": 37.32671822559463,
+     "published": 37.57
+    },
+    "all@1000": {
+     "difference": -0.3488924558587456,
+     "ours": 65.97110754414125,
+     "published": 66.32
+    },
+    "hit@1": {
+     "difference": 0.1500933897563108,
+     "ours": 9.120093389756311,
+     "published": 8.97
+    },
+    "mrr@10": {
+     "difference": 0.2112339862741166,
+     "ours": 16.161233986274116,
+     "published": 15.95
+    }
+   },
+   "dataset": "housing",
+   "diagnostics": [],
+   "id": "R2b",
+   "later_runs": [],
+   "metrics": {
+    "R@10": {
+     "difference": 0.3063548810739789,
+     "limit": 2,
+     "ours": 34.65635488107398,
+     "published": 34.35,
+     "verdict": "reproduced"
+    },
+    "R@100": {
+     "difference": -0.9003735590252475,
+     "limit": 3,
+     "ours": 63.519626440974754,
+     "published": 64.42,
+     "verdict": "reproduced"
+    },
+    "R@1000": {
+     "difference": -0.4392806070334103,
+     "limit": 3,
+     "ours": 81.19071939296659,
+     "published": 81.63,
+     "verdict": "reproduced"
+    }
+   },
+   "published": {
+    "R@10": 34.35,
+    "R@100": 64.42,
+    "R@1000": 81.63
+   },
+   "questions": 6853,
+   "retriever": "e5-small",
+   "run_id": "ba48ee23902af913",
+   "verdict": "reproduced"
+  },
+  {
+   "commit": "198ada5b048289335ad5ce14fcd63c8b0610cbbe",
+   "comparison_only": {
+    "all@10": {
+     "difference": -0.7225352112676049,
+     "ours": 19.577464788732396,
+     "published": 20.3
+    },
+    "all@100": {
+     "difference": -1.1170422535211273,
+     "ours": 50.49295774647887,
+     "published": 51.61
+    },
+    "all@1000": {
+     "difference": 5.878450704225358,
+     "ours": 81.40845070422536,
+     "published": 75.53
+    },
+    "hit@1": {
+     "difference": 2.0033802816901396,
+     "ours": 15.56338028169014,
+     "published": 13.56
+    },
+    "mrr@10": {
+     "difference": 1.6559099038676521,
+     "ours": 24.03590990386765,
+     "published": 22.38
+    }
+   },
+   "dataset": "housing",
+   "diagnostics": [],
+   "id": "R2c",
+   "later_runs": [],
+   "metrics": {
+    "R@10": {
+     "difference": 0.16549295774647987,
+     "limit": 2,
+     "ours": 45.91549295774648,
+     "published": 45.75,
+     "verdict": "reproduced"
+    },
+    "R@100": {
+     "difference": -1.4409859154929592,
+     "limit": 3,
+     "ours": 73.16901408450704,
+     "published": 74.61,
+     "verdict": "reproduced"
+    },
+    "R@1000": {
+     "difference": 3.0683098591549225,
+     "limit": 3,
+     "ours": 89.71830985915493,
+     "published": 86.65,
+     "verdict": "partly reproduced"
+    }
+   },
+   "on_sampled_states": [
+    "connecticut",
+    "delaware",
+    "idaho",
+    "kansas",
+    "louisiana",
+    "new jersey",
+    "oregon",
+    "rhode island",
+    "washington",
+    "wyoming"
+   ],
+   "published": {
+    "R@10": 45.75,
+    "R@100": 74.61,
+    "R@1000": 86.65
+   },
+   "questions": 1420,
+   "retriever": "e5-base",
+   "run_id": "0643777ad54eeabb",
+   "verdict": "partly reproduced"
+  },
+  {
+   "comparison_only": {},
+   "dataset": "housing",
+   "diagnostics": [],
+   "id": "R2d",
+   "published": {
+    "R@10": 50.58,
+    "R@100": 78.83,
+    "R@1000": 87.73
+   },
+   "retriever": "e5-large",
+   "verdict": "pending"
+  }
+ ],
+ "units": "percentage points"
+}

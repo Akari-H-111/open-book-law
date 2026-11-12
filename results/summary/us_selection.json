@@ -1,0 +1,58 @@
+{
+ "best_dense": {
+  "rule": "highest R@100 on full",
+  "runs": {
+   "e5-base": "362e4429624184c3",
+   "e5-small": "b89510c86c4e05b5"
+  },
+  "scores": {
+   "e5-base": 5.645161290322581,
+   "e5-small": 4.838709677419355
+  },
+  "status": "selected",
+  "value": "e5-base"
+ },
+ "best_open": {
+  "rule": "highest closed-book accuracy",
+  "runs": {
+   "phi4": "7ec96a250bcaea28",
+   "qwen3": "9bb3d74024beaa42"
+  },
+  "scores": {
+   "phi4": 42.74193548387097,
+   "qwen3": 54.03225806451613
+  },
+  "status": "selected",
+  "value": "qwen3"
+ },
+ "best_real_library": {
+  "rule": "highest accuracy among libraries",
+  "runs": {
+   "cases": "516980c4b1bbd93a",
+   "doctrine": "0e7dc49f227b66a2",
+   "real": "95a18b34264b1938"
+  },
+  "scores": {
+   "cases": 40.32258064516129,
+   "doctrine": 41.935483870967744,
+   "real": 40.32258064516129
+  },
+  "status": "selected",
+  "value": "doctrine"
+ },
+ "k": {
+  "rule": "highest accuracy, ties to the smaller k",
+  "runs": {
+   "1": "95a18b34264b1938",
+   "3": "0e42fd0375717698",
+   "5": "a578b30b19fabf60"
+  },
+  "scores": {
+   "1": 40.32258064516129,
+   "3": 38.70967741935484,
+   "5": 35.483870967741936
+  },
+  "status": "selected",
+  "value": 1
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "config": {
+  "dataset": "mbe",
+  "judges": [
+   "claude-opus-5-5",
+   "claude-sonnet-5-5"
+  ],
+  "retrieval_runs": {
+   "bm25": "064ab92f0a8e8c80",
+   "e5-base": "362e4429624184c3"
+  },
+  "seed": 20261103,
+  "size": 3
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be",
+  "$OBL_DATA/barexam_qa/test.csv": "dc0cfd5253ae837e447e70d2ee22645b83bee43c383384f5e1882f72f9279c4b",
+  "$OBL_DATA/barexam_qa/train.csv": "91f8a3eb1f872f81e9c420241b6e44b1ba0c6592378708f1c947d575e28d9e8a",
+  "$OBL_DATA/barexam_qa/validation.csv": "25faae1290920494fe25d0eccf2487ee9a32f48475fd0be697869b50c9371129"
+ },
+ "elapsed_seconds": 42.59276509284973,
+ "git": {
+  "commit": "319dcf69b30c1ac4ea9aee9c138d65f31ab5d1c7",
+  "dirty": false,
+  "dirty_paths": []
+ },
+ "metrics": {
+  "all": {
+   "both_judges_found_one": 33.333333333333336,
+   "gold_hit_top10_bm25": 0.0,
+   "gold_hit_top10_e5-base": 0.0,
+   "judged_relevant_claude-opus-5-5": 33.333333333333336,
+   "judged_relevant_claude-sonnet-5-5": 33.333333333333336,
+   "label": "silver",
+   "passage_agreement": 100.0,
+   "questions": 3
+  },
+  "questions_missing": 0
+ },
+ "model": {
+  "id": "claude-opus-5-5+claude-sonnet-5-5",
+  "revision": null
+ },
+ "per_query": [
+  {
+   "gold_hit": {
+    "bm25": false,
+    "e5-base": false
+   },
+   "pool": [
+    "caselaw_12509461_52",
+    "caselaw_12510604_6",
+    "caselaw_12513022_128",
+    "caselaw_12515452_44",
+    "caselaw_12515560_20",
+    "caselaw_12547329_5",
+    "caselaw_12574755_113",
+    "caselaw_12653902_29",
+    "caselaw_12654576_30",
+    "caselaw_12659752_48",
+    "caselaw_12687883_12",
+    "caselaw_12687895_3",
+    "mbe_1884",
+    "wex_1017",
+    "wex_1018",
+    "wex_190",
+    "wex_2490",
+    "wex_3897",
+    "wex_4336",
+    "wex_548"
+   ],
+   "qid": "mbe_1091",
+   "relevant": {
+    "claude-opus-5-5": [
+     "wex_190"
+    ],
+    "claude-sonnet-5-5": [
+     "wex_190"
+    ]
+   }
+  },
+  {
+   "gold_hit": {
+    "bm25": false,
+    "e5-base": false
+   },
+   "pool": [
+    "caselaw_12510411_32",
+    "caselaw_12520031_47",
+    "caselaw_12529371_25",
+    "caselaw_12529398_46",
+    "caselaw_12529398_75",
+    "caselaw_12530522_61",
+    "caselaw_12530691_26",
+    "caselaw_12530691_68",
+    "caselaw_12532077_39",
+    "caselaw_12544042_45",
+    "caselaw_12576768_14",
+    "caselaw_12576768_174",
+    "caselaw_12576768_178",
+    "caselaw_12576768_193",
+    "caselaw_12576768_64",
+    "caselaw_12576768_65",
+    "caselaw_12576768_67",
+    "caselaw_12576768_68",
+    "caselaw_12576768_88",
+    "caselaw_12692414_79"
+   ],
+   "qid": "mbe_1149",
+   "relevant": {
+    "claude-opus-5-5": [],
+    "claude-sonnet-5-5": []
+   }
+  },
+  {
+   "gold_hit": {
+    "bm25": false,
+    "e5-base": false
+   },
+   "pool": [
+    "caselaw_12519874_27",
+    "caselaw_12530254_30",
+    "caselaw_12530254_37",
+    "caselaw_12530254_39",
+    "caselaw_12530254_40",
+    "caselaw_12542704_39",
+    "caselaw_12564169_25",
+    "caselaw_12564169_26",
+    "caselaw_12576054_16",
+    "caselaw_12576732_50",
+    "caselaw_12653763_5",
+    "caselaw_12658987_7",
+    "caselaw_12659520_29",
+    "mbe_1489",
+    "mbe_397",
+    "wex_1391",
+    "wex_3897"
+   ],
+   "qid": "mbe_1180",
+   "relevant": {
+    "claude-opus-5-5": [],
+    "claude-sonnet-5-5": []
+   }
+  }
+ ],
+ "run_id": "81a6c35dc6fdd83f",
+ "suite": "us_smoke",
+ "throughput": {},
+ "utc_time": "2026-11-04T21:31:53+00:00"
+}

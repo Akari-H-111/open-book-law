@@ -1,0 +1,167 @@
+{
+ "config": {
+  "condition": "retrieved",
+  "context_tokens": 2000,
+  "dataset": "housing",
+  "k": 1,
+  "library": "within-state",
+  "limit": 5,
+  "prompt_version": "v2",
+  "rank_run": "009ec399e8e08026",
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/housing_qa/questions.json.zip": "7e7722c267d44ecc1f9f52d69109116d8a0a352b89f002438585872f67de9985",
+  "$OBL_DATA/housing_qa/statutes.tsv.zip": "7d4382875edc40b54de5889a21d7ddebe6fae5629fd54bfa53b3d82c20eb04ae"
+ },
+ "elapsed_seconds": 287.67944383621216,
+ "git": {
+  "commit": "470df42c21046cc2698f253dc08310b0f9a2145f",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/citations.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_caselaw.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/191ce5e24e39fc89.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/548353700231a8ea.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9492d1aab16165c2.json",
+   "results/runs/us_smoke/9530352736e33ffd.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 40.0,
+   "contexts_cut": 1,
+   "empty_contexts": 0,
+   "max_prompt_tokens": 2069,
+   "mean_label_mass": 0.9193953194074037,
+   "questions": 5
+  },
+  "label_token_ids": {
+   "No": [
+    2360,
+    2822
+   ],
+   "Yes": [
+    7566,
+    9642
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 1.0,
+   "docids": [
+    "462148"
+   ],
+   "gold": "No",
+   "group": "new hampshire",
+   "label_mass": 0.9702210766520747,
+   "predicted": "No",
+   "probabilities": {
+    "No": 0.9992326151642391,
+    "Yes": 0.0007673848357609227
+   },
+   "prompt_tokens": 1024,
+   "qid": "7369",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1482864"
+   ],
+   "gold": "Yes",
+   "group": "tennessee",
+   "label_mass": 0.8564053933386452,
+   "predicted": "No",
+   "probabilities": {
+    "No": 0.9124264155101927,
+    "Yes": 0.0875735844898073
+   },
+   "prompt_tokens": 1229,
+   "qid": "2498",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "261114"
+   ],
+   "gold": "No",
+   "group": "washington",
+   "label_mass": 0.8446509868771164,
+   "predicted": "Yes",
+   "probabilities": {
+    "No": 0.002148780354599103,
+    "Yes": 0.9978512196454009
+   },
+   "prompt_tokens": 2069,
+   "qid": "7420",
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1788770"
+   ],
+   "gold": "No",
+   "group": "west virginia",
+   "label_mass": 0.9384148226628238,
+   "predicted": "No",
+   "probabilities": {
+    "No": 0.9999509057799718,
+    "Yes": 4.9094220028128795e-05
+   },
+   "prompt_tokens": 869,
+   "qid": "9194",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1084306"
+   ],
+   "gold": "Yes",
+   "group": "wyoming",
+   "label_mass": 0.9872843175063586,
+   "predicted": "No",
+   "probabilities": {
+    "No": 0.999912490087487,
+    "Yes": 8.750991251312201e-05
+   },
+   "prompt_tokens": 930,
+   "qid": "55",
+   "truncated": false
+  }
+ ],
+ "run_id": "5affe215a77eb85c",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.08258056640625,
+  "questions_per_second": 0.02585049441490256,
+  "read_seconds": 193.41989827156067,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:51:48+00:00"
+}

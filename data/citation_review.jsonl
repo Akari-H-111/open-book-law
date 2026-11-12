@@ -1,0 +1,20 @@
+{"case_id":"531019","cite":"11 U.S. 339","verdict":"regex_right","note":"Text prints 7 Cr. 339. CAP has no entry."}
+{"case_id":"1429901","cite":"5 Wheat. Rep. 1","verdict":"regex_missed","note":"CAP is right. The regex does not accept Rep. after the reporter."}
+{"case_id":"3335410","cite":"37 U.S. 5","verdict":"regex_right","note":"Text prints 12 Peters, 5. CAP has no entry."}
+{"case_id":"3325327","cite":"37 U.S. 54","verdict":"regex_right","note":"Text prints 12 Peters, 54. CAP has no entry."}
+{"case_id":"3325327","cite":"41 U.S. 537","verdict":"regex_right","note":"Text prints 16 Peters, 537. CAP has no entry."}
+{"case_id":"3325327","cite":"35 U.S. 493","verdict":"regex_right","note":"Text prints 10 Peters, 493. CAP has no entry."}
+{"case_id":"3325327","cite":"32 U.S. 122","verdict":"regex_right","note":"Text prints 7 Peters, 122. CAP has no entry."}
+{"case_id":"3318389","cite":"41 U.S. 342","verdict":"regex_right","note":"Text prints 16 Peters, 342. CAP has no entry."}
+{"case_id":"3318389","cite":"41 U.S. 203","verdict":"regex_right","note":"Text prints 16 Peters, 203. CAP has no entry."}
+{"case_id":"3354228","cite":"37 U.S. 454","verdict":"regex_right","note":"Text prints 12 Peters, 454. CAP has no entry."}
+{"case_id":"1134224","cite":"68 U.S. 486","verdict":"regex_right","note":"Text prints 1 Wallace, 486 in a note. CAP has no entry."}
+{"case_id":"62459","cite":"24 U.S. 75","verdict":"regex_right","note":"Text prints 11 Wheaton, 75. CAP has no entry. The page may be a pin page and not the first page."}
+{"case_id":"3409315","cite":"80 U.S. 36","verdict":"regex_right","note":"Text prints 13 Wallace, 36 in a note. CAP has no entry."}
+{"case_id":"3409315","cite":"76 U.S. 67","verdict":"regex_right","note":"Text prints 9 Wallace, 67 in a note. CAP has no entry."}
+{"case_id":"3408915","cite":"2 U.S. 92","verdict":"regex_right","note":"Text prints 2 Dallas, 92 in a note. CAP has no entry."}
+{"case_id":"3408915","cite":"35 U.S. 343","verdict":"regex_right","note":"Text prints 10 Peters, 343 in a note. CAP has no entry."}
+{"case_id":"3408915","cite":"81 U.S. 244","verdict":"regex_right","note":"Text prints 14 Wallace, 244 in a note. CAP has no entry."}
+{"case_id":"3408915","cite":"82 U.S. 562","verdict":"regex_right","note":"Text prints 15 Wallace, 562 in a note. CAP has no entry."}
+{"case_id":"5700026","cite":"101 U. S, 184","verdict":"regex_missed","note":"CAP is right. The regex does not accept a comma after U. S."}
+{"case_id":"11729594","cite":"330 U. S, 552","verdict":"regex_missed","note":"CAP is right. The regex does not accept a comma after U. S."}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For teachers · Open Book</title>
+<meta name="description" content="Five lesson ideas, a printable worksheet and an answer key for using the Open Book project in class. No programming needed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="teachers">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html" aria-current="page">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="label">For teachers</p>
+    <h1>Use Open Book in class</h1>
+    <p class="lead">Five lesson ideas for students from about 15 to 22. Four of them need no programming. You need a browser and, if you like, a printer.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><p class="label">Start in 2 minutes</p><h2 style="margin-top:0;font-size:1.2rem">Open the tests in classroom mode</h2><p>Students guess each result before they see it.</p><p><a class="btn" href="tests.html">The 11 tests</a></p></div>
+    <div class="card"><p class="label">Print</p><h2 style="margin-top:0;font-size:1.2rem">Student worksheet</h2><p>Two pages. It works with lessons 1, 2, 3 and 5.</p><p><a class="btn ghost" href="worksheet.html">Worksheet</a> <a class="btn ghost" href="answer-key.html">Answer key</a></p></div>
+    <div class="card"><p class="label">No internet in class?</p><h2 style="margin-top:0;font-size:1.2rem">Download the site</h2><p>The site bundle works from a folder, without a connection. Lesson 5 and the links into the repository still need one, so print that page beforehand.</p><p><a class="btn ghost" href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p></div>
+  </div>
+
+  <h2>Before you teach</h2>
+  <ul class="narrow">
+    <li><strong>This is not legal advice.</strong> The project studies AI models. It does not teach the law of any state.</li>
+    <li><strong>The questions about overruled decisions are AI-written.</strong> No person has checked them yet. Treat them as study material about AI, not as statements of the law.</li>
+    <li><strong>Overruling is a legal event.</strong> It does not say which side was morally right. The examples on this site were chosen to keep the lesson about method.</li>
+    <li><strong>AI models did most of the work, and no person has checked the results yet.</strong> This is itself a good topic for discussion. Lesson 5 uses it.</li>
+    <li><strong>You may copy and adapt everything here.</strong> The site and its text are under the MIT License.</li>
+  </ul>
+
+  <h2>Lesson ideas</h2>
+
+  <article class="card lesson" id="lesson-1">
+    <p class="label">Lesson 1</p>
+    <h3>Predict, then check</h3>
+    <ul class="meta"><li>Any subject</li><li>About 20 minutes</li><li>No programming</li><li>Worksheet part A</li></ul>
+    <p><strong>Goal.</strong> Students learn that a careful study states its expectations before it sees the results, and that results can surprise.</p>
+    <ol class="steps">
+      <li>Explain the question in one sentence: does a small AI model answer old bar exam questions better when it can read from a law library?</li>
+      <li>Open <a href="tests.html">The 11 tests</a> and turn on classroom mode. Choose the group “Reading (H1 to H3)”, and later “Old law (H7 to H10)”. The search engine tests (H4 to H6) are hard to guess without a technical background. Read each claim aloud. Students vote, and you click the guess of the majority.</li>
+      <li>Press “Reveal the verdicts”. The page counts how many guesses were right.</li>
+      <li>Discuss the surprises. Why could the library fail to help (H1), while the right passage helps a lot (H3)?</li>
+    </ol>
+    <p><strong>Questions to ask.</strong> What does “not supported” mean? Is it the same as “false”? Why did the project fix its tests before the main runs?</p>
+  </article>
+
+  <article class="card lesson" id="lesson-2" style="margin-top:16px">
+    <p class="label">Lesson 2</p>
+    <h3>When the law changes</h3>
+    <ul class="meta"><li>Civics or government</li><li>About 30 minutes</li><li>No programming</li><li>Worksheet part C</li></ul>
+    <p><strong>Goal.</strong> Students learn what a precedent is, what it means to overrule one, and why a tool that only searches text cannot tell old law from new.</p>
+    <ol class="steps">
+      <li>Explain <a href="words.html#precedent">precedent</a> and <a href="words.html#overruled">overruling</a>. One example that students know from online shopping is <em>South Dakota v. Wayfair</em> (2018), about sales tax on sales from other states.</li>
+      <li>Open <a href="old-law.html">The old-law trap</a>. Compare the bars “Nothing to read” and “Only the old decision”.</li>
+      <li>Open <a href="questions.html">Try a question</a>. Read one question together and let students choose. Then show the answers.</li>
+      <li>Discuss: a search tool matches words and meanings. What could go wrong if a person, or an AI model, relied on an old decision?</li>
+    </ol>
+    <p><strong>Questions to ask.</strong> How does a lawyer check that a case is still good law? Why did taking the overruled decisions out of the search not clearly help (H8)?</p>
+    <p class="muted">The government's table of overruled decisions is part of the Constitution Annotated, which is free online.</p>
+  </article>
+
+  <article class="card lesson" id="lesson-3" style="margin-top:16px">
+    <p class="label">Lesson 3</p>
+    <h3>Fair tests and honest statistics</h3>
+    <ul class="meta"><li>Statistics</li><li>About 45 minutes</li><li>No programming</li><li>Worksheet parts B and D</li></ul>
+    <p><strong>Goal.</strong> Students read an uncertainty range, and they see why a study needs rules that are fixed in advance.</p>
+    <ol class="steps">
+      <li>On <a href="tests.html">The 11 tests</a>, look at H1 and H3. For each, find the measured difference, the range and the size that the plan required.</li>
+      <li>Ask why the project compared the same questions under two conditions, and not two different groups of questions.</li>
+      <li>Ask what it means when the range includes zero.</li>
+      <li>Explain the correction for 11 tests: when you run 11 tests, one may look good by luck. The correction makes each test harder to pass, to allow for this.</li>
+    </ol>
+    <p><strong>Questions to ask.</strong> H8 moved in the hoped-for direction. Why is it still “not supported”? What would you need to find out more?</p>
+  </article>
+
+  <article class="card lesson" id="lesson-4" style="margin-top:16px">
+    <p class="label">Lesson 4</p>
+    <h3>How a search engine works</h3>
+    <ul class="meta"><li>Computer science</li><li>45 to 90 minutes</li><li>For students with some programming</li></ul>
+    <p><strong>Goal.</strong> Students read a complete search engine and check its arithmetic by hand.</p>
+    <ol class="steps">
+      <li>Open <a href="https://github.com/Akari-H-111/open-book-law/blob/main/open_book_law/retrieval/bm25.py"><code>bm25.py</code></a> in the repository. It is a search engine in about 130 lines of plain Python. The formula is at the top of the file.</li>
+      <li>Give students three short documents and one query. They compute the score of each document by hand.</li>
+      <li>Students run the code on the same documents and compare.</li>
+      <li>Discuss what word matching cannot see: meaning, and time.</li>
+    </ol>
+  </article>
+
+  <article class="card lesson" id="lesson-5" style="margin-top:16px">
+    <p class="label">Lesson 5</p>
+    <h3>Who checked what?</h3>
+    <ul class="meta"><li>AI literacy or research ethics</li><li>About 30 minutes</li><li>No programming</li><li>Worksheet part D</li></ul>
+    <p><strong>Goal.</strong> Students learn to ask which parts of a piece of work a person checked.</p>
+    <ol class="steps">
+      <li>Read <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> together. It lists each step, what AI models did and what the author did.</li>
+      <li>Students mark each step: done by AI, done by a person, or checked by a person.</li>
+      <li>Discuss: the record says that no person has checked the results yet. What can a reader still trust, and why? What should a reader check?</li>
+    </ol>
+    <p><strong>Questions to ask.</strong> Why does the project call labels made by AI “<a href="words.html#silver">silver</a>”? Why does it let anyone rebuild every number?</p>
+  </article>
+
+  <h2>More help</h2>
+  <ul class="narrow">
+    <li><a href="words.html">Words</a> explains every term on this site in plain language.</li>
+    <li>The same lesson ideas are in the repository as <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/TEACHING.md"><code>docs/TEACHING.md</code></a>, if you prefer to read or edit them as text.</li>
+    <li>Found a mistake, or have a question from class? Open an issue in the <a href="https://github.com/Akari-H-111/open-book-law/issues">repository on GitHub</a>.</li>
+  </ul>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+</body>
+</html>

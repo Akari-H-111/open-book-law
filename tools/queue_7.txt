@@ -1,0 +1,7 @@
+# The e5-base search of the scotus corpus, then the searched good-law conditions (H8, H9, and the H10 baseline).
+# Smoke runs of retrieved, citator and note passed with bm25 and --limit 3.
+open_book_law.experiments.us_retrieval --dataset scotus --retriever e5-base
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition retrieved --retriever e5-base --k 1
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition citator --retriever e5-base --k 1
+open_book_law.experiments.us_goodlaw --dataset scotus --reader llama8 --condition note --retriever e5-base --k 1
+open_book_law.experiments.us_goodlaw --dataset scotus --reader qwen3 --condition retrieved --retriever e5-base --k 1

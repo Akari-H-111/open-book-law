@@ -1,0 +1,272 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 10,
+  "prompt_version": "v3",
+  "rank_run": null,
+  "reader": "qwen3",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 176.44029211997986,
+ "git": {
+  "commit": "470df42c21046cc2698f253dc08310b0f9a2145f",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/citations.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_caselaw.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/191ce5e24e39fc89.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/2850394db2e26c6e.json",
+   "results/runs/us_smoke/548353700231a8ea.json",
+   "results/runs/us_smoke/5affe215a77eb85c.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9492d1aab16165c2.json",
+   "results/runs/us_smoke/9530352736e33ffd.json",
+   "results/runs/us_smoke/dcdda91f87498e8b.json",
+   "results/runs/us_smoke/dcdda91f87498e8b.rank.tsv.gz"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 60.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 502,
+   "mean_label_mass": 0.9999977424264064,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    425
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    422
+   ]
+  },
+  "validation": {
+   "accuracy": 60.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 502,
+   "mean_label_mass": 0.9999977424264064,
+   "questions": 10
+  }
+ },
+ "model": {
+  "id": "mlx-community/Qwen3-8B-4bit",
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999993648088995,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.003578390842635812,
+    "B": 0.00017815758965989155,
+    "C": 0.9921886035046595,
+    "D": 0.004054848063044665
+   },
+   "prompt_tokens": 293,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9999996332825708,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0002596274926931509,
+    "B": 7.438452211557183e-05,
+    "C": 0.993756893451475,
+    "D": 0.005909094533716298
+   },
+   "prompt_tokens": 499,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999948589814499,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.01550104213309859,
+    "B": 0.18884135217108372,
+    "C": 0.21398528597520633,
+    "D": 0.5816723197206114
+   },
+   "prompt_tokens": 252,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9999981177502306,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.07582745726395414,
+    "B": 5.385071819041939e-05,
+    "C": 0.0003511507924303424,
+    "D": 0.9237675412254251
+   },
+   "prompt_tokens": 258,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9999994369575811,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.1480341202569573,
+    "B": 3.867518069531639e-05,
+    "C": 0.8518775446473198,
+    "D": 4.965991502760708e-05
+   },
+   "prompt_tokens": 244,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999989110997326,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0021678813431798742,
+    "B": 0.005892912478102134,
+    "C": 0.0009037073951413201,
+    "D": 0.9910354987835767
+   },
+   "prompt_tokens": 306,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999997681751164,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0011646991955280568,
+    "B": 0.0027939681296542595,
+    "C": 0.0013197770917007946,
+    "D": 0.9947215555831169
+   },
+   "prompt_tokens": 502,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9999879125065669,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.46054896518792415,
+    "B": 0.16942649746276836,
+    "C": 0.27933706789908863,
+    "D": 0.0906874694502188
+   },
+   "prompt_tokens": 325,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999994395398704,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.002722823604276957,
+    "B": 0.0050869041952863086,
+    "C": 0.9693923491408959,
+    "D": 0.022797923059540936
+   },
+   "prompt_tokens": 381,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9999999811620444,
+   "predicted": "C",
+   "probabilities": {
+    "A": 3.535607621439853e-05,
+    "B": 3.726503016790701e-06,
+    "C": 0.9999597076023693,
+    "D": 1.2098183995046334e-06
+   },
+   "prompt_tokens": 210,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "22755798907fb3e5",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.3007965087890625,
+  "questions_per_second": 0.06065932704887608,
+  "read_seconds": 164.8551094532013,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:58:11+00:00"
+}

@@ -1,0 +1,113 @@
+{
+ "BAAI/bge-small-zh-v1.5": {
+  "revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "patterns": [
+   "*.safetensors",
+   "*.json",
+   "*.txt",
+   "1_Pooling/*"
+  ]
+ },
+ "intfloat/multilingual-e5-small": {
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "patterns": [
+   "model.safetensors",
+   "*.json",
+   "*.txt",
+   "sentencepiece.bpe.model",
+   "1_Pooling/*"
+  ]
+ },
+ "hfl/chinese-roberta-wwm-ext": {
+  "revision": "5c58d0b8ec1d9014354d691c538661bf00bfdb44",
+  "patterns": [
+   "pytorch_model.bin",
+   "*.json",
+   "*.txt"
+  ]
+ },
+ "BAAI/bge-reranker-v2-m3": {
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "patterns": [
+   "model.safetensors",
+   "*.json",
+   "sentencepiece.bpe.model"
+  ]
+ },
+ "BAAI/bge-m3": {
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "patterns": [
+   "pytorch_model.bin",
+   "*.json",
+   "*.txt",
+   "sentencepiece.bpe.model",
+   "1_Pooling/*"
+  ]
+ },
+ "mlx-community/Qwen2.5-7B-Instruct-4bit": {
+  "revision": "c26a38f6a37d0a51b4e9a1eb3026530fa35d9fed",
+  "patterns": [
+   "*.safetensors",
+   "*.json",
+   "*.txt",
+   "*.jinja"
+  ]
+ },
+ "intfloat/e5-small-v2": {
+  "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+  "patterns": [
+   "model.safetensors",
+   "*.json",
+   "*.txt",
+   "1_Pooling/*"
+  ]
+ },
+ "intfloat/e5-base-v2": {
+  "revision": "f52bf8ec8c7124536f0efb74aca902b2995e5bcd",
+  "patterns": [
+   "model.safetensors",
+   "*.json",
+   "*.txt",
+   "1_Pooling/*"
+  ]
+ },
+ "intfloat/e5-large-v2": {
+  "revision": "f169b11e22de13617baa190a028a32f3493550b6",
+  "patterns": [
+   "model.safetensors",
+   "*.json",
+   "*.txt",
+   "1_Pooling/*"
+  ]
+ },
+ "mlx-community/Meta-Llama-3-8B-Instruct-4bit": {
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651",
+  "patterns": [
+   "*.safetensors",
+   "*.json",
+   "*.txt",
+   "*.jinja",
+   "LICENSE*",
+   "USE_POLICY*"
+  ]
+ },
+ "mlx-community/Qwen3-8B-4bit": {
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+  "patterns": [
+   "*.safetensors",
+   "*.json",
+   "*.txt",
+   "*.jinja"
+  ]
+ },
+ "mlx-community/Phi-4-mini-instruct-4bit": {
+  "revision": "ac1c269cb4222a4e136a3d09edad301056c1f36a",
+  "patterns": [
+   "*.safetensors",
+   "*.json",
+   "*.txt",
+   "*.jinja",
+   "*.py"
+  ]
+ }
+}

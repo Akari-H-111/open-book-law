@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 11 tests · Open Book</title>
+<meta name="description" content="The 11 tests that the Open Book project fixed before its main runs, with a classroom mode in which students guess each result first.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="tests">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html" aria-current="page">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="label">Results</p>
+    <h1>The 11 tests</h1>
+    <p class="lead">Before the main runs, the project wrote down 11 claims and how big an effect each one needed. Here is each claim, what was measured, and the verdict.</p>
+  </div>
+  <noscript><p class="note">This page fills in its numbers and charts with JavaScript, which is turned off in this browser. You can read the main results in the <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">results table</a> instead.</p></noscript>
+  <div class="info narrow">
+    <p><strong>When does a claim count as supported?</strong> Three things must hold. The effect is at least as big as the plan required. The <a href="words.html#interval">uncertainty range</a> stays on one side of zero. And the claim passes a <a href="words.html#holm">correction for running 11 tests</a>.</p>
+    <p>Ten of the tests measure a difference. For these, the plan needed the measured difference (the dot) to reach the dashed line, and the range only has to stay away from zero. Test H9 measures a share. There, the low end of the range must be above the 30% line.</p>
+    <p style="margin:0">“Not supported” does not mean “proven false”. It means that this experiment did not show the effect clearly enough.</p>
+  </div>
+
+  <div class="toolbar">
+    <button type="button" class="btn ghost" id="classroom-toggle" aria-pressed="false">Classroom mode: off</button>
+    <button type="button" class="btn" id="reveal" hidden>Reveal the verdicts</button>
+    <span id="classroom-status" class="muted" role="status"></span>
+  </div>
+  <p class="note" id="classroom-help" hidden>Classroom mode hides the verdicts and the charts. Ask students to guess for each claim whether it held. Then press “Reveal the verdicts”.</p>
+
+  <div class="toolbar" id="group-chips" role="group" aria-label="Show a group of tests"></div>
+
+  <ul class="legend" aria-label="How to read each chart">
+    <li><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" style="fill:var(--accent)"/></svg>the measured difference</li>
+    <li><svg width="30" height="16" aria-hidden="true"><line x1="2" y1="8" x2="28" y2="8" stroke-width="6" stroke-linecap="round" style="stroke:var(--accent);opacity:.4"/></svg>the uncertainty range (95%)</li>
+    <li><svg width="16" height="16" aria-hidden="true"><line x1="8" y1="0" x2="8" y2="16" stroke-dasharray="4 3" stroke-width="2" style="stroke:var(--good)"/></svg>the size that the plan required</li>
+  </ul>
+  <div id="tests-list"></div>
+
+  <p class="muted narrow">Llama 3 and Qwen3 are the two small AI models that answered the questions. <a href="words.html#mbe">MBE</a>, <a href="words.html#bm25">BM25</a> and <a href="words.html#e5">E5</a> are explained in <a href="words.html">Words</a>.</p>
+  <p class="muted narrow">Tests H4 to H6 are about search engines. Readers who care mainly about law can skip them. The full table, with the statistics, is in the <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">results table</a>.</p>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+{
+ "config": {
+  "b": 0.4,
+  "dataset": "scotus",
+  "k1": 0.9,
+  "ks": [
+   1,
+   10,
+   100,
+   1000
+  ],
+  "library": "scotus",
+  "limit": 5,
+  "rerun": 0,
+  "retriever": "bm25",
+  "rollout": null,
+  "sample": null,
+  "split": "all",
+  "states": null,
+  "tie_break": "fixed random order, seed 20261103",
+  "tokenizer": "plain"
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/authority.sqlite": "8dc7c9411574e35ccc85e0d4a0afe9dc685e11bf534846837171d1c79709ea9d",
+  "$OBL_DATA/derived/goodlaw/questions.jsonl": "f0e4af0fffd7ccc2cee2f1a23634877248b32e017369089fd17f464ddfd30f06",
+  "$OBL_DATA/derived/scotus_passages.jsonl.gz": "94c4dae10a65f6571ac7d6f9f894492a35e863f8380c7ae38d3da95bcc5806a5"
+ },
+ "elapsed_seconds": 136.5126941204071,
+ "git": {
+  "commit": "8ef187f98748d5497ca0c47a509ffbe97072d50b",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/prep/us_label_audit.py",
+   "results/data_audit/goodlaw_audit.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "left_out": [],
+   "old_outranks_new": 0.0,
+   "questions": 5,
+   "type_share_top10": {
+    "concurrence": 2.0,
+    "concurring-in-part-and-dissenting-in-part": 2.0,
+    "dissent": 22.0,
+    "majority": 74.0
+   }
+  }
+ },
+ "model": {
+  "id": "bm25-hand-written",
+  "revision": null
+ },
+ "per_query": [
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "4-1",
+   "rank_new": 2,
+   "rank_old": 4,
+   "types_top10": {
+    "dissent": 5,
+    "majority": 5
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "150-1",
+   "rank_new": 8,
+   "rank_old": 9,
+   "types_top10": {
+    "dissent": 2,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "2-1",
+   "rank_new": 1,
+   "rank_old": 10,
+   "types_top10": {
+    "concurrence": 1,
+    "concurring-in-part-and-dissenting-in-part": 1,
+    "majority": 8
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "166-1",
+   "rank_new": 5,
+   "rank_old": 7,
+   "types_top10": {
+    "dissent": 4,
+    "majority": 6
+   }
+  },
+  {
+   "group": "overruled",
+   "old_outranks_new": 0.0,
+   "qid": "82-1",
+   "rank_new": 4,
+   "rank_old": 6,
+   "types_top10": {
+    "majority": 10
+   }
+  }
+ ],
+ "run_id": "2d36da496704cf75",
+ "suite": "us_smoke",
+ "throughput": {},
+ "utc_time": "2026-11-03T19:08:27+00:00"
+}

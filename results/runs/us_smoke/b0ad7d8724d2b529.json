@@ -1,0 +1,105 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "housing",
+  "k": null,
+  "library": null,
+  "limit": 3,
+  "prompt_version": "v3",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/housing_qa/questions.json.zip": "7e7722c267d44ecc1f9f52d69109116d8a0a352b89f002438585872f67de9985",
+  "$OBL_DATA/housing_qa/statutes.tsv.zip": "7d4382875edc40b54de5889a21d7ddebe6fae5629fd54bfa53b3d82c20eb04ae"
+ },
+ "elapsed_seconds": 10.115835189819336,
+ "git": {
+  "commit": "272306dc02faee25f5b4ff0e6a2be89b198a90e1",
+  "dirty": false,
+  "dirty_paths": []
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 33.333333333333336,
+   "contexts_cut": 0,
+   "mean_label_mass": 0.9193552562780308,
+   "questions": 3
+  },
+  "label_token_ids": {
+   "No": [
+    2360,
+    2822
+   ],
+   "Yes": [
+    7566,
+    9642
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "No",
+   "group": "new hampshire",
+   "label_mass": 0.936351606597516,
+   "predicted": "Yes",
+   "probabilities": {
+    "No": 0.2365065453691376,
+    "Yes": 0.7634934546308624
+   },
+   "prompt_tokens": 52,
+   "qid": "7370",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "Yes",
+   "group": "tennessee",
+   "label_mass": 0.9100434403189308,
+   "predicted": "Yes",
+   "probabilities": {
+    "No": 0.0034832504182858836,
+    "Yes": 0.9965167495817141
+   },
+   "prompt_tokens": 45,
+   "qid": "2498",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "No",
+   "group": "west virginia",
+   "label_mass": 0.9116707219176459,
+   "predicted": "Yes",
+   "probabilities": {
+    "No": 0.00183852467788985,
+    "Yes": 0.9981614753221102
+   },
+   "prompt_tokens": 51,
+   "qid": "9196",
+   "truncated": false
+  }
+ ],
+ "run_id": "b0ad7d8724d2b529",
+ "suite": "us_smoke",
+ "throughput": {
+  "questions_per_second": 1.9036970378793425,
+  "read_seconds": 1.575881004333496,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-05T07:11:29+00:00"
+}

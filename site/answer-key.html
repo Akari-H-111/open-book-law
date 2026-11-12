@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Answer key · Open Book</title>
+<meta name="description" content="The answer key for the Open Book student worksheet. Its numbers come from the project's data.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="answers">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html" aria-current="page">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <p class="no-print" style="margin-top:24px"><a href="teachers.html">← Back to For teachers</a> · <button type="button" class="chip" onclick="window.print()">Print this page</button></p>
+
+  <noscript><p class="note">This page fills in its numbers with JavaScript, which is turned off in this browser. Please turn it on, or open the page in another browser, before you print.</p></noscript>
+  <div class="sheet">
+    <p class="label">Open Book · answer key for teachers</p>
+    <h1 style="font-size:1.7rem">Answer key</h1>
+    <p>The numbers on this page come from the project's data file, so they always match the site. Differences are in percentage points.</p>
+
+    <h2>Part A. Predict</h2>
+    <ol>
+      <li>Test H1: <strong><span data-bind="H1.verdict">…</span></strong>. The difference was <span data-bind="H1.diff">…</span>.</li>
+      <li>Test H3: <strong><span data-bind="H3.verdict">…</span></strong>. The difference was <span data-bind="H3.diff">…</span>.</li>
+      <li>Test H5: <strong><span data-bind="H5.verdict">…</span></strong>. The difference was <span data-bind="H5.diff">…</span>.</li>
+      <li>Test H7: <strong><span data-bind="H7.verdict">…</span></strong>. The share of outdated answers rose by <span data-bind="H7.diff">…</span>.</li>
+      <li>Test H8: <strong><span data-bind="H8.verdict">…</span></strong>. The share of outdated answers fell by only <span data-bind="H8.abs">…</span>.</li>
+    </ol>
+
+    <h2>Part B. Read the charts</h2>
+    <ol start="6">
+      <li><span data-bind="tests.supported">…</span> of <span data-bind="tests.count">…</span>.</li>
+      <li>The difference is <span data-bind="H1.diff">…</span>. The range goes from <span data-bind="H1.low">…</span> to <span data-bind="H1.high">…</span>.</li>
+      <li>Yes. The true difference could be a little below zero, zero, or a little above zero. So the study cannot say that the library helped. The plan also required at least +<span data-bind="H1.need">…</span>.</li>
+      <li>For H3, the difference is <span data-bind="H3.diff">…</span>, and the range goes from <span data-bind="H3.low">…</span> to <span data-bind="H3.high">…</span>. The measured difference is above the +<span data-bind="H3.need">…</span> that the plan required, and the whole range is above zero. For H1, the range includes zero.</li>
+    </ol>
+
+    <h2>Part C. Old law</h2>
+    <ol start="10">
+      <li>With nothing to read: <span data-bind="gl.closed.old">…</span>. With only the old decision: <span data-bind="gl.old-only.old">…</span>.</li>
+      <li>These search methods rank texts by how similar they are to the question. An old decision and a new decision about the same issue use similar words. The search does not check whether a later decision overruled a case.</li>
+      <li>Good answers: check whether a later decision overruled the case; look at the date; use a tool that lists overruled cases (a citator); ask a lawyer.</li>
+    </ol>
+
+    <h2>Part D. Think</h2>
+    <ol start="13">
+      <li>No. “Not supported” means that this experiment did not show the effect clearly enough. A larger model, a better library or more questions might give a different answer.</li>
+      <li>If researchers choose their tests after they see the results, they can pick the tests that happen to look good. Fixed rules prevent that.</li>
+      <li>Many answers are good. Examples: rerun the scripts that compute the results; read a sample of the AI-written questions; check whether the AI's reasons for wrong answers are right.</li>
+    </ol>
+  </div>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

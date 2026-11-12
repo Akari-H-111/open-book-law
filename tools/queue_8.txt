@@ -1,0 +1,5 @@
+# The research agent with qwen3 and e5-base (H10). Validation comes first, because Amendment 1 part D sets a gate there.
+# Smoke runs passed on mbe and scotus with --limit 3. Each question took about 90 seconds.
+open_book_law.experiments.us_agent --dataset mbe --split validation --reader qwen3 --library doctrine --retriever e5-base
+open_book_law.experiments.us_agent --dataset scotus --reader qwen3 --library scotus --retriever e5-base
+open_book_law.experiments.us_agent --dataset mbe --split test --reader qwen3 --library doctrine --retriever e5-base

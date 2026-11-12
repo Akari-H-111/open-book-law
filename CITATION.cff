@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "Open Book: what does a small model need from a law library to answer US bar exam questions?"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Jian-Yu
+    alias: "A. Hayami"
+version: "1.0.0"
+date-released: "2026-11-12"
+license: MIT
+repository-code: "https://github.com/Akari-H-111/open-book-law"
+url: "https://akari-h-111.github.io/open-book-law/"
+abstract: "A preregistered study of whether small open AI models answer old US bar exam questions better with a law library, and how they fail on overruled precedent. AI models did most of the work, and no person has checked the results yet."

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student worksheet · Open Book</title>
+<meta name="description" content="A printable student worksheet for the Open Book lessons.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="worksheet">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html" aria-current="page">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <p class="no-print" style="margin-top:24px"><a href="teachers.html">← Back to For teachers</a> · <button type="button" class="chip" onclick="window.print()">Print this page</button></p>
+
+  <div class="sheet">
+    <p class="label">Open Book · student worksheet</p>
+    <h1 style="font-size:1.7rem">Does a law library help a small AI model?</h1>
+    <p>Name: <span class="fill" style="min-width:14em">&nbsp;</span> &nbsp; Date: <span class="fill" style="min-width:8em">&nbsp;</span></p>
+    <p>A research project gave small AI models old multiple-choice questions from the US bar exam, the exam that people take to become lawyers. Sometimes the model could also read a passage from a law library. Before the main runs, the project's plan fixed what counted as success. This is not legal advice, and the scores are not bar exam scores.</p>
+
+    <h2>Part A. Predict</h2>
+    <p>Do this before you look at any result. For each claim, circle what you expect.</p>
+    <ol>
+      <li>A model scores higher with a law library than with nothing to read. <span class="circle"><span>It held</span><span>It did not</span></span></li>
+      <li>A model scores higher with the exact passage that a law student marked than with the library. <span class="circle"><span>It held</span><span>It did not</span></span></li>
+      <li>Searching only the right state's laws works better than searching every state's laws. <span class="circle"><span>It held</span><span>It did not</span></span></li>
+      <li>If a model reads only a court decision that was later overruled, it picks the outdated rule more often. <span class="circle"><span>It held</span><span>It did not</span></span></li>
+      <li>Taking overruled decisions out of the search results fixes that problem. <span class="circle"><span>It held</span><span>It did not</span></span></li>
+    </ol>
+
+    <h2>Part B. Read the charts</h2>
+    <p>Open the page “The 11 tests”.</p>
+    <ol start="6">
+      <li>How many of the 11 tests are “supported”? <span class="fill">&nbsp;</span></li>
+      <li>Find test H1. What is the measured difference? <span class="fill">&nbsp;</span> What is the range? From <span class="fill">&nbsp;</span> to <span class="fill">&nbsp;</span></li>
+      <li>Does the range of H1 include zero? <span class="circle"><span>Yes</span><span>No</span></span> What does that tell you?<span class="blank"></span><span class="blank"></span></li>
+      <li>Find test H3. Why is it “supported”, when H1 is not? Use the numbers.<span class="blank"></span><span class="blank"></span></li>
+    </ol>
+
+    <h2 class="page-break">Part C. Old law</h2>
+    <p>Open the page “The old-law trap”.</p>
+    <ol start="10">
+      <li>How often did the model choose the outdated rule with nothing to read? <span class="fill">&nbsp;</span> And when it read only the old decision? <span class="fill">&nbsp;</span></li>
+      <li>A search tool ranked the old decision above the new one in many questions. Why can a search tool not tell old law from new law?<span class="blank"></span><span class="blank"></span></li>
+      <li>How could a careful person avoid this trap?<span class="blank"></span><span class="blank"></span></li>
+    </ol>
+
+    <h2>Part D. Think</h2>
+    <ol start="13">
+      <li>Is “not supported” the same as “proven false”? Explain.<span class="blank"></span><span class="blank"></span></li>
+      <li>The project fixed its tests before the main runs. Why does that matter?<span class="blank"></span><span class="blank"></span></li>
+      <li>AI models did most of the work in this project, and no person has checked the results yet. Name one thing that you would check first, and say why.<span class="blank"></span><span class="blank"></span></li>
+    </ol>
+  </div>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+</body>
+</html>

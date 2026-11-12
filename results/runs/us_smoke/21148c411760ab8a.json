@@ -1,0 +1,192 @@
+{
+ "config": {
+  "condition": "retrieved",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": 3,
+  "library": "full",
+  "limit": 5,
+  "prompt_version": "v1",
+  "rank_run": "064ab92f0a8e8c80",
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 278.8654897212982,
+ "git": {
+  "commit": "64f938fa639b1aef8b0d2b44afb6537eeba529f1",
+  "dirty": true,
+  "dirty_paths": [
+   "Makefile",
+   "data/overruled_pairs.jsonl",
+   "open_book_law/us/goodlaw_questions.py",
+   "results/data_audit/goodlaw_audit.json",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 20.0,
+   "contexts_cut": 1,
+   "empty_contexts": 0,
+   "max_prompt_tokens": 2545,
+   "mean_label_mass": 0.09217743042078672,
+   "questions": 5
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  },
+  "validation": {
+   "accuracy": 20.0,
+   "contexts_cut": 1,
+   "empty_contexts": 0,
+   "max_prompt_tokens": 2545,
+   "mean_label_mass": 0.09217743042078672,
+   "questions": 5
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [
+    "wex_1861",
+    "caselaw_12530495_55",
+    "caselaw_12659975_60"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.0576345145043681,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.3777699618821758,
+    "B": 0.516350317879897,
+    "C": 0.06668035920791988,
+    "D": 0.03919936103000724
+   },
+   "prompt_tokens": 2545,
+   "qid": "mbe_234",
+   "truncated": true
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "caselaw_12654195_36",
+    "caselaw_12573429_20",
+    "caselaw_12564356_35"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.16309141363520543,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.032268572480613295,
+    "B": 0.13374951619028855,
+    "C": 0.8322174529629591,
+    "D": 0.0017644583661390117
+   },
+   "prompt_tokens": 1180,
+   "qid": "mbe_380",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12520188_23",
+    "caselaw_12520246_22",
+    "caselaw_12654577_38"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.0839373991119991,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.14716118792148722,
+    "B": 0.7243527536835747,
+    "C": 0.12587363445592611,
+    "D": 0.002612423939012002
+   },
+   "prompt_tokens": 1068,
+   "qid": "mbe_812",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12576733_36",
+    "caselaw_12653571_32",
+    "caselaw_12529532_4"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.07985510444770635,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.05919563447210987,
+    "B": 0.8171705276037845,
+    "C": 0.12337429669312595,
+    "D": 0.00025954123097969464
+   },
+   "prompt_tokens": 1388,
+   "qid": "mbe_1015",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "caselaw_12546194_32",
+    "caselaw_12653794_4",
+    "caselaw_12531251_70"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.07636872040465463,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.06518991881465436,
+    "B": 0.8193856381421227,
+    "C": 0.06621651066380999,
+    "D": 0.04920793237941293
+   },
+   "prompt_tokens": 1211,
+   "qid": "mbe_1039",
+   "truncated": false
+  }
+ ],
+ "run_id": "21148c411760ab8a",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 2.753814697265625,
+  "questions_per_second": 0.020542360809818732,
+  "read_seconds": 243.39948296546936,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:34:40+00:00"
+}

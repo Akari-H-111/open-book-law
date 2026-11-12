@@ -1,0 +1,896 @@
+{
+ "coverage": {
+  "decisions_lacking_text": [
+   {
+    "cite": null,
+    "name": "Leeds & Catlin Co. v. Victor Talking Machine Co.",
+    "pair_id": "169-1",
+    "reason": "name_year_ambiguous",
+    "side": "old",
+    "year": 1909
+   },
+   {
+    "cite": "46 U.S. (5 How.) 504",
+    "name": "Peirce v. New Hampshire",
+    "pair_id": "215-1",
+    "reason": "case has no opinion text",
+    "side": "old",
+    "year": 1847
+   }
+  ],
+  "fetched": [
+   "cornell:13-7120",
+   "cornell:14-556",
+   "cornell:14-7505",
+   "cornell:16-1466",
+   "cornell:17-1299",
+   "cornell:17-494",
+   "cornell:17-532",
+   "cornell:17-647",
+   "cornell:17-965",
+   "cornell:18-422",
+   "cornell:18-5924",
+   "cornell:19-1392",
+   "cornell:19-5807",
+   "cornell:22-451",
+   "cornell:24-621",
+   "cornell:25-332"
+  ],
+  "found_by": {
+   "cite": 460,
+   "cite_not_in_cap+name_year": 1,
+   "cite_not_in_cap+name_year+full_opinion": 1,
+   "cite_other_name": 6,
+   "docket": 18,
+   "name_near_year": 3,
+   "name_near_year+cited_by_new": 2,
+   "name_year": 58,
+   "name_year+cited_by_new": 32,
+   "name_year+cited_by_new+full_opinion+exact": 2,
+   "name_year+full_opinion": 2,
+   "name_year_ambiguous": 1
+  },
+  "matched_by_citation_with_another_name": [
+   {
+    "cap": "Commonwealth ex rel. Magoffin v. Dennison",
+    "pair_id": "62-1",
+    "side": "old",
+    "table": "Kentucky v. Dennison"
+   },
+   {
+    "cap": "Cicenia v. Lagay",
+    "pair_id": "134-2",
+    "side": "old",
+    "table": "Cicenia v. La Gay"
+   },
+   {
+    "cap": "Brown v. Allen",
+    "pair_id": "145-2",
+    "side": "old",
+    "table": "Daniels v. Allen"
+   },
+   {
+    "cap": "Simpson v. Shepard",
+    "pair_id": "212-1",
+    "side": "new",
+    "table": "Minnesota Rate Cases"
+   },
+   {
+    "cap": "Thurlow v. Massachusetts",
+    "pair_id": "215-1",
+    "side": "old",
+    "table": "Peirce v. New Hampshire"
+   },
+   {
+    "cap": "Reading Railroad v. Pennsylvania",
+    "pair_id": "218-1",
+    "side": "old",
+    "table": "State Tax on Railway Gross Receipts"
+   }
+  ],
+  "not_fetched": [],
+  "pairs": 293,
+  "pairs_lacking_a_text": 2,
+  "pairs_with_both_texts": 291,
+  "pairs_with_both_texts_but_one_under_300_words": 13,
+  "table_cite_differs_from_case": [
+   {
+    "case": "406 U.S. 356",
+    "pair_id": "6-2",
+    "side": "old",
+    "table": "406 U.S. 366"
+   },
+   {
+    "case": "509 U.S. 690",
+    "pair_id": "46-1",
+    "side": "new",
+    "table": "509 U.S. 688"
+   }
+  ],
+  "table_year_differs_from_case_date": [
+   {
+    "case_date": "1854-12",
+    "name": "Minturn v. Maynard",
+    "pair_id": "52-1",
+    "side": "old",
+    "table_year": 1855
+   },
+   {
+    "case_date": "1882-10",
+    "name": "Kring v. Missouri",
+    "pair_id": "54-2",
+    "side": "old",
+    "table_year": 1883
+   },
+   {
+    "case_date": "1860-12",
+    "name": "Kentucky v. Dennison",
+    "pair_id": "62-1",
+    "side": "old",
+    "table_year": 1861
+   },
+   {
+    "case_date": "1871-12",
+    "name": "Low v. Austin",
+    "pair_id": "96-1",
+    "side": "old",
+    "table_year": 1872
+   },
+   {
+    "case_date": "1972-10-10",
+    "name": "Sterrett v. Mothers’ & Children’s Rights Organization",
+    "pair_id": "101-1",
+    "side": "old",
+    "table_year": 1973
+   },
+   {
+    "case_date": "1968-06-17",
+    "name": "Jones v. Alfred H. Mayer Co.",
+    "pair_id": "118-1",
+    "side": "new",
+    "table_year": 1969
+   },
+   {
+    "case_date": "1882-10",
+    "name": "Pace v. Alabama",
+    "pair_id": "142-1",
+    "side": "old",
+    "table_year": 1883
+   },
+   {
+    "case_date": "1875-10",
+    "name": "United States v. Reese",
+    "pair_id": "153-1",
+    "side": "old",
+    "table_year": 1876
+   },
+   {
+    "case_date": "1868-12",
+    "name": "Paul v. Virginia",
+    "pair_id": "171-1",
+    "side": "old",
+    "table_year": 1869
+   },
+   {
+    "case_date": "1870-12",
+    "name": "Collector v. Day",
+    "pair_id": "191-2",
+    "side": "old",
+    "table_year": 1871
+   },
+   {
+    "case_date": "1876-10",
+    "name": "Doyle v. Cont’l Ins. Co.",
+    "pair_id": "205-2",
+    "side": "old",
+    "table_year": 1877
+   },
+   {
+    "case_date": "1876-10",
+    "name": "Peik v. Chicago & Northwestern Railway",
+    "pair_id": "212-1",
+    "side": "old",
+    "table_year": 1877
+   },
+   {
+    "case_date": "1866-12",
+    "name": "Mitchell v. Burlington",
+    "pair_id": "214-1",
+    "side": "old",
+    "table_year": 1867
+   },
+   {
+    "case_date": "1865-12",
+    "name": "Rogers v. Burlington",
+    "pair_id": "214-2",
+    "side": "old",
+    "table_year": 1866
+   },
+   {
+    "case_date": "1872-12",
+    "name": "Osborne v. Mobile",
+    "pair_id": "216-1",
+    "side": "old",
+    "table_year": 1873
+   },
+   {
+    "case_date": "1872-12",
+    "name": "State Tax on Railway Gross Receipts",
+    "pair_id": "218-1",
+    "side": "old",
+    "table_year": 1873
+   },
+   {
+    "case_date": "1868-12",
+    "name": "Texas v. White",
+    "pair_id": "219-1",
+    "side": "old",
+    "table_year": 1869
+   },
+   {
+    "case_date": "1882-10",
+    "name": "Kountze v. Omaha Hotel Co.",
+    "pair_id": "220-1",
+    "side": "new",
+    "table_year": 1883
+   },
+   {
+    "case_date": "1882-10",
+    "name": "United States v. Phelps",
+    "pair_id": "221-1",
+    "side": "new",
+    "table_year": 1883
+   },
+   {
+    "case_date": "1866-12",
+    "name": "Shelton v. Collector",
+    "pair_id": "221-1",
+    "side": "old",
+    "table_year": 1867
+   },
+   {
+    "case_date": "1880-10",
+    "name": "Kilbourn v. Thompson",
+    "pair_id": "222-1",
+    "side": "new",
+    "table_year": 1881
+   },
+   {
+    "case_date": "1873-10",
+    "name": "Hornbuckle v. Toombs",
+    "pair_id": "226-1",
+    "side": "new",
+    "table_year": 1874
+   },
+   {
+    "case_date": "1873-10",
+    "name": "Hornbuckle v. Toombs",
+    "pair_id": "226-2",
+    "side": "new",
+    "table_year": 1874
+   },
+   {
+    "case_date": "1863-12",
+    "name": "Orchard v. Hughes",
+    "pair_id": "226-2",
+    "side": "old",
+    "table_year": 1864
+   },
+   {
+    "case_date": "1873-10",
+    "name": "Hornbuckle v. Toombs",
+    "pair_id": "226-3",
+    "side": "new",
+    "table_year": 1874
+   },
+   {
+    "case_date": "1862-12",
+    "name": "Noonan v. Lee",
+    "pair_id": "226-3",
+    "side": "old",
+    "table_year": 1863
+   },
+   {
+    "case_date": "1872-12",
+    "name": "Railway v. Prescott",
+    "pair_id": "227-1",
+    "side": "old",
+    "table_year": 1873
+   },
+   {
+    "case_date": "1870-12",
+    "name": "Knox v. Lee",
+    "pair_id": "228-1",
+    "side": "new",
+    "table_year": 1871
+   },
+   {
+    "case_date": "1869-12",
+    "name": "Hepburn v. Griswold",
+    "pair_id": "228-1",
+    "side": "old",
+    "table_year": 1870
+   },
+   {
+    "case_date": "1868-12",
+    "name": "The Belfast",
+    "pair_id": "230-1",
+    "side": "new",
+    "table_year": 1869
+   },
+   {
+    "case_date": "1867-12",
+    "name": "Mason v. Eldred",
+    "pair_id": "231-1",
+    "side": "new",
+    "table_year": 1868
+   },
+   {
+    "case_date": "1860-12",
+    "name": "Suydam v. Williamson",
+    "pair_id": "232-1",
+    "side": "new",
+    "table_year": 1861
+   },
+   {
+    "case_date": "1860-12",
+    "name": "Suydam v. Williamson",
+    "pair_id": "232-2",
+    "side": "new",
+    "table_year": 1861
+   },
+   {
+    "case_date": "1860-12",
+    "name": "Suydam v. Williamson",
+    "pair_id": "232-3",
+    "side": "new",
+    "table_year": 1861
+   }
+  ]
+ },
+ "extraction": {
+  "disagreements": 5,
+  "false_negative": 0,
+  "false_positive": 5,
+  "opinions_available": 332157,
+  "opinions_scored": 500,
+  "post_hoc_opinions_of_at_least_300_words": {
+   "disagreements": 48,
+   "false_negative": 10,
+   "false_positive": 38,
+   "opinions_available": 36636,
+   "opinions_scored": 500,
+   "precision": 0.9907587548638133,
+   "recall": 0.9975514201762977,
+   "seed": 20261103,
+   "true_positive": 4074,
+   "unreadable_reference": 9
+  },
+  "precision": 0.9855907780979827,
+  "recall": 1.0,
+  "review_by": "AI (Claude Opus 5.5) from the printed text, not human-verified",
+  "review_counts": {
+   "regex_missed": 3,
+   "regex_right": 17
+  },
+  "review_verdicts": [
+   {
+    "case_id": "531019",
+    "cite": "11 U.S. 339",
+    "note": "Text prints 7 Cr. 339. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "1429901",
+    "cite": "5 Wheat. Rep. 1",
+    "note": "CAP is right. The regex does not accept Rep. after the reporter.",
+    "verdict": "regex_missed"
+   },
+   {
+    "case_id": "3335410",
+    "cite": "37 U.S. 5",
+    "note": "Text prints 12 Peters, 5. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "37 U.S. 54",
+    "note": "Text prints 12 Peters, 54. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "41 U.S. 537",
+    "note": "Text prints 16 Peters, 537. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "35 U.S. 493",
+    "note": "Text prints 10 Peters, 493. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "32 U.S. 122",
+    "note": "Text prints 7 Peters, 122. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3318389",
+    "cite": "41 U.S. 342",
+    "note": "Text prints 16 Peters, 342. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3318389",
+    "cite": "41 U.S. 203",
+    "note": "Text prints 16 Peters, 203. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3354228",
+    "cite": "37 U.S. 454",
+    "note": "Text prints 12 Peters, 454. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "1134224",
+    "cite": "68 U.S. 486",
+    "note": "Text prints 1 Wallace, 486 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "62459",
+    "cite": "24 U.S. 75",
+    "note": "Text prints 11 Wheaton, 75. CAP has no entry. The page may be a pin page and not the first page.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3409315",
+    "cite": "80 U.S. 36",
+    "note": "Text prints 13 Wallace, 36 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3409315",
+    "cite": "76 U.S. 67",
+    "note": "Text prints 9 Wallace, 67 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "2 U.S. 92",
+    "note": "Text prints 2 Dallas, 92 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "35 U.S. 343",
+    "note": "Text prints 10 Peters, 343 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "81 U.S. 244",
+    "note": "Text prints 14 Wallace, 244 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "82 U.S. 562",
+    "note": "Text prints 15 Wallace, 562 in a note. CAP has no entry.",
+    "verdict": "regex_right"
+   },
+   {
+    "case_id": "5700026",
+    "cite": "101 U. S, 184",
+    "note": "CAP is right. The regex does not accept a comma after U. S.",
+    "verdict": "regex_missed"
+   },
+   {
+    "case_id": "11729594",
+    "cite": "330 U. S, 552",
+    "note": "CAP is right. The regex does not accept a comma after U. S.",
+    "verdict": "regex_missed"
+   }
+  ],
+  "reviewed": [
+   {
+    "case_id": "531019",
+    "cite": "11 U.S. 339",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1814"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "2 U.S. 92",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1874"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "35 U.S. 343",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1874"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "81 U.S. 244",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1874"
+   },
+   {
+    "case_id": "3408915",
+    "cite": "82 U.S. 562",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1874"
+   },
+   {
+    "case_id": "3335410",
+    "cite": "37 U.S. 5",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1840"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "37 U.S. 54",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1843"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "41 U.S. 537",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1843"
+   },
+   {
+    "case_id": "11729594",
+    "cite": "330 U. S, 552",
+    "opinion": 0,
+    "side": "cap",
+    "year": "1964"
+   },
+   {
+    "case_id": "3318389",
+    "cite": "41 U.S. 342",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1845"
+   },
+   {
+    "case_id": "3409315",
+    "cite": "80 U.S. 36",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1874"
+   },
+   {
+    "case_id": "5700026",
+    "cite": "101 U. S, 184",
+    "opinion": 0,
+    "side": "cap",
+    "year": "1889"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "35 U.S. 493",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1843"
+   },
+   {
+    "case_id": "1429901",
+    "cite": "5 Wheat. Rep. 1",
+    "opinion": 0,
+    "side": "cap",
+    "year": "1827"
+   },
+   {
+    "case_id": "62459",
+    "cite": "24 U.S. 75",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1872"
+   },
+   {
+    "case_id": "3354228",
+    "cite": "37 U.S. 454",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1850"
+   },
+   {
+    "case_id": "3409315",
+    "cite": "76 U.S. 67",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1874"
+   },
+   {
+    "case_id": "1134224",
+    "cite": "68 U.S. 486",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1871"
+   },
+   {
+    "case_id": "3325327",
+    "cite": "32 U.S. 122",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1843"
+   },
+   {
+    "case_id": "3318389",
+    "cite": "41 U.S. 203",
+    "opinion": 0,
+    "side": "regex",
+    "year": "1845"
+   }
+  ],
+  "seed": 20261103,
+  "true_positive": 342,
+  "unreadable_reference": 0
+ },
+ "generator": {
+  "checks_failed": 8,
+  "checks_failed_balance": 0,
+  "checks_failed_names": 4,
+  "checks_failed_support": 0,
+  "checks_run": 269,
+  "cli_errors_logged": 64,
+  "inputs_built": 291,
+  "inputs_empty": 0,
+  "label": "AI-written, not human-verified",
+  "pairs_in_table": 293,
+  "pairs_in_this_run": 291,
+  "pairs_with_both_ids": 292,
+  "step_a_partial": 45,
+  "step_a_unsuitable": 22,
+  "step_a_written": 291,
+  "step_b_answered": 261,
+  "step_b_kept": 227
+ },
+ "graph": {
+  "cases": 330012,
+  "cites": 564602,
+  "overruled": 293
+ },
+ "passages": {
+  "cases": 330011,
+  "cases_from_cap": 329995,
+  "cases_from_cornell": 16,
+  "cases_without_text": 11263,
+  "passages": 1007513,
+  "passages_concurrence": 38215,
+  "passages_concurring-in-part-and-dissenting-in-part": 14839,
+  "passages_dissent": 130910,
+  "passages_majority": 823480,
+  "passages_on-motion-to-strike-cost-bill": 12,
+  "passages_on-the-merits": 1,
+  "passages_plurality": 6,
+  "passages_rehearing": 50
+ },
+ "pool_audit": {
+  "after_2021": {
+   "citing_passages": 329,
+   "decisions": 5,
+   "decisions_cited": 5
+  },
+  "all_after_2021": [
+   {
+    "cite": "467 U.S. 837",
+    "first_overruled": 2024,
+    "name": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+    "passages": 210
+   },
+   {
+    "cite": "505 U.S. 833",
+    "first_overruled": 2022,
+    "name": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+    "passages": 72
+   },
+   {
+    "cite": "410 U.S. 113",
+    "first_overruled": 2022,
+    "name": "Roe v. Wade",
+    "passages": 36
+   },
+   {
+    "cite": "295 U.S. 602",
+    "first_overruled": 2026,
+    "name": "Humphrey's Executor v. United States",
+    "passages": 8
+   },
+   {
+    "cite": "533 U.S. 431",
+    "first_overruled": 2026,
+    "name": "Federal Election Commission v. Colorado Republican Federal Campaign Committee",
+    "passages": 3
+   }
+  ],
+  "by_2021": {
+   "citing_passages": 630,
+   "decisions": 275,
+   "decisions_cited": 104
+  },
+  "citing_passages_by_source": {
+   "caselaw/after_2021": 321,
+   "caselaw/by_2021": 602,
+   "mbe/by_2021": 4,
+   "wex/after_2021": 8,
+   "wex/by_2021": 24
+  },
+  "decisions_with_a_citation": 280,
+  "decisions_without_a_citation_not_counted": 1,
+  "passages_scanned": {
+   "caselaw": 847228,
+   "mbe": 2893,
+   "wex": 6714
+  },
+  "pool_dates": {
+   "case_ids_also_in_scotus_corpus": 0,
+   "caselaw_case_ids": 23406,
+   "cases_whose_newest_year_is_before_2010": 1545,
+   "cases_with_no_year_in_parentheses": 6443,
+   "newest_parenthesized_year_per_case": {
+    "2010": 118,
+    "2011": 123,
+    "2012": 222,
+    "2013": 265,
+    "2014": 420,
+    "2015": 566,
+    "2016": 1073,
+    "2017": 2274,
+    "2018": 6345,
+    "2019": 3966,
+    "2020": 42,
+    "2021": 2,
+    "2023": 1,
+    "2024": 1
+   }
+  },
+  "top_20_by_2021": [
+   {
+    "cite": "533 U.S. 194",
+    "first_overruled": 2009,
+    "name": "Saucier v. Katz",
+    "passages": 80
+   },
+   {
+    "cite": "489 U.S. 288",
+    "first_overruled": 2021,
+    "name": "Teague v. Lane",
+    "passages": 32
+   },
+   {
+    "cite": "473 U.S. 172",
+    "first_overruled": 2019,
+    "name": "Williamson County Regional Planning Commission v. Hamilton Bank of Johnson City",
+    "passages": 26
+   },
+   {
+    "cite": "395 U.S. 711",
+    "first_overruled": 1989,
+    "name": "North Carolina v. Pearce",
+    "passages": 25
+   },
+   {
+    "cite": "451 U.S. 527",
+    "first_overruled": 1986,
+    "name": "Parratt v. Taylor",
+    "passages": 22
+   },
+   {
+    "cite": "431 U.S. 209",
+    "first_overruled": 2018,
+    "name": "Abood v. Detroit Board of Education",
+    "passages": 20
+   },
+   {
+    "cite": "448 U.S. 56",
+    "first_overruled": 2004,
+    "name": "Ohio v. Roberts",
+    "passages": 19
+   },
+   {
+    "cite": "365 U.S. 167",
+    "first_overruled": 1978,
+    "name": "Monroe v. Pape",
+    "passages": 17
+   },
+   {
+    "cite": "492 U.S. 302",
+    "first_overruled": 2002,
+    "name": "Penry v. Lynaugh",
+    "passages": 17
+   },
+   {
+    "cite": "550 U.S. 192",
+    "first_overruled": 2015,
+    "name": "James v. United States",
+    "passages": 17
+   },
+   {
+    "cite": "406 U.S. 404",
+    "first_overruled": 2020,
+    "name": "Apodaca v. Oregon",
+    "passages": 15
+   },
+   {
+    "cite": "540 U.S. 93",
+    "first_overruled": 2010,
+    "name": "McConnell v. Federal Election Commission",
+    "passages": 15
+   },
+   {
+    "cite": "277 U.S. 438",
+    "first_overruled": 1967,
+    "name": "Olmstead v. United States",
+    "passages": 13
+   },
+   {
+    "cite": "393 U.S. 410",
+    "first_overruled": 1983,
+    "name": "Spinelli v. United States",
+    "passages": 13
+   },
+   {
+    "cite": "462 U.S. 416",
+    "first_overruled": 1992,
+    "name": "City of Akron v. Akron Center for Reproductive Health, Inc.",
+    "passages": 12
+   },
+   {
+    "cite": "394 U.S. 618",
+    "first_overruled": 1974,
+    "name": "Shapiro v. Thompson",
+    "passages": 11
+   },
+   {
+    "cite": "163 U.S. 537",
+    "first_overruled": 1983,
+    "name": "Plessy v. Ferguson",
+    "passages": 10
+   },
+   {
+    "cite": "338 U.S. 25",
+    "first_overruled": 1961,
+    "name": "Wolf v. Colorado",
+    "passages": 10
+   },
+   {
+    "cite": "380 U.S. 202",
+    "first_overruled": 1986,
+    "name": "Swain v. Alabama",
+    "passages": 10
+   },
+   {
+    "cite": "416 U.S. 396",
+    "first_overruled": 1989,
+    "name": "Procunier v. Martinez",
+    "passages": 10
+   }
+  ]
+ },
+ "table": {
+  "distinct_old_decisions": 283,
+  "new_decisions_with_docket_only": 14,
+  "old_decisions_without_cite_in_table": 100,
+  "pairs": 293,
+  "pairs_in_part": 36,
+  "rows": 237,
+  "rows_parsed": 237,
+  "rows_plus_semicolons": 271,
+  "unparsed_rows": []
+ }
+}

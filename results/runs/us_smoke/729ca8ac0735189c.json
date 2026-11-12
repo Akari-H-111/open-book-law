@@ -1,0 +1,115 @@
+{
+ "config": {
+  "condition": "gold",
+  "context_tokens": 2000,
+  "dataset": "housing",
+  "k": null,
+  "library": null,
+  "limit": 3,
+  "prompt_version": "v3",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/housing_qa/questions.json.zip": "7e7722c267d44ecc1f9f52d69109116d8a0a352b89f002438585872f67de9985",
+  "$OBL_DATA/housing_qa/statutes.tsv.zip": "7d4382875edc40b54de5889a21d7ddebe6fae5629fd54bfa53b3d82c20eb04ae"
+ },
+ "elapsed_seconds": 50.56194877624512,
+ "git": {
+  "commit": "272306dc02faee25f5b4ff0e6a2be89b198a90e1",
+  "dirty": true,
+  "dirty_paths": [
+   "results/runs/us_smoke/b0ad7d8724d2b529.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 66.66666666666667,
+   "contexts_cut": 0,
+   "mean_label_mass": 0.8814585995315452,
+   "questions": 3
+  },
+  "label_token_ids": {
+   "No": [
+    2360,
+    2822
+   ],
+   "Yes": [
+    7566,
+    9642
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 1.0,
+   "docids": [
+    "462151"
+   ],
+   "gold": "No",
+   "group": "new hampshire",
+   "label_mass": 0.9157774740715445,
+   "predicted": "No",
+   "probabilities": {
+    "No": 0.9579067061103093,
+    "Yes": 0.04209329388969072
+   },
+   "prompt_tokens": 1139,
+   "qid": "7370",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "1504018",
+    "1504021",
+    "1504028"
+   ],
+   "gold": "Yes",
+   "group": "tennessee",
+   "label_mass": 0.9250894151521409,
+   "predicted": "Yes",
+   "probabilities": {
+    "No": 0.0022517447190221074,
+    "Yes": 0.9977482552809779
+   },
+   "prompt_tokens": 314,
+   "qid": "2498",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "1805176"
+   ],
+   "gold": "No",
+   "group": "west virginia",
+   "label_mass": 0.8035089093709499,
+   "predicted": "Yes",
+   "probabilities": {
+    "No": 0.011867964942841652,
+    "Yes": 0.9881320350571583
+   },
+   "prompt_tokens": 1014,
+   "qid": "9196",
+   "truncated": false
+  }
+ ],
+ "run_id": "729ca8ac0735189c",
+ "suite": "us_smoke",
+ "throughput": {
+  "questions_per_second": 0.18207473755037368,
+  "read_seconds": 16.476750373840332,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-05T07:12:21+00:00"
+}

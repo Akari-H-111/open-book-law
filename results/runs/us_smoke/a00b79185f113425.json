@@ -1,0 +1,150 @@
+{
+ "config": {
+  "as_of": "2026-11-03",
+  "condition": "both",
+  "dataset": "scotus",
+  "k": 1,
+  "library": "scotus",
+  "limit": 3,
+  "prompt_version": "v3",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "all"
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/authority.sqlite": "8dc7c9411574e35ccc85e0d4a0afe9dc685e11bf534846837171d1c79709ea9d",
+  "$OBL_DATA/derived/goodlaw/questions.jsonl": "f89ea046eb190af6a2d241579540adf39b57ae24a770e38baafd8e7aa4459529",
+  "$OBL_DATA/derived/scotus_passages.jsonl.gz": "94c4dae10a65f6571ac7d6f9f894492a35e863f8380c7ae38d3da95bcc5806a5"
+ },
+ "elapsed_seconds": 18.734648942947388,
+ "git": {
+  "commit": "641305640fa28a0eca7bcd6a6bb5c869745b5853",
+  "dirty": false,
+  "dirty_paths": []
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 66.66666666666667,
+   "contexts_cut": 0,
+   "left_out": [
+    "145-1",
+    "49-1"
+   ],
+   "mean_label_mass": 0.9997616096677134,
+   "questions": 3,
+   "rates": {
+    "current": 66.66666666666667,
+    "other_wrong": 0.0,
+    "superseded": 33.333333333333336
+   }
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 1.0,
+   "docids": [
+    "cornell:19-1392",
+    "1480969"
+   ],
+   "gold": "C",
+   "group": "overruled",
+   "label_mass": 0.9996856408281384,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "C",
+   "probabilities": {
+    "A": 4.979195201646812e-05,
+    "B": 0.0011332596049673307,
+    "C": 0.9985937963956237,
+    "D": 0.00022315204739242484
+   },
+   "prompt_tokens": 413,
+   "qid": "4-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "451047",
+    "6931824"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9998437091179041,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "current",
+   "predicted": "D",
+   "probabilities": {
+    "A": 4.832336801245703e-05,
+    "B": 2.586563502884641e-05,
+    "C": 2.1110916016051087e-05,
+    "D": 0.9999047000809427
+   },
+   "prompt_tokens": 607,
+   "qid": "150-1",
+   "superseded": 0.0,
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "cornell:24-621",
+    "9313389"
+   ],
+   "gold": "D",
+   "group": "overruled",
+   "label_mass": 0.9997554790570975,
+   "n_passages": 2,
+   "old_first": false,
+   "outcome": "superseded",
+   "predicted": "C",
+   "probabilities": {
+    "A": 3.8378920464876585e-05,
+    "B": 4.7763338327396626e-05,
+    "C": 0.6583607829443741,
+    "D": 0.34155307479683367
+   },
+   "prompt_tokens": 317,
+   "qid": "2-1",
+   "superseded": 1.0,
+   "truncated": false
+  }
+ ],
+ "run_id": "a00b79185f113425",
+ "suite": "us_smoke",
+ "throughput": {
+  "questions_per_second": 0.3220534906870273,
+  "read_seconds": 9.31522274017334,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-04T18:36:56+00:00"
+}

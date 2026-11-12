@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-tone="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Book: does a law library help a small AI model?</title>
+<meta name="description" content="A research project for classrooms and engineers: can a small AI model answer old US bar exam questions better with a law library?">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234B41D6'/%3E%3Cpath d='M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" style="fill:var(--accent-fill)"/><path d="M7 9h7a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H7zM25 9h-7a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h6z" fill="#fff"/></svg>Open Book</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Start</a></li>
+        <li><a href="tests.html">The 11 tests</a></li>
+        <li><a href="old-law.html">The old-law trap</a></li>
+        <li><a href="questions.html">Try a question</a></li>
+        <li><a href="errors.html">Wrong answers</a></li>
+        <li><a href="teachers.html">For teachers</a></li>
+        <li><a href="engineers.html">For engineers</a></li>
+        <li><a href="words.html">Words</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <svg class="dots" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <circle cx="40" cy="26" r="5" style="fill:var(--dot-1)"/><circle cx="1150" cy="110" r="6" style="fill:var(--dot-2)"/>
+    <circle cx="1170" cy="300" r="4" style="fill:var(--dot-3)"/><circle cx="700" cy="20" r="3.5" style="fill:var(--dot-4)"/>
+    <circle cx="240" cy="402" r="4" style="fill:var(--dot-2)"/><circle cx="930" cy="404" r="3" style="fill:var(--dot-1)"/>
+    <line x1="1080" y1="30" x2="1160" y2="56" style="stroke:var(--dot-1)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="30" y1="392" x2="100" y2="370" style="stroke:var(--dot-3)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1040" y1="396" x2="1100" y2="396" style="stroke:var(--dot-4)" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <div class="wrap">
+    <p class="label">A research project that you can check</p>
+    <h1>Does a law library help a small AI model answer old bar exam questions?</h1>
+    <p class="lead">Lawyers look things up all the time. This project gave small AI models some old multiple-choice questions from the US bar exam, with and without legal texts to read. Its plan fixed <span data-bind="tests.count">11</span> tests and their rules for success before the main runs. This site shows what happened.</p>
+    <ul class="badges">
+      <li>Not legal advice</li>
+      <li>Not bar exam scores</li>
+      <li>AI models did most of the work</li>
+      <li>No person has checked the code or the results yet</li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <noscript><p class="note">This page fills in its numbers and charts with JavaScript, which is turned off in this browser. You can read the main results in the <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">results table</a> instead.</p></noscript>
+  <h2 class="sr">Choose your path</h2>
+  <div class="grid two">
+    <section class="card path">
+      <p class="label">For teachers and students</p>
+      <h2>See what was found, and use it in class</h2>
+      <p>You need no setup and no programming. Every chart is already made. The pages explain each word that they use.</p>
+      <ul>
+        <li>The results, with a classroom mode in which students guess first</li>
+        <li>Five lesson ideas, from 20 to 90 minutes</li>
+        <li>A worksheet that you can print</li>
+      </ul>
+      <p class="go"><a class="btn" href="tests.html">See the 11 tests</a> <a class="btn ghost" href="teachers.html">Lesson ideas</a> <a class="btn ghost" href="https://www.youtube.com/watch?v=Z9x9vX72wcE">Watch the trailer (67 s)</a></p>
+    </section>
+    <section class="card path">
+      <p class="label">For engineers and researchers</p>
+      <h2>Reproduce it, verify it, fork it</h2>
+      <p>Every number comes from stored run files through scripts in the repository. You can rebuild the results in a few minutes without any AI model.</p>
+      <ul>
+        <li>How the code and the data fit together</li>
+        <li>Three levels of reproduction, with commands</li>
+        <li>How to verify a release and how to extend the project</li>
+      </ul>
+      <p class="go"><a class="btn" href="engineers.html">Engineering guide</a> <a class="btn ghost" href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a></p>
+    </section>
+  </div>
+
+  <h2>What we found</h2>
+  <p class="narrow"><strong><span data-bind="tests.supported">Some</span> of the <span data-bind="tests.count">11</span> tests came out supported, and <span data-bind="tests.notsupported">the rest</span> did not.</strong> Differences are in <a href="words.html#percentage-point">percentage points</a>.</p>
+  <div class="grid two">
+    <div class="card">
+      <p class="label">Test H1 · <span data-bind="H1.verdict">see the tests</span></p>
+      <p class="big"><span data-bind="H1.diff">…</span></p>
+      <p>With the best library that the project could build, a legal encyclopedia, the model did not score higher than with nothing to read.</p>
+    </div>
+    <div class="card">
+      <p class="label">Test H3 · <span data-bind="H3.verdict">see the tests</span></p>
+      <p class="big"><span data-bind="H3.diff">…</span></p>
+      <p>With the passage that a law student had marked as the right one, the model scored higher than with that encyclopedia.</p>
+    </div>
+    <div class="card">
+      <p class="label">Test H7 · <span data-bind="H7.verdict">see the tests</span></p>
+      <p class="big"><span data-bind="H7.diff">…</span></p>
+      <p>When the model read only a court decision that was later overruled, it chose the outdated rule far more often.</p>
+    </div>
+    <div class="card">
+      <p class="label">Test H9 · <span data-bind="H9.verdict">see the tests</span></p>
+      <p class="big"><span data-bind="h9.count">…</span> of <span data-bind="h9.n">…</span></p>
+      <p>In this many questions, search ranked the overruled decision above the decision that overruled it.</p>
+    </div>
+  </div>
+  <p class="narrow">So the right text helps, and old law is a trap. Two attempts to fix the trap did not help by a clear amount (tests H8 and H10). The tests do not show how often the search failed to find the right passage.</p>
+  <p><a class="btn ghost" href="tests.html">All 11 tests</a> <a class="btn ghost" href="old-law.html">The old-law trap</a></p>
+
+  <h2>What this project cannot show</h2>
+  <ul class="narrow">
+    <li><strong>These are not bar exam scores.</strong> The questions are old exam questions released from 1972 to 1998. A score here says nothing about whether a model, or a person, could practise law.</li>
+    <li><strong>Small models only.</strong> The tests used two small models on one laptop. Larger models may behave very differently.</li>
+    <li><strong>“Not supported” does not mean “proven false”.</strong> It means that this experiment did not show the effect clearly enough.</li>
+    <li><strong>Some questions are AI-written.</strong> An AI model wrote the questions about overruled decisions, and no person has checked them yet.</li>
+    <li><strong>Nothing here is legal advice.</strong> The author is not a licensed US attorney.</li>
+  </ul>
+
+  <h2>Who made this, and who checked it</h2>
+  <div class="card narrow">
+    <p>The project's own record says:</p>
+    <ul>
+      <li>AI models did most of the work.</li>
+      <li>The author did not write or edit any code or document directly. All of the author's input was carried out by Claude after a discussion with the author.</li>
+      <li>The verdicts come from scripts, not from judgment.</li>
+      <li>No person has checked the code or the results yet. The author has not recomputed a verdict or read the run logs.</li>
+    </ul>
+    <p>The full record is in <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a>. Because of this, the project lets anyone rebuild every number. <a href="engineers.html">For engineers</a> explains how.</p>
+  </div>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Open Book. Copyright 2026 Jian-Yu Huang (A. Hayami). AI models did most of the work. No person has checked the code or the results yet. This site is not legal advice, and its scores are not bar exam scores.</p>
+    <p>The code, the documents and this site are under the MIT License, so you may copy and adapt them for teaching. The datasets keep their own terms.</p>
+    <p><a href="https://github.com/Akari-H-111/open-book-law">Repository on GitHub</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/RESULTS.md">Results table</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/PREREGISTRATION.md">The plan (preregistration)</a> · <a href="https://github.com/Akari-H-111/open-book-law/blob/main/docs/AI_ASSISTANCE.md">How AI was used</a> · <a href="https://github.com/Akari-H-111/open-book-law/releases">Downloads</a></p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

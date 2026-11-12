@@ -1,0 +1,96 @@
+{
+ "config": {
+  "budget": 5,
+  "dataset": "scotus",
+  "library": "scotus",
+  "limit": 3,
+  "max_malformed": 3,
+  "prompt": "a2",
+  "reader": "qwen3",
+  "rerun": 0,
+  "retriever": "e5-base",
+  "sample": null,
+  "split": "validation",
+  "tokens": 200
+ },
+ "data_sha256": {
+  "$OBL_DATA/derived/authority.sqlite": "8dc7c9411574e35ccc85e0d4a0afe9dc685e11bf534846837171d1c79709ea9d",
+  "$OBL_DATA/derived/goodlaw/questions.jsonl": "f89ea046eb190af6a2d241579540adf39b57ae24a770e38baafd8e7aa4459529",
+  "$OBL_DATA/derived/scotus_passages.jsonl.gz": "94c4dae10a65f6571ac7d6f9f894492a35e863f8380c7ae38d3da95bcc5806a5"
+ },
+ "elapsed_seconds": 296.3350510597229,
+ "git": {
+  "commit": "76dbccc5d851a1e63b4054b240adcac3585712c1",
+  "dirty": false,
+  "dirty_paths": []
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 100.0,
+   "budget_exhausted": 0,
+   "ignored_status": 0,
+   "malformed_limit": 3,
+   "malformed_limit_hit": 0,
+   "malformed_share": 0.0,
+   "questions": 3,
+   "superseded_rate": 0.0,
+   "tool_call_budget": 5,
+   "tool_calls_per_question": 3.0,
+   "valid_turn_share": 100.0
+  }
+ },
+ "model": {
+  "id": "mlx-community/Qwen3-8B-4bit",
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+ },
+ "per_query": [
+  {
+   "correct": 1.0,
+   "exhausted": false,
+   "group": "overruled",
+   "ignored_status": false,
+   "malformed": 0,
+   "predicted": "C",
+   "qid": "4-1",
+   "saw_overruled": false,
+   "stop": "answer",
+   "superseded": 0.0,
+   "tool_calls": 3,
+   "turns": 4
+  },
+  {
+   "correct": 1.0,
+   "exhausted": false,
+   "group": "overruled",
+   "ignored_status": false,
+   "malformed": 0,
+   "predicted": "D",
+   "qid": "150-1",
+   "saw_overruled": false,
+   "stop": "answer",
+   "superseded": 0.0,
+   "tool_calls": 3,
+   "turns": 4
+  },
+  {
+   "correct": 1.0,
+   "exhausted": false,
+   "group": "overruled",
+   "ignored_status": false,
+   "malformed": 0,
+   "predicted": "D",
+   "qid": "2-1",
+   "saw_overruled": false,
+   "stop": "answer",
+   "superseded": 0.0,
+   "tool_calls": 3,
+   "turns": 4
+  }
+ ],
+ "run_id": "c34c2834d1acce09",
+ "suite": "us_smoke",
+ "throughput": {
+  "seconds_per_question": 98.77835035324097
+ },
+ "utc_time": "2026-11-05T07:06:36+00:00"
+}

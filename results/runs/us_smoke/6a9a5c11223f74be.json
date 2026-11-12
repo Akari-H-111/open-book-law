@@ -1,0 +1,275 @@
+{
+ "config": {
+  "condition": "gold",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 10,
+  "prompt_version": "v3",
+  "rank_run": null,
+  "reader": "llama8",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be",
+  "$OBL_DATA/barexam_qa/test.csv": "dc0cfd5253ae837e447e70d2ee22645b83bee43c383384f5e1882f72f9279c4b",
+  "$OBL_DATA/barexam_qa/train.csv": "91f8a3eb1f872f81e9c420241b6e44b1ba0c6592378708f1c947d575e28d9e8a",
+  "$OBL_DATA/barexam_qa/validation.csv": "25faae1290920494fe25d0eccf2487ee9a32f48475fd0be697869b50c9371129"
+ },
+ "elapsed_seconds": 63.4963059425354,
+ "git": {
+  "commit": "af8a6a15a9c2a0b00f5ceb7325cf94a95fe43485",
+  "dirty": true,
+  "dirty_paths": [
+   "docs/REPRODUCTION.md",
+   "results/summary/us_repro.json",
+   "results/summary/us_selection.json",
+   "results/runs/us_retrieval/362e4429624184c3.json",
+   "results/runs/us_retrieval/362e4429624184c3.rank.tsv.gz",
+   "results/runs/us_smoke/0f6def6b26c1a976.json",
+   "results/runs/us_smoke/119f5f7652d24723.json",
+   "results/runs/us_smoke/189dd0a3d3f4113c.json",
+   "results/runs/us_smoke/2d36da496704cf75.json",
+   "results/runs/us_smoke/2d36da496704cf75.rank.tsv.gz",
+   "results/runs/us_smoke/6e3b522c9bb9851b.json",
+   "results/runs/us_smoke/8ca9f6f2699ab874.json",
+   "results/runs/us_smoke/98bafc5556d0477b.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 40.0,
+   "contexts_cut": 0,
+   "mean_label_mass": 0.9994020516853526,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    426
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    423
+   ]
+  }
+ },
+ "model": {
+  "id": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "revision": "c38b3b1f03cce0ce0ccd235e5c97b0d3d255e651"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [
+    "mbe_2336"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9997521070780928,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0006781378572614733,
+    "B": 0.41716019858967995,
+    "C": 0.5791695789977385,
+    "D": 0.0029920845553201214
+   },
+   "prompt_tokens": 419,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "mbe_2339"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9998014385118676,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.013084286093752876,
+    "B": 0.002658233959366732,
+    "C": 0.03786063716708668,
+    "D": 0.9463968427797937
+   },
+   "prompt_tokens": 655,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "mbe_2352"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9995759989741422,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.0018346378589414868,
+    "B": 0.005922283558160268,
+    "C": 0.6739103632002263,
+    "D": 0.31833271538267194
+   },
+   "prompt_tokens": 438,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "mbe_2362"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9991129650870075,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9002624722401152,
+    "B": 0.013043779575780106,
+    "C": 0.002956293707197273,
+    "D": 0.08373745447690736
+   },
+   "prompt_tokens": 627,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "mbe_2363"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9996931192315336,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.04937969190173966,
+    "B": 0.021237940855714756,
+    "C": 0.91728135329452,
+    "D": 0.012101013948025504
+   },
+   "prompt_tokens": 457,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "mbe_2396"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9984185094091061,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.0026732224126145166,
+    "B": 0.0287398494112896,
+    "C": 0.0018662100085871805,
+    "D": 0.9667207181675087
+   },
+   "prompt_tokens": 388,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [
+    "mbe_2418"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.999434999302217,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.10408035876346687,
+    "B": 0.07734595510488329,
+    "C": 0.20062014230767386,
+    "D": 0.6179535438239759
+   },
+   "prompt_tokens": 719,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "mbe_2420"
+   ],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 0.9988964685443811,
+   "predicted": "C",
+   "probabilities": {
+    "A": 0.12486552040672522,
+    "B": 0.08317836870518865,
+    "C": 0.7185514578105007,
+    "D": 0.07340465307758541
+   },
+   "prompt_tokens": 557,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "mbe_2434"
+   ],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 0.9999040673485313,
+   "predicted": "B",
+   "probabilities": {
+    "A": 0.055123312464499835,
+    "B": 0.9178855601048929,
+    "C": 0.015069875041527493,
+    "D": 0.011921252389079833
+   },
+   "prompt_tokens": 548,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [
+    "mbe_2436"
+   ],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 0.9994308433666468,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.5022158190099978,
+    "B": 0.1555792032225075,
+    "C": 0.2773499165276123,
+    "D": 0.06485506123988245
+   },
+   "prompt_tokens": 321,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "6a9a5c11223f74be",
+ "suite": "us_smoke",
+ "throughput": {
+  "questions_per_second": 0.203733889801623,
+  "read_seconds": 49.083635568618774,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T20:23:18+00:00"
+}

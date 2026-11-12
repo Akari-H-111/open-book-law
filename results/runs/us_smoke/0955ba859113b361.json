@@ -1,0 +1,252 @@
+{
+ "config": {
+  "condition": "closed",
+  "context_tokens": 2000,
+  "dataset": "mbe",
+  "k": null,
+  "library": null,
+  "limit": 10,
+  "prompt_version": "v1",
+  "rank_run": null,
+  "reader": "qwen3",
+  "rerun": 0,
+  "retriever": null,
+  "rollout": false,
+  "sample": null,
+  "split": "validation"
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be"
+ },
+ "elapsed_seconds": 147.9089651107788,
+ "git": {
+  "commit": "64f938fa639b1aef8b0d2b44afb6537eeba529f1",
+  "dirty": true,
+  "dirty_paths": [
+   "Makefile",
+   "open_book_law/us/goodlaw_questions.py"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 40.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 501,
+   "mean_label_mass": 4.7343259242432995e-07,
+   "questions": 10
+  },
+  "label_token_ids": {
+   "A": [
+    32,
+    362
+   ],
+   "B": [
+    33,
+    425
+   ],
+   "C": [
+    34,
+    356
+   ],
+   "D": [
+    35,
+    422
+   ]
+  },
+  "validation": {
+   "accuracy": 40.0,
+   "contexts_cut": 0,
+   "empty_contexts": 10,
+   "max_prompt_tokens": 501,
+   "mean_label_mass": 4.7343259242432995e-07,
+   "questions": 10
+  }
+ },
+ "model": {
+  "id": "mlx-community/Qwen3-8B-4bit",
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 4.206591528421181e-07,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9036827911840843,
+    "B": 0.021252582272006378,
+    "C": 0.024082331231414737,
+    "D": 0.050982295312494534
+   },
+   "prompt_tokens": 292,
+   "qid": "mbe_225",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 4.682204906331683e-07,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8637773311377095,
+    "B": 0.01792712669313583,
+    "C": 0.08034381337972682,
+    "D": 0.03795172878942786
+   },
+   "prompt_tokens": 498,
+   "qid": "mbe_233",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 1.1335901187353108e-06,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.5013085883771288,
+    "B": 0.015138207722373552,
+    "C": 0.44240328824337705,
+    "D": 0.041149915657120714
+   },
+   "prompt_tokens": 251,
+   "qid": "mbe_379",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 4.289265656187009e-07,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.9765230789351167,
+    "B": 0.006579760767426863,
+    "C": 0.008448580167543795,
+    "D": 0.008448580129912703
+   },
+   "prompt_tokens": 257,
+   "qid": "mbe_430",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 1.9611894194484702e-07,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8436087141310452,
+    "B": 0.08891570443979452,
+    "C": 0.042000805363077404,
+    "D": 0.02547477606608295
+   },
+   "prompt_tokens": 243,
+   "qid": "mbe_452",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 1.4082775118321199e-06,
+   "predicted": "D",
+   "probabilities": {
+    "A": 0.11886190970680192,
+    "B": 0.0016954740868719896,
+    "C": 0.0011652811694444038,
+    "D": 0.8782773350368818
+   },
+   "prompt_tokens": 305,
+   "qid": "mbe_799",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 2.0117324963655265e-07,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8771545176451082,
+    "B": 0.02062869743063933,
+    "C": 0.020628698948478283,
+    "D": 0.08158808597577412
+   },
+   "prompt_tokens": 501,
+   "qid": "mbe_992",
+   "truncated": false
+  },
+  {
+   "correct": 1.0,
+   "docids": [],
+   "gold": "A",
+   "group": "validation",
+   "label_mass": 3.370827128163172e-07,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8920982306936992,
+    "B": 0.02693903286974624,
+    "C": 0.016339351263423427,
+    "D": 0.06462338517313118
+   },
+   "prompt_tokens": 324,
+   "qid": "mbe_994",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "D",
+   "group": "validation",
+   "label_mass": 9.908417588924486e-08,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.8472389556745475,
+    "B": 0.0372250818247104,
+    "C": 0.06137378606383886,
+    "D": 0.0541621764369031
+   },
+   "prompt_tokens": 380,
+   "qid": "mbe_1118",
+   "truncated": false
+  },
+  {
+   "correct": 0.0,
+   "docids": [],
+   "gold": "C",
+   "group": "validation",
+   "label_mass": 4.1193004294919275e-08,
+   "predicted": "A",
+   "probabilities": {
+    "A": 0.818529984574472,
+    "B": 0.028008555883076332,
+    "C": 0.06718903332618974,
+    "D": 0.08627242621626198
+   },
+   "prompt_tokens": 209,
+   "qid": "mbe_1133",
+   "truncated": false
+  }
+ ],
+ "run_id": "0955ba859113b361",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_rss_gb": 1.568878173828125,
+  "questions_per_second": 0.07247961883114884,
+  "read_seconds": 137.96982049942017,
+  "resumed_questions": 0
+ },
+ "utc_time": "2026-11-03T09:25:04+00:00"
+}

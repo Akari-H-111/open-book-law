@@ -1,0 +1,100 @@
+{
+ "config": {
+  "budget": 5,
+  "dataset": "mbe",
+  "library": "doctrine",
+  "limit": 3,
+  "max_malformed": 3,
+  "prompt": "a2",
+  "reader": "qwen3",
+  "rerun": 0,
+  "retriever": "e5-base",
+  "sample": null,
+  "split": "validation",
+  "tokens": 200
+ },
+ "data_sha256": {
+  "$OBL_DATA/barexam_qa/passages.tsv.zip": "ba53a01c34f9cfdadf13bd1c6079b49f63b8baeda366cd0e4232ba2a81c6778f",
+  "$OBL_DATA/barexam_qa/qa.csv": "01589a7c02740cd525da73a54a599dff66a4999864e66d1c803405e338e193be",
+  "$OBL_DATA/barexam_qa/test.csv": "dc0cfd5253ae837e447e70d2ee22645b83bee43c383384f5e1882f72f9279c4b",
+  "$OBL_DATA/barexam_qa/train.csv": "91f8a3eb1f872f81e9c420241b6e44b1ba0c6592378708f1c947d575e28d9e8a",
+  "$OBL_DATA/barexam_qa/validation.csv": "25faae1290920494fe25d0eccf2487ee9a32f48475fd0be697869b50c9371129"
+ },
+ "elapsed_seconds": 245.01872897148132,
+ "git": {
+  "commit": "76dbccc5d851a1e63b4054b240adcac3585712c1",
+  "dirty": true,
+  "dirty_paths": [
+   "results/runs/us_smoke/c34c2834d1acce09.json"
+  ]
+ },
+ "metrics": {
+  "all": {
+   "accuracy": 33.333333333333336,
+   "budget_exhausted": 0,
+   "ignored_status": 0,
+   "malformed_limit": 3,
+   "malformed_limit_hit": 0,
+   "malformed_share": 0.0,
+   "questions": 3,
+   "superseded_rate": 0.0,
+   "tool_call_budget": 5,
+   "tool_calls_per_question": 3.0,
+   "valid_turn_share": 100.0
+  }
+ },
+ "model": {
+  "id": "mlx-community/Qwen3-8B-4bit",
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+ },
+ "per_query": [
+  {
+   "correct": 0.0,
+   "exhausted": false,
+   "group": "validation",
+   "ignored_status": false,
+   "malformed": 0,
+   "predicted": "C",
+   "qid": "mbe_235",
+   "saw_overruled": false,
+   "stop": "answer",
+   "superseded": 0.0,
+   "tool_calls": 3,
+   "turns": 4
+  },
+  {
+   "correct": 1.0,
+   "exhausted": false,
+   "group": "validation",
+   "ignored_status": false,
+   "malformed": 0,
+   "predicted": "A",
+   "qid": "mbe_381",
+   "saw_overruled": false,
+   "stop": "answer",
+   "superseded": 0.0,
+   "tool_calls": 2,
+   "turns": 3
+  },
+  {
+   "correct": 0.0,
+   "exhausted": false,
+   "group": "validation",
+   "ignored_status": false,
+   "malformed": 0,
+   "predicted": "C",
+   "qid": "mbe_1039",
+   "saw_overruled": false,
+   "stop": "answer",
+   "superseded": 0.0,
+   "tool_calls": 4,
+   "turns": 5
+  }
+ ],
+ "run_id": "3fb636754492de68",
+ "suite": "us_smoke",
+ "throughput": {
+  "seconds_per_question": 81.67290965716045
+ },
+ "utc_time": "2026-11-05T07:10:49+00:00"
+}

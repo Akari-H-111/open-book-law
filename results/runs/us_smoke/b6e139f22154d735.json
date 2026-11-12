@@ -1,0 +1,82 @@
+{
+ "config": {
+  "batch_size": 8,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "limit": 5,
+  "limit_pairs": 32,
+  "mode": "train",
+  "model": "intfloat/e5-small-v2",
+  "rerun": 0,
+  "seed": 20261103,
+  "temperature": 0.01,
+  "train_max_length": 256,
+  "val_docs": 200
+ },
+ "data_sha256": {
+  "$OBL_DATA/housing_qa/questions.json.zip": "7e7722c267d44ecc1f9f52d69109116d8a0a352b89f002438585872f67de9985",
+  "$OBL_DATA/housing_qa/statutes.tsv.zip": "7d4382875edc40b54de5889a21d7ddebe6fae5629fd54bfa53b3d82c20eb04ae",
+  "data/housing_state_splits.json": "3fcbec50cf233a56b0cfe0588fe8e15fc44a0b25c40ad5acbe02b28b3f51870c"
+ },
+ "elapsed_seconds": 124.5084400177002,
+ "git": {
+  "commit": "470df42c21046cc2698f253dc08310b0f9a2145f",
+  "dirty": true,
+  "dirty_paths": [
+   "open_book_law/reader/prompts.py",
+   "open_book_law/us/caselaw.py",
+   "open_book_law/us/citations.py",
+   "open_book_law/us/goodlaw_questions.py",
+   "open_book_law/us/overruled.py",
+   "results/data_audit/goodlaw_audit.json",
+   "tests/test_caselaw.py",
+   "tests/test_reader.py",
+   "tests/test_us_select.py",
+   "data/citation_review.jsonl",
+   "results/runs/us_smoke/01ff1be3362f765f.json",
+   "results/runs/us_smoke/0955ba859113b361.json",
+   "results/runs/us_smoke/191ce5e24e39fc89.json",
+   "results/runs/us_smoke/20459b79aab4d37d.json",
+   "results/runs/us_smoke/21148c411760ab8a.json",
+   "results/runs/us_smoke/22755798907fb3e5.json",
+   "results/runs/us_smoke/2850394db2e26c6e.json",
+   "results/runs/us_smoke/548353700231a8ea.json",
+   "results/runs/us_smoke/5affe215a77eb85c.json",
+   "results/runs/us_smoke/90ca780bea6390d3.json",
+   "results/runs/us_smoke/9492d1aab16165c2.json",
+   "results/runs/us_smoke/9530352736e33ffd.json",
+   "results/runs/us_smoke/a71180b3cdb164bd.json",
+   "results/runs/us_smoke/a71180b3cdb164bd.rank.tsv.gz",
+   "results/runs/us_smoke/dcdda91f87498e8b.json",
+   "results/runs/us_smoke/dcdda91f87498e8b.rank.tsv.gz"
+  ]
+ },
+ "metrics": {
+  "log": [
+   {
+    "epoch": 0,
+    "validation_r@10": 100.0
+   },
+   {
+    "epoch": 1,
+    "mean_loss": 2.6299141347408295,
+    "seconds": 36.31468224525452,
+    "validation_r@10": 80.0
+   }
+  ],
+  "training_pairs": 32
+ },
+ "model": {
+  "id": "intfloat/e5-small-v2",
+  "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+  "saved_to": "$OBL_DATA/derived/models/ft-small-b6e139f22154d735"
+ },
+ "per_query": [],
+ "run_id": "b6e139f22154d735",
+ "suite": "us_smoke",
+ "throughput": {
+  "peak_mps_gb": 3.2707366943359375,
+  "peak_rss_gb": 0.99688720703125
+ },
+ "utc_time": "2026-11-03T10:01:49+00:00"
+}

@@ -1,0 +1,33 @@
+# Checks on every push: the tests pass, and the results table and the site data come back unchanged
+# when the scripts run again on the committed run files. No model and no downloaded data are needed.
+name: verify
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install the few libraries that the checks need
+        run: |
+          python -m pip install numpy==2.5.4 pytest==9.2.0 nltk==3.10.4
+          python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Run the tests that need no model and no data
+        run: python -m pytest -q
+      - name: Rebuild every summary and the results table from the run files
+        run: |
+          for m in us_answers us_verdicts us_select us_hypotheses; do
+            python -m open_book_law.experiments.$m > /dev/null
+          done
+          test -z "$(git status --porcelain -- results/summary docs/REPRODUCTION.md docs/RESULTS.md)" || { git status --short; git diff; exit 1; }
+      - name: Rebuild the data of the site
+        run: |
+          python -I tools/build_site_data.py
+          test -z "$(git status --porcelain -- site)" || { git status --short; git diff; exit 1; }
